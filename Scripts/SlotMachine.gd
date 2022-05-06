@@ -4,7 +4,6 @@ const SlotTile := preload("res://scenes/Tile.tscn")
 const SPIN_UP_DISTANCE = 100.0
 signal stopped
 
-
 export(Array, String) var pictures := [
   preload("res://Imagens/Simbolos/CyberCircus_Bunny.png"),
   preload("res://Imagens/Simbolos/CyberCircus_Clown.png"),
@@ -49,7 +48,6 @@ var tiles_moved_per_reel := []
 var runs_stopped := 0
 var total_runs : int
 
-
 var col1Mid
 var col2Mid 
 var col3Mid 
@@ -73,9 +71,6 @@ var lion= 0
 var malabare= 0
 var strongman= 0
 var q= 0
-
-
-
 
 var reel1
 
@@ -116,13 +111,11 @@ func _add_tile(col :int, row :int) -> void:
 func get_tile(col :int, row :int) -> SlotTile:
   return tiles[(col * rows) + row]
 
-
 func start() -> void:
  if state == State.OFF: 
 		state = State.ON 
 		total_runs = expected_runs
 		_get_result()
-		#print(result)
 	for reel in reels:
 		_spin_reel(reel)
 		if reel_delay > 0:
@@ -140,10 +133,8 @@ func _stop() -> void:
 		tiles_moved_per_reel[reel] = 0
 		state = State.OFF
 		emit_signal("stopped")
-	
 	if state == State.OFF:
 		idk()
-#		checkMidReel()
 	buildResultMasks();
 
 
@@ -177,7 +168,6 @@ func _on_tile_moved(tile: SlotTile, _nodePath) -> void:
 		tile.move_by(Vector2(0, tile_size.y))
 	else: 
 		tile.spin_down()
-#		print(str(reel) + " - " + str(reels))
 		if reel == reels - 1:
 			_stop()
 
@@ -193,12 +183,6 @@ func idk():
 	col3Mid_name = col3Mid.tileName
 	col4Mid_name = col4Mid.tileName
 	col5Mid_name = col5Mid.tileName
-
-	#print(col1Mid_name)
-	#print(col2Mid_name)
-	#print(col3Mid_name)
-	#print(col4Mid_name)
-	#print(col5Mid_name)
 
 func current_runs(reel := 0) -> int:
   return int(ceil(float(tiles_moved_per_reel[reel]) / rows))
@@ -235,22 +219,6 @@ func _get_result() -> void:
 	  [ 0,0,0,0 ],
 	  [ 0,0,0,0 ]
 	]}
-	
-
-#func checkMidReel():
-#	if col1Mid_name == col2Mid_name:
-#		if col2Mid_name == col3Mid_name:
-#			if col3Mid_name == col4Mid_name:
-#				if col4Mid_name == col5Mid_name:
-#					print("5 Iguais na reel do meio")
-#				else:
-#					print("4 Iguais na reel do meio")
-#			else:
-#				print("3 Iguais na reel do meio")
-#		else:
-#			print("2 Iguais na reel do meio")
-#	else:
-#		print("Nenhuma Igual na reel do meio")
 
 func buildResultMasks():
 	var resultSymbols = [];
@@ -267,13 +235,12 @@ func buildResultMasks():
 		var _tmpResultMask = 0b0;
 		for i in resultSymbols.size():
 			_tmpResultMask |= int(symbolName[p] == resultSymbols[i]) << resultSymbols.size() - 1 - i;
-			
 		resultMasks.push_back(_tmpResultMask);
 	
 	print("Result Masks: ", resultMasks);
 	prizesToAnim = [];
 	prizesToAnim = getPizes(resultMasks);
-		
+
 func getPizes(result_masks):
 	var prizeInfo = [];
 	for i in result_masks.size():

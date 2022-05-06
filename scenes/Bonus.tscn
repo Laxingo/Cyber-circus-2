@@ -202,28 +202,44 @@ outline_color = Color( 0.0980392, 0.733333, 0.913725, 0.862745 )
 use_filter = true
 font_data = ExtResource( 2 )
 
-[node name="Bonus" type="Node2D"]
+[node name="Bonus" type="ViewportContainer"]
+margin_left = -590.0
+margin_top = -225.0
+margin_right = 986.0
+margin_bottom = 576.0
+rect_scale = Vector2( 1.01284, 0.762516 )
 
-[node name="Roulette" type="Sprite" parent="."]
+[node name="Viewport" type="Viewport" parent="."]
+size = Vector2( 1576, 801 )
+transparent_bg = true
+handle_input_locally = false
+render_target_update_mode = 3
+
+[node name="Bonus" type="Node2D" parent="Viewport"]
+position = Vector2( 389, 220 )
+scale = Vector2( 1.01284, 0.762516 )
+
+[node name="Roulette" type="Sprite" parent="Viewport/Bonus"]
 light_mask = 2
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 190, 10, 290, 500 )
 
-[node name="Knife" type="Sprite" parent="."]
+[node name="Knife" type="Sprite" parent="Viewport/Bonus"]
 light_mask = 2
-position = Vector2( -120, -24 )
-rotation = 8.04537
+position = Vector2( -841, 94 )
+rotation = -3.71102
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 60, 250, 80, 210 )
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Viewport/Bonus"]
 root_node = NodePath("../Knife")
 anims/Bonus = SubResource( 1 )
 anims/Bonus_DancingLetters = SubResource( 4 )
 
-[node name="Label" type="Label" parent="."]
+[node name="Label" type="Label" parent="Viewport/Bonus"]
+visible = false
 margin_left = -232.877
 margin_top = -146.482
 margin_right = 248.123
@@ -234,7 +250,7 @@ custom_colors/font_color = Color( 0.956863, 0.905882, 0.752941, 1 )
 custom_fonts/font = SubResource( 3 )
 text = "BONUS"
 
-[node name="Radial" type="Light2D" parent="Label"]
+[node name="Radial" type="Light2D" parent="Viewport/Bonus/Label"]
 show_behind_parent = true
 light_mask = 2
 position = Vector2( 244.506, 123.98 )
@@ -246,10 +262,10 @@ energy = 0.77
 range_z_max = 1202
 range_item_cull_mask = 2
 
-[node name="Lights" type="Node" parent="."]
+[node name="Lights" type="Node" parent="Viewport/Bonus"]
 
-[node name="Sweeper" type="Light2D" parent="Lights"]
-position = Vector2( -117.207, 224.465 )
+[node name="Sweeper" type="Light2D" parent="Viewport/Bonus/Lights"]
+position = Vector2( 325, -184 )
 rotation = -1.00094
-scale = Vector2( 1.18276, 5.19822 )
+scale = Vector2( 1.2225, 5.37288 )
 texture = ExtResource( 4 )
