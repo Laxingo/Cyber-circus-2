@@ -750,14 +750,8 @@ region_enabled = true
 region_rect = Rect2( 315, 211, 109, 44 )
 
 [node name="Ears" type="Sprite" parent="Head"]
-<<<<<<< HEAD
 position = Vector2( -3.76539, -82.8386 )
 scale = Vector2( 1.19041, 1.19041 )
-=======
-position = Vector2( 1.5075, -86.0023 )
-rotation = 0.0404462
-scale = Vector2( 1.25017, 1.25017 )
->>>>>>> fa8fab246d1f7ea554fc7314b7681e60836dfdfd
 texture = ExtResource( 6 )
 region_enabled = true
 region_rect = Rect2( 41, 32, 204, 92 )
@@ -777,11 +771,7 @@ rotation = 0.15369
 scale = Vector2( 0.910988, 0.815587 )
 frames = SubResource( 16 )
 animation = "burn"
-<<<<<<< HEAD
 frame = 7
-=======
-frame = 2
->>>>>>> fa8fab246d1f7ea554fc7314b7681e60836dfdfd
 playing = true
 
 [node name="RightPaw" type="Sprite" parent="Head"]
@@ -799,11 +789,7 @@ rotation = -0.0349056
 scale = Vector2( 0.683358, 0.683087 )
 frames = SubResource( 27 )
 animation = "kwispy"
-<<<<<<< HEAD
 frame = 1
-=======
-frame = 6
->>>>>>> fa8fab246d1f7ea554fc7314b7681e60836dfdfd
 playing = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
