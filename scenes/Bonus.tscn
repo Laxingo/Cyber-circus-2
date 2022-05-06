@@ -264,8 +264,13 @@ range_item_cull_mask = 2
 
 [node name="Lights" type="Node" parent="Viewport/Bonus"]
 
+<<<<<<< HEAD
 [node name="Sweeper" type="Light2D" parent="Viewport/Bonus/Lights"]
 position = Vector2( 325, -184 )
+=======
+[node name="Sweeper" type="Light2D" parent="Lights"]
+position = Vector2( -207, 216 )
+>>>>>>> fa8fab246d1f7ea554fc7314b7681e60836dfdfd
 rotation = -1.00094
 scale = Vector2( 1.2225, 5.37288 )
 texture = ExtResource( 4 )

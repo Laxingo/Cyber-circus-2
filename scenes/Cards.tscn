@@ -180,7 +180,11 @@ margin_right = 40.0
 margin_bottom = 40.0
 
 [node name="Light2D" type="Light2D" parent="Control"]
+<<<<<<< HEAD
 position = Vector2( -18, 23.6818 )
+=======
+position = Vector2( -18, -332.981 )
+>>>>>>> fa8fab246d1f7ea554fc7314b7681e60836dfdfd
 rotation = 1.21844
 scale = Vector2( 2.85119, 5.34667 )
 texture = ExtResource( 2 )
