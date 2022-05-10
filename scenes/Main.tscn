@@ -66,15 +66,15 @@ position = Vector2( -50, -47 )
 script = ExtResource( 1 )
 
 [node name="Cards" parent="." instance=ExtResource( 9 )]
-position = Vector2( -607, 1314 )
+position = Vector2( 466, 1776 )
 
 [node name="Lion" parent="." instance=ExtResource( 10 )]
-position = Vector2( -1060, 478 )
+position = Vector2( -1531, -142 )
 
 [node name="Bunny" parent="." instance=ExtResource( 4 )]
-position = Vector2( -478, 241 )
+position = Vector2( 7, -527 )
 
 [node name="Bonus" parent="." instance=ExtResource( 11 )]
-position = Vector2( -413, 1872 )
+position = Vector2( -1603, 1257 )
 
 [connection signal="button_down" from="Botao" to="." method="_on_Roll2_button_down"]

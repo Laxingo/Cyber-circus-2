@@ -244,8 +244,10 @@ func buildResultMasks():
 func getPizes(result_masks):
 	var prizeInfo = [];
 	for i in result_masks.size():
+		
 		for p in  prizeMasks.size():
 			if (result_masks[i] & prizeMasks[p] == prizeMasks[p]):
 				prizeInfo.push_back([i, p]) # First position -> Synbol IDX; Second Position -> Prize IDX
+				
 	print("Prize  Info: ", prizeInfo);
 	return prizeInfo;
