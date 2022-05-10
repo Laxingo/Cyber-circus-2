@@ -1,0 +1,658 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Imagens/Simbolos/peso.png" type="Texture" id=1]
+[ext_resource path="res://Imagens/Simbolos/CyberCircus_Bumbaaadu.png" type="Texture" id=2]
+
+[sub_resource type="Animation" id=3]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Skeleton2D/Bone2D/Bone2D/Bone2D2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 14.1434, -0.817207 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Skeleton2D/Bone2D/Bone2D/Bone2D2:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -102.977 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Skeleton2D/Bone2D/Bone2D/Bone2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 14.5622, -0.646572 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Skeleton2D/Bone2D/Bone2D/Bone2D:rotation_degrees")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 63.6419 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Skeleton2D/Bone2D/Bone2D/Bone2D2/Bone2D/Bone2D:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 19.2205, 1.23761 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Skeleton2D/Bone2D/Bone2D/Bone2D2/Bone2D/Bone2D:rotation_degrees")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 26.8439 ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Skeleton2D/Bone2D/Bone2D/Bone2D3:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 25.4412, -1.3189 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Skeleton2D/Bone2D/Bone2D/Bone2D3:rotation_degrees")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -2.44364 ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Skeleton2D/Bone2D/Bone2D/Bone2D2/Bone2D:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 19.7743, -1.27204 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Skeleton2D/Bone2D/Bone2D/Bone2D2/Bone2D:rotation_degrees")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 25.9327 ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("Skeleton2D/Bone2D/Bone2D/Bone2D/Bone2D:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 22.4754, -0.0851097 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("Skeleton2D/Bone2D/Bone2D/Bone2D/Bone2D:rotation_degrees")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -8.41583 ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("Sprite:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 289.242, 133.26 ) ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("Sprite:rotation_degrees")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("Skeleton2D/Bone2D/Bone2D/Bone2D/Bone2D/Bone2D:position")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 29.0781, -5.77601 ) ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("Skeleton2D/Bone2D/Bone2D/Bone2D/Bone2D/Bone2D:rotation_degrees")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -11.6369 ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("Sprite2:position")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 306, 220 ) ]
+}
+tracks/17/type = "value"
+tracks/17/path = NodePath("Sprite2:rotation_degrees")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -1.08723 ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "b1"
+length = 1.5
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Skeleton2D/Bone2D/Bone2D/Bone2D2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.7, 1.2, 1.3, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 12.9588, -1.28689 ), Vector2( 16.9629, -1.24864 ), Vector2( 16.9629, -1.24864 ), Vector2( 16.9629, -1.24864 ), Vector2( 12.9588, -1.28689 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Skeleton2D/Bone2D/Bone2D/Bone2D2:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray(  ),
+"transitions": PoolRealArray(  ),
+"update": 0,
+"values": [  ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Skeleton2D/Bone2D/Bone2D/Bone2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.7, 1.2, 1.3, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 11.6357, -0.364746 ), Vector2( 17.1479, -0.938354 ), Vector2( 17.1479, -0.938354 ), Vector2( 17.1479, -0.938354 ), Vector2( 11.6357, -0.364746 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Skeleton2D/Bone2D/Bone2D/Bone2D:rotation_degrees")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray(  ),
+"transitions": PoolRealArray(  ),
+"update": 0,
+"values": [  ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Skeleton2D/Bone2D/Bone2D/Bone2D2/Bone2D:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.7, 1.2, 1.3, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 18.5973, 1.27119 ), Vector2( 19.7743, -1.27204 ), Vector2( 17.0463, 3.12609 ), Vector2( 17.0463, 3.12609 ), Vector2( 18.5973, 1.27119 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Skeleton2D/Bone2D/Bone2D/Bone2D2/Bone2D:rotation_degrees")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0.7, 1.2, 1.3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 25.9327, 25.9327, 25.9327 ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Skeleton2D/Bone2D/Bone2D/Bone2D/Bone2D:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 0.7, 1.2, 1.3, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 20.1576, -1.63532 ), Vector2( 22.4754, -0.0851097 ), Vector2( 19.3573, -2.70134 ), Vector2( 19.3573, -2.70134 ), Vector2( 20.1576, -1.63532 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Skeleton2D/Bone2D/Bone2D/Bone2D/Bone2D:rotation_degrees")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0.7, 1.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ -8.41583, -8.41583 ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Skeleton2D/Bone2D/Bone2D/Bone2D/Bone2D/Bone2D:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 1.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 22.2842, -2.42787 ), Vector2( 22.2842, -2.42787 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Skeleton2D/Bone2D/Bone2D/Bone2D/Bone2D/Bone2D:rotation_degrees")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0, 1.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ -10.3467, -10.3467 ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("Skeleton2D/Bone2D/Bone2D/Bone2D2/Bone2D/Bone2D:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0, 1.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 18.7928, 1.27345 ), Vector2( 18.7928, 1.27345 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("Skeleton2D/Bone2D/Bone2D/Bone2D2/Bone2D/Bone2D:rotation_degrees")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0, 1.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 28.4684, 28.4684 ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("Skeleton2D/Bone2D/Bone2D/Bone2D3:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0, 0.7, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 25.3038, -1.35282 ), Vector2( 23.0607, -1.29132 ), Vector2( 25.3038, -1.35282 ) ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("Skeleton2D/Bone2D/Bone2D/Bone2D3:rotation_degrees")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0, 0.7, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ -2.44364, -2.44364, -2.44364 ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("Sprite:position")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0, 0.1, 0.7, 1.1, 1.2, 1.3, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -189, 253 ), Vector2( -187.714, 250.429 ), Vector2( -180, 242 ), Vector2( -188.5, 226.5 ), Vector2( -191.75, 226.75 ), Vector2( -191.75, 226.75 ), Vector2( -189, 253 ) ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("Sprite:rotation_degrees")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0.7 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("Sprite2:position")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0, 0.7, 1.1, 1.2, 1.3, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 306, 250 ), Vector2( 314, 236 ), Vector2( 297, 220 ), Vector2( 297, 218 ), Vector2( 297, 218 ), Vector2( 306, 250 ) ]
+}
+tracks/17/type = "value"
+tracks/17/path = NodePath("Sprite2:rotation_degrees")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray( 0, 0.7, 1.1, 1.2, 1.3, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ -1.08723, -1.08723, 0.394028, 0.0237131, 0.0237131, -1.08723 ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "bomba_idle"
+length = 1.5
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Skeleton2D/Bone2D/Bone2D/Bone2D2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 14.1434, -0.817207 ), Vector2( 15.8347, -1.05552 ), Vector2( 14.1434, -0.817207 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Skeleton2D/Bone2D/Bone2D/Bone2D2:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ -102.977, -102.977, -102.977 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Skeleton2D/Bone2D/Bone2D/Bone2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.5, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 14.5622, -0.646572 ), Vector2( 15.7195, -0.863853 ), Vector2( 14.5622, -0.646572 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Skeleton2D/Bone2D/Bone2D/Bone2D:rotation_degrees")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.5, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 63.6419, 63.6419, 63.6419 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Sprite2:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.5, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 305, 240 ), Vector2( 293, 220 ), Vector2( 305, 240 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Sprite2:rotation_degrees")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 0.5, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ -0.553825, 3.43341, -0.553825 ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Sprite:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 0.5, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -172, 261 ), Vector2( -176, 253 ), Vector2( -172, 261 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Sprite:rotation_degrees")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 0.5, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ -4.25668, -4.25668, -4.25668 ]
+}
+
+[sub_resource type="ViewportTexture" id=2]
+viewport_path = NodePath("Viewport")
+
+[node name="Bombadissimo" type="Node2D"]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 3 )
+anims/b1 = SubResource( 7 )
+anims/bomba_idle = SubResource( 5 )
+
+[node name="Viewport" type="Viewport" parent="."]
+size = Vector2( 560, 560 )
+own_world = true
+transparent_bg = true
+render_target_v_flip = true
+
+[node name="Sprite" type="Sprite" parent="Viewport"]
+texture = ExtResource( 2 )
+centered = false
+region_enabled = true
+region_rect = Rect2( -10, 100, 540, 430 )
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+position = Vector2( 12, -1 )
+texture = SubResource( 2 )
+skeleton = NodePath("../Skeleton2D")
+polygon = PoolVector2Array( -10, 20, 550, -7.62939e-06, 550, 440, -10, 440, 200, 440, 200, 410, 200, 380, 200, 350, 200, 320, 200, 290, 170, 280, 140, 260, 110, 230, 90, 190, 60, 200, 30, 200, 0, 200, -10, 180, -10, 150, -10, 120, -10, 90, -10, 60, -10, 30, 0, 10, 30, 10, 60, 10, 90, 20, 100, 40, 130, 40, 150, 50, 180, 50, 210, 40, 240, 40, 270, 40, 300, 40, 330, 40, 360, 40, 390, 40, 420, 40, 440, 40, 470, 40, 490, 20, 500, 0, 530, 0, 550, 0, 550, 20, 550, 50, 550, 80, 550, 110, 550, 140, 550, 170, 540, 190, 510, 190, 481.443, 179.267, 470, 180, 470, 200, 470, 230, 452.634, 249.833, 431.842, 261.714, 410, 270, 390, 280, 370, 290, 350, 290, 340, 320, 330, 290, 340, 440, 340, 410, 340, 380, 340, 350, 230, 440, 260, 440, 290, 440, 320, 440, 320, 410, 290, 410, 260, 410, 230, 410, 230, 380, 260, 380, 230, 350, 260, 350, 230, 320, 260, 320, 290, 320, 290, 350, 290, 380, 320, 350, 320, 380, 320, 320, 350, 260, 380, 260, 400, 250, 420, 240, 440, 220, 450, 210, 260, 290, 290, 290, 260, 260, 290, 260, 220, 240, 260, 240, 450, 180, 470, 150, 450, 150, 230, 290, 200, 260, 170, 240, 140, 220, 120, 180, 190, 220, 340, 240, 160, 210, 140, 180, 200, 200, 170, 190, 170, 190, 160, 170, 230, 200, 290, 240, 260, 200, 290, 200, 370, 240, 390, 230, 410, 220, 420, 210, 430, 190, 120, 160, 130, 150, 150, 140, 230, 170, 230, 140, 310, 200, 310, 170, 310, 140, 310, 140, 310, 110, 290, 110, 260, 110, 230, 110, 260, 170, 290, 170, 260, 140, 290, 140, 380, 210, 392.733, 204.289, 430, 170, 440, 140, 340, 210, 360, 210, 120, 120, 150, 120, 130, 90, 160, 90, 180, 80, 210, 80, 240, 80, 270, 80, 300, 80, 330, 80, 360, 80, 390, 80, 420, 80, 440, 110, 330, 200, 406.595, 202.308, 410, 170, 420, 140, 430, 120, 100, 120, 100, 160, 100, 90, 450, 120, 480, 120, 460, 100, 470, 70, 490, 80, 90, 140, 80, 100, 430, 80, 440, 90, 440, 110, 440, 90, 70, 160, 50, 170, 30, 180, 10, 160, 60, 120, 80, 60, 60, 30, 60, 70, 40, 40, 30, 120, 50, 100, 10, 130, 40, 150, 490, 40, 510, 20, 530, 40, 510, 60, 530, 130, 530, 60, 520, 100, 510, 120, 492.094, 149.682, 530, 160, 30, 70, 10, 90, 10, 60, 10, 30 )
+uv = PoolVector2Array( -10, 20, 550, -7.62939e-06, 550, 440, -10, 440, 200, 440, 200, 410, 200, 380, 200, 350, 200, 320, 200, 290, 170, 280, 140, 260, 110, 230, 90, 190, 60, 200, 30, 200, 0, 200, -10, 180, -10, 150, -10, 120, -10, 90, -10, 60, -10, 30, 0, 10, 30, 10, 60, 10, 90, 20, 100, 40, 130, 40, 150, 50, 180, 50, 210, 40, 240, 40, 270, 40, 300, 40, 330, 40, 360, 40, 390, 40, 420, 40, 440, 40, 470, 40, 490, 20, 500, 0, 530, 0, 550, 0, 550, 20, 550, 50, 550, 80, 550, 110, 550, 140, 550, 170, 540, 190, 510, 190, 490, 180, 470, 180, 470, 200, 470, 230, 452.634, 249.833, 431.842, 261.714, 410, 270, 390, 280, 370, 290, 350, 290, 340, 320, 330, 290, 340, 440, 340, 410, 340, 380, 340, 350, 230, 440, 260, 440, 290, 440, 320, 440, 320, 410, 290, 410, 260, 410, 230, 410, 230, 380, 260, 380, 230, 350, 260, 350, 230, 320, 260, 320, 290, 320, 290, 350, 290, 380, 320, 350, 320, 380, 320, 320, 350, 260, 380, 260, 400, 250, 420, 240, 440, 220, 450, 210, 260, 290, 290, 290, 260, 260, 290, 260, 220, 240, 260, 240, 450, 180, 470, 150, 450, 150, 230, 290, 200, 260, 170, 240, 140, 220, 120, 180, 190, 220, 340, 240, 160, 210, 140, 180, 200, 200, 170, 190, 170, 190, 160, 170, 230, 200, 290, 240, 260, 200, 290, 200, 370, 240, 390, 230, 410, 220, 420, 210, 430, 190, 120, 160, 130, 150, 150, 140, 230, 170, 230, 140, 310, 200, 310, 170, 310, 140, 310, 140, 310, 110, 290, 110, 260, 110, 230, 110, 260, 170, 290, 170, 260, 140, 290, 140, 380, 210, 392.733, 204.289, 430, 170, 440, 140, 340, 210, 360, 210, 120, 120, 150, 120, 130, 90, 160, 90, 180, 80, 210, 80, 240, 80, 270, 80, 300, 80, 330, 80, 360, 80, 390, 80, 420, 80, 440, 110, 330, 200, 406.595, 202.308, 410, 170, 420, 140, 430, 120, 100, 120, 100, 160, 100, 90, 450, 120, 480, 120, 460, 100, 470, 70, 490, 80, 90, 140, 80, 100, 430, 80, 440, 90, 440, 110, 440, 90, 70, 160, 50, 170, 30, 180, 10, 160, 60, 120, 80, 60, 60, 30, 60, 70, 40, 40, 30, 120, 50, 100, 10, 130, 40, 150, 490, 40, 510, 20, 530, 40, 510, 60, 530, 130, 530, 60, 520, 100, 510, 120, 500, 150, 530, 160, 30, 70, 10, 90, 10, 60, 10, 30 )
+polygons = [ PoolIntArray( 4, 69, 76, 5 ), PoolIntArray( 5, 6, 77, 76 ), PoolIntArray( 6, 7, 79, 77 ), PoolIntArray( 69, 70, 75, 76 ), PoolIntArray( 75, 78, 77, 76 ), PoolIntArray( 70, 71, 74, 75 ), PoolIntArray( 74, 73, 72, 71 ), PoolIntArray( 66, 73, 72, 65 ), PoolIntArray( 66, 67, 87, 73 ), PoolIntArray( 67, 68, 86, 87 ), PoolIntArray( 68, 63, 88, 86 ), PoolIntArray( 63, 62, 64, 88 ), PoolIntArray( 62, 61, 89, 64 ), PoolIntArray( 61, 60, 90, 89 ), PoolIntArray( 60, 59, 91, 90 ), PoolIntArray( 59, 58, 92, 91 ), PoolIntArray( 93, 57, 58, 92 ), PoolIntArray( 74, 85, 87, 73 ), PoolIntArray( 85, 78, 75, 74 ), PoolIntArray( 84, 86, 87, 85 ), PoolIntArray( 83, 84, 86, 88 ), PoolIntArray( 83, 96, 64, 88 ), PoolIntArray( 57, 56, 94, 93 ), PoolIntArray( 56, 55, 101, 94 ), PoolIntArray( 55, 54, 103, 101 ), PoolIntArray( 80, 84, 85, 78 ), PoolIntArray( 79, 80, 78, 77 ), PoolIntArray( 7, 8, 81, 79 ), PoolIntArray( 80, 82, 81, 79 ), PoolIntArray( 84, 83, 82, 80 ), PoolIntArray( 9, 8, 81, 104 ), PoolIntArray( 9, 10, 105, 104 ), PoolIntArray( 10, 11, 106, 105 ), PoolIntArray( 11, 12, 107, 106 ), PoolIntArray( 12, 13, 108, 107 ), PoolIntArray( 95, 82, 83, 96 ), PoolIntArray( 104, 95, 82, 81 ), PoolIntArray( 97, 95, 96, 98 ), PoolIntArray( 105, 97, 95, 104 ), PoolIntArray( 105, 99, 109, 106 ), PoolIntArray( 99, 100, 97, 105 ), PoolIntArray( 107, 111, 109, 106 ), PoolIntArray( 107, 108, 112, 111 ), PoolIntArray( 111, 114, 116, 112 ), PoolIntArray( 114, 113, 109, 111 ), PoolIntArray( 113, 117, 99, 109 ), PoolIntArray( 98, 118, 100, 97 ), PoolIntArray( 98, 89, 64, 96 ), PoolIntArray( 108, 126, 127, 112 ), PoolIntArray( 112, 116, 128, 127 ), PoolIntArray( 100, 119, 117, 99 ), PoolIntArray( 118, 120, 119, 100 ), PoolIntArray( 89, 110, 118, 98 ), PoolIntArray( 110, 121, 90, 89 ), PoolIntArray( 121, 122, 91, 90 ), PoolIntArray( 122, 123, 92, 91 ), PoolIntArray( 123, 124, 93, 92 ), PoolIntArray( 124, 125, 94, 93 ), PoolIntArray( 120, 131, 110, 118 ), PoolIntArray( 120, 140, 132, 131 ), PoolIntArray( 120, 119, 139, 140 ), PoolIntArray( 119, 117, 129, 139 ), PoolIntArray( 129, 130, 141, 139 ), PoolIntArray( 130, 138, 137, 141 ), PoolIntArray( 137, 136, 142, 141 ), PoolIntArray( 142, 140, 139, 141 ), PoolIntArray( 142, 133, 135, 136 ), PoolIntArray( 140, 132, 133, 142 ), PoolIntArray( 122, 143, 144, 123 ), PoolIntArray( 125, 145, 101, 94 ), PoolIntArray( 145, 146, 103, 101 ), PoolIntArray( 121, 148, 143, 122 ), PoolIntArray( 110, 147, 148, 121 ), PoolIntArray( 163, 147, 110, 131 ), PoolIntArray( 126, 169, 13, 108 ), PoolIntArray( 144, 164, 124, 123 ), PoolIntArray( 164, 165, 125, 124 ), PoolIntArray( 165, 166, 145, 125 ), PoolIntArray( 166, 167, 146, 145 ), PoolIntArray( 103, 171, 102, 54 ), PoolIntArray( 167, 162, 171, 103, 146 ), PoolIntArray( 171, 173, 172, 102 ), PoolIntArray( 180, 179, 173, 171 ), PoolIntArray( 169, 176, 168, 126 ), PoolIntArray( 126, 127, 149, 168 ), PoolIntArray( 127, 128, 150, 149 ), PoolIntArray( 170, 151, 149, 168 ), PoolIntArray( 151, 152, 150, 149 ), PoolIntArray( 152, 153, 30, 29 ), PoolIntArray( 153, 154, 31, 30 ), PoolIntArray( 154, 155, 32, 31 ), PoolIntArray( 32, 33, 156, 155 ), PoolIntArray( 28, 151, 152, 29 ), PoolIntArray( 28, 27, 170, 151 ), PoolIntArray( 187, 27, 170, 177 ), PoolIntArray( 170, 168, 176, 177 ), PoolIntArray( 176, 182, 13, 169 ), PoolIntArray( 182, 186, 177, 176 ), PoolIntArray( 27, 26, 188, 187 ), PoolIntArray( 13, 14, 183, 182 ), PoolIntArray( 183, 184, 15, 14 ), PoolIntArray( 15, 16, 17, 184 ), PoolIntArray( 184, 185, 194, 183 ), PoolIntArray( 183, 194, 186, 182 ), PoolIntArray( 185, 18, 17, 184 ), PoolIntArray( 18, 193, 194, 185 ), PoolIntArray( 193, 191, 186, 194 ), PoolIntArray( 191, 192, 177, 186 ), PoolIntArray( 192, 189, 187, 177 ), PoolIntArray( 189, 190, 188, 187 ), PoolIntArray( 26, 25, 24, 188 ), PoolIntArray( 190, 208, 24, 188 ), PoolIntArray( 189, 205, 206, 192 ), PoolIntArray( 18, 19, 191, 193 ), PoolIntArray( 206, 19, 191, 192 ), PoolIntArray( 205, 207, 190, 189 ), PoolIntArray( 207, 21, 208, 190 ), PoolIntArray( 23, 22, 208, 24 ), PoolIntArray( 22, 21, 208 ), PoolIntArray( 21, 20, 206, 207 ), PoolIntArray( 20, 19, 206 ), PoolIntArray( 206, 207, 205 ), PoolIntArray( 33, 34, 157, 156 ), PoolIntArray( 34, 35, 158, 157 ), PoolIntArray( 35, 36, 159, 158 ), PoolIntArray( 37, 160, 159, 36 ), PoolIntArray( 37, 38, 161, 160 ), PoolIntArray( 161, 178, 39, 38 ), PoolIntArray( 178, 179, 40, 39 ), PoolIntArray( 178, 179, 40, 39 ), PoolIntArray( 174, 173, 172, 175 ), PoolIntArray( 174, 40, 195, 175 ), PoolIntArray( 173, 179, 40, 174 ), PoolIntArray( 41, 42, 43, 196 ), PoolIntArray( 41, 195, 198, 196 ), PoolIntArray( 45, 197, 196, 43 ), PoolIntArray( 197, 200, 198, 196 ), PoolIntArray( 45, 46, 200, 197 ), PoolIntArray( 46, 47, 201, 200 ), PoolIntArray( 198, 195, 175 ), PoolIntArray( 175, 201, 200, 198 ), PoolIntArray( 175, 172, 202, 201 ), PoolIntArray( 201, 47, 48, 202 ), PoolIntArray( 172, 102, 203, 202 ), PoolIntArray( 102, 53, 52, 203 ), PoolIntArray( 49, 50, 204, 199 ), PoolIntArray( 49, 48, 202, 199 ), PoolIntArray( 50, 51, 52, 204 ), PoolIntArray( 203, 202, 199, 204, 52 ) ]
+bones = [ "Bone2D", PoolRealArray( 0, 0, 0, 0, 0.5, 0.5, 0.5, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Bone2D/Bone2D", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0.5, 0.5, 1, 1, 1, 0.5, 0.5, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0.5, 1, 0, 0, 0, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Bone2D/Bone2D/Bone2D", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0.5, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 0.5, 1, 1, 0, 0, 0, 0, 0, 0.5, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0.5, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Bone2D/Bone2D/Bone2D/Bone2D", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.8, 0.66, 0.66, 0.5, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 1, 1, 1, 0.66, 0.66, 0, 0, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.66, 0, 0, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Bone2D/Bone2D/Bone2D/Bone2D/Bone2D", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.45, 0.45, 0.45, 0.45, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.38, 0.58, 0.74, 0, 0, 0, 0, 0, 0, 1, 0.45, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.29, 0.74, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.45, 1, 0.9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.48, 0.77, 0, 0.45, 0.45, 0.45, 0.77, 0, 0, 0, 1, 0.93, 1, 0.5, 0.5, 0, 0, 0.48, 1, 0.77, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 0, 0, 0, 0.16, 0, 0, 0, 0, 0 ), "Bone2D/Bone2D/Bone2D/Bone2D/Bone2D/Bone2D", PoolRealArray( 1, 0.86, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0.86, 0.86, 0.86, 1, 0.86, 0.86, 0.86, 0.86, 1, 1, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 1, 0.47, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.94, 0.47, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.47, 0, 0, 0.47, 0.47, 1, 1, 1, 0.86, 0.86, 0.86, 1, 1, 0.86, 0.86, 0.86, 0.47, 0, 0, 0, 0, 0.47, 0.47, 0.47, 1, 0.47, 0.86, 0.86, 1, 0.86, 1, 1, 0.86, 0.86, 0.47, 0.86, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 1, 0.86, 1, 1, 1, 1 ), "Bone2D/Bone2D/Bone2D2", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0.52, 0.52, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.52, 0.52, 0.52, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0.84, 0, 0, 0, 1, 1, 0.52, 0, 0, 0.16, 0, 0, 0, 0.32, 0, 0, 0, 0.32, 0, 0.32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Bone2D/Bone2D/Bone2D2/Bone2D", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.52, 0.52, 0.52, 0.68, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.52, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.52, 0, 0, 0, 0, 0.52, 1, 1, 1, 0, 1, 0, 1, 0, 0.52, 0.68, 0.68, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Bone2D/Bone2D/Bone2D2/Bone2D/Bone2D", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.52, 0.68, 0.68, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.68, 1, 0, 0, 0.68, 1, 0.52, 0.52, 0.52, 0.68, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0.96, 0.16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Bone2D/Bone2D/Bone2D2/Bone2D/Bone2D/Bone2D", PoolRealArray( 0.86, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 1, 0.86, 0.86, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0.47, 0.47, 0.47, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.47, 0.47, 0, 0, 0, 0, 0, 0, 0.47, 0.47, 0.36, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.47, 0.47, 0.47, 0.47, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.47, 0.5, 0, 0, 0.86, 0.86, 0.86, 1, 1, 1, 1, 1, 0.86, 0.86, 0.86, 0.86, 1, 0.36, 0, 0, 0.47, 0.47, 0.47, 0.86, 0.47, 0.86, 0.72, 1, 1, 1, 1, 0.86, 0.86, 1, 1, 0.36, 1, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0.86, 0.86, 0.86, 0.86 ), "Bone2D/Bone2D/Bone2D3", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ) ]
+internal_vertex_count = 205
+
+[node name="Skeleton2D" type="Skeleton2D" parent="."]
+visible = false
+
+[node name="Bone2D" type="Bone2D" parent="Skeleton2D"]
+position = Vector2( 279, 378 )
+rotation = -1.43333
+scale = Vector2( 4.47521, 12.4028 )
+rest = Transform2D( 0.613255, -4.43299, 12.2858, 1.6996, 279, 378 )
+
+[node name="Bone2D" type="Bone2D" parent="Skeleton2D/Bone2D"]
+position = Vector2( 10.6176, 0.0397799 )
+rest = Transform2D( 1, 0, 0, 1, 10.6176, 0.0397799 )
+
+[node name="Bone2D" type="Bone2D" parent="Skeleton2D/Bone2D/Bone2D"]
+position = Vector2( 14.5622, -0.646572 )
+rotation = 1.11076
+scale = Vector2( 0.376366, 1.1672 )
+rest = Transform2D( 0.167099, 0.337238, -1.04585, 0.518214, 14.8507, -0.715849 )
+
+[node name="Bone2D" type="Bone2D" parent="Skeleton2D/Bone2D/Bone2D/Bone2D"]
+position = Vector2( 22.4754, -0.0851097 )
+rotation = -0.146884
+rest = Transform2D( 0.995724, -0.0923742, 0.0923742, 0.995724, 22.5532, -0.858718 )
+
+[node name="Bone2D" type="Bone2D" parent="Skeleton2D/Bone2D/Bone2D/Bone2D/Bone2D"]
+position = Vector2( 29.0781, -5.77601 )
+rotation = -0.203102
+rest = Transform2D( 0.979446, -0.201708, 0.201708, 0.979446, 27.8203, -5.66779 )
+
+[node name="Bone2D" type="Bone2D" parent="Skeleton2D/Bone2D/Bone2D/Bone2D/Bone2D/Bone2D"]
+position = Vector2( 27.6676, -5.46151 )
+rotation = -0.242251
+rest = Transform2D( 0.970801, -0.239888, 0.239888, 0.970801, 29.5826, -5.8189 )
+
+[node name="Bone2D2" type="Bone2D" parent="Skeleton2D/Bone2D/Bone2D"]
+position = Vector2( 14.1434, -0.817207 )
+rotation = -1.79729
+scale = Vector2( 0.334009, 0.918862 )
+rest = Transform2D( -0.075005, -0.325478, 0.895395, -0.20634, 15.2909, -1.28738 )
+
+[node name="Bone2D" type="Bone2D" parent="Skeleton2D/Bone2D/Bone2D/Bone2D2"]
+position = Vector2( 19.7743, -1.27204 )
+rotation = 0.452611
+scale = Vector2( 0.724301, 3.79612 )
+rest = Transform2D( 0.65137, 0.316748, -1.6601, 3.41388, 18.0335, 0.162031 )
+
+[node name="Bone2D" type="Bone2D" parent="Skeleton2D/Bone2D/Bone2D/Bone2D2/Bone2D"]
+position = Vector2( 19.2205, 1.23761 )
+rotation = 0.468514
+scale = Vector2( 0.741635, -3.36 )
+rest = Transform2D( 0.656876, 0.344291, 1.55982, -2.976, 18.4355, 2.54302 )
+
+[node name="Bone2D" type="Bone2D" parent="Skeleton2D/Bone2D/Bone2D/Bone2D2/Bone2D/Bone2D"]
+position = Vector2( 11.8768, -0.244051 )
+rotation = -0.107198
+scale = Vector2( 0.347438, -0.749009 )
+rest = Transform2D( 0.345444, -0.0371734, -0.0801387, -0.74471, 11.8768, -0.244051 )
+
+[node name="Bone2D3" type="Bone2D" parent="Skeleton2D/Bone2D/Bone2D"]
+position = Vector2( 25.4412, -1.3189 )
+rotation = -0.0426496
+scale = Vector2( 1.02646, 1 )
+rest = Transform2D( 1.02553, -0.0437648, 0.0426366, 0.999091, 25.1568, -1.34117 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 306, 220 )
+rotation = -0.0189757
+scale = Vector2( 1.29009, 1.29009 )
+texture = ExtResource( 1 )
+offset = Vector2( 179.832, -94.567 )
+region_enabled = true
+region_rect = Rect2( 410, 140, 100, 160 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 289.242, 133.26 )
+scale = Vector2( 1.29009, 1.29009 )
+texture = ExtResource( 1 )
+offset = Vector2( 179.832, -94.567 )
+region_enabled = true
+region_rect = Rect2( 20, 150, 100, 150 )
