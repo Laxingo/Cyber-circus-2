@@ -771,7 +771,7 @@ rotation = 0.15369
 scale = Vector2( 0.910988, 0.815587 )
 frames = SubResource( 16 )
 animation = "burn"
-frame = 7
+frame = 2
 playing = true
 
 [node name="RightPaw" type="Sprite" parent="Head"]
@@ -789,7 +789,7 @@ rotation = -0.0349056
 scale = Vector2( 0.683358, 0.683087 )
 frames = SubResource( 27 )
 animation = "kwispy"
-frame = 1
+frame = 6
 playing = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
