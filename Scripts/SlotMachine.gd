@@ -6,7 +6,7 @@ signal stopped
 
 export(Array, String) var pictures := [
   preload("res://Imagens/Simbolos/CyberCircus_Bunny.png"),
-  preload("res://Imagens/Simbolos/CyberCircus_Clown.png"),
+  preload("res://Imagens/Simbolos/CyberCircus_GeorgeCloony.png"),
   preload("res://Imagens/Simbolos/CyberCircus_Elephant.png"),
   preload("res://Imagens/Simbolos/CyberCircus_J.001_cropped.png"),
   preload("res://Imagens/Simbolos/CyberCircus_K.001_cropped.png"),
