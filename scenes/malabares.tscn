@@ -141,4 +141,4 @@ animations = [ {
 rotation = 0.00549665
 frames = SubResource( 26 )
 animation = "malabares"
-frame = 20
+frame = 2

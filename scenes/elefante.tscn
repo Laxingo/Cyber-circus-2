@@ -727,7 +727,7 @@ region_rect = Rect2( 290, 60, 230, 160 )
 
 [node name="orelhaf" type="Sprite" parent="cabeçaf"]
 position = Vector2( -177.8, 6.32732 )
-scale = Vector2( 1.01831, 1.01831 )
+scale = Vector2( 1.03256, 1.03256 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 0, 20, 180, 230 )

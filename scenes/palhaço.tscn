@@ -508,7 +508,7 @@ region_rect = Rect2( -6, 227, 193, 202 )
 
 [node name="Sprite2" type="Sprite" parent="."]
 position = Vector2( 1, 136 )
-scale = Vector2( 0.976516, 0.976516 )
+scale = Vector2( 0.998746, 0.998746 )
 z_index = 1
 texture = ExtResource( 1 )
 region_enabled = true
@@ -575,7 +575,7 @@ rest = Transform2D( 1, 0, 0, 1, 15.7695, 0.751621 )
 
 [node name="Sprite4" type="Sprite" parent="."]
 position = Vector2( -15, 86 )
-scale = Vector2( 0.934711, 0.934711 )
+scale = Vector2( 1.23373, 1.23373 )
 z_index = 1
 texture = ExtResource( 1 )
 region_enabled = true

@@ -309,6 +309,7 @@ anims/luzbigwin = SubResource( 3 )
 anims/luzwin = SubResource( 4 )
 
 [node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+visible = false
 position = Vector2( 0, -4 )
 amount = 9
 lifetime = 1.48
