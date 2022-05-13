@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Scripts/SlotMachine.gd" type="Script" id=1]
 [ext_resource path="res://Imagens/UI/ui.png" type="Texture" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://scenes/Cards.tscn" type="PackedScene" id=9]
 [ext_resource path="res://scenes/Lion.tscn" type="PackedScene" id=10]
 [ext_resource path="res://scenes/Bonus.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Imagens/UI/10.png" type="Texture" id=12]
 
 [node name="root" type="Node2D"]
 script = ExtResource( 3 )
@@ -76,5 +77,9 @@ position = Vector2( 7, -527 )
 
 [node name="Bonus" parent="." instance=ExtResource( 11 )]
 position = Vector2( -1603, 1257 )
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="Bonus"]
+draw_order = 1
+texture = ExtResource( 12 )
 
 [connection signal="button_down" from="Botao" to="." method="_on_Roll2_button_down"]

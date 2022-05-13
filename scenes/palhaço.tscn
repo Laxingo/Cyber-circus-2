@@ -256,15 +256,16 @@ tracks/11/keys = {
 }
 
 [node name="palhaço" type="Node2D"]
+scale = Vector2( 0.5, 0.5 )
 
 [node name="Sprite3" type="Sprite" parent="."]
-position = Vector2( -2, -11 )
+position = Vector2( 0.783798, -69 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( -6, 227, 193, 202 )
 
 [node name="Sprite2" type="Sprite" parent="."]
-position = Vector2( 1, 136 )
+position = Vector2( 3.78378, 78 )
 scale = Vector2( 1.04053, 1.04053 )
 z_index = 1
 texture = ExtResource( 1 )
@@ -293,7 +294,7 @@ centered = false
 region_rect = Rect2( 5, 314, 497, 87 )
 
 [node name="Polygon2D" type="Polygon2D" parent="."]
-position = Vector2( -281, -374 )
+position = Vector2( -278.216, -432 )
 offset = Vector2( 16, -2 )
 texture = SubResource( 3 )
 skeleton = NodePath("../Skeleton2D")
@@ -331,7 +332,7 @@ position = Vector2( 15.7695, 0.751621 )
 rest = Transform2D( 1, 0, 0, 1, 15.7695, 0.751621 )
 
 [node name="Sprite4" type="Sprite" parent="."]
-position = Vector2( -8, 86 )
+position = Vector2( -5.21625, 28 )
 scale = Vector2( 0.874231, 0.874231 )
 z_index = 1
 texture = ExtResource( 1 )

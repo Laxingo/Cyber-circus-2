@@ -394,6 +394,7 @@ tracks/15/keys = {
 viewport_path = NodePath("Viewport")
 
 [node name="elefante" type="Node2D"]
+scale = Vector2( 0.5, 0.5 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/ele_bola = SubResource( 5 )
@@ -413,7 +414,7 @@ region_enabled = true
 region_rect = Rect2( 230, 230, 280, 143.697 )
 
 [node name="Polygon2D" type="Polygon2D" parent="."]
-position = Vector2( 11, -35 )
+position = Vector2( -18.5332, -70.4154 )
 texture = SubResource( 3 )
 skeleton = NodePath("../Skeleton2D")
 polygon = PoolVector2Array( 0, 0, 0, 180, 290, 180, 290, 0, 0, 20, 0, 100, 40, 100, 60, 20, 100, 30, 70, 120, 100, 140, 150, 60, 130, 160, 170, 100, 200, 100, 170, 170, 210, 170, 220, 120, 250, 120, 240, 170, 290, 120, 290, 160, 0, 60, 60, 60, 100, 90, 130, 120, 160, 130, 190, 140, 220, 150, 240, 140, 290, 140 )
@@ -423,8 +424,7 @@ bones = [ "1", PoolRealArray( 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0.5, 0.5, 0, 0, 0, 0, 
 internal_vertex_count = 27
 
 [node name="Skeleton2D" type="Skeleton2D" parent="."]
-visible = false
-position = Vector2( 6, -33 )
+position = Vector2( -23.5332, -68.4154 )
 
 [node name="1" type="Bone2D" parent="Skeleton2D"]
 position = Vector2( 53, 57 )
@@ -432,22 +432,27 @@ rest = Transform2D( 1, 0, 0, 1, 53, 56 )
 
 [node name="2" type="Bone2D" parent="Skeleton2D/1"]
 position = Vector2( 50, 31 )
+rotation = -0.127568
 rest = Transform2D( 1, 0, 0, 1, 50, 31 )
 
 [node name="3" type="Bone2D" parent="Skeleton2D/1/2"]
 position = Vector2( 44, 43 )
+rotation = -0.134807
 rest = Transform2D( 1, 0, 0, 1, 44, 43 )
 
 [node name="4" type="Bone2D" parent="Skeleton2D/1/2/3"]
-position = Vector2( 42, 14 )
+position = Vector2( 43.2835, 25.9639 )
+rotation = -0.0892378
 rest = Transform2D( 1, 0, 0, 1, 42, 14 )
 
 [node name="5" type="Bone2D" parent="Skeleton2D/1/2/3/4"]
 position = Vector2( 60, 3 )
+rotation = -0.131045
 rest = Transform2D( 1, 0, 0, 1, 59, 1 )
 
 [node name="cabeçaf" type="Sprite" parent="."]
-position = Vector2( 32, 33 )
+position = Vector2( 2.46675, -2.41538 )
+rotation = -0.0148273
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 0, 310, 290, 200 )
@@ -461,7 +466,7 @@ region_rect = Rect2( 290, 60, 230, 160 )
 
 [node name="orelhaf" type="Sprite" parent="cabeçaf"]
 position = Vector2( -177.8, 6.32732 )
-scale = Vector2( 1.00605, 1.00605 )
+scale = Vector2( 1.01207, 1.01207 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 0, 20, 180, 230 )
@@ -474,7 +479,8 @@ region_enabled = true
 region_rect = Rect2( 240, 20, 60, 190 )
 
 [node name="bola" type="Sprite" parent="."]
-position = Vector2( 242, 34 )
+position = Vector2( 189.967, -13.4154 )
+rotation = -0.462504
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 360, 370, 150, 150 )
