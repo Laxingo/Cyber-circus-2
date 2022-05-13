@@ -1,31 +1,33 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Imagens/particulas/blue.png" type="Texture" id=1]
+[ext_resource path="res://Imagens/particulas/hotpink.png" type="Texture" id=2]
 
 [sub_resource type="Gradient" id=1]
 colors = PoolColorArray( 1, 1, 1, 1, 1, 1, 1, 0 )
 
 [node name="particulas" type="Node2D"]
 
-[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
-position = Vector2( 7, -16 )
-amount = 10
+[node name="CPUParticles2D2" type="CPUParticles2D" parent="."]
+position = Vector2( 9, -16 )
+rotation = -0.0331861
+amount = 100
 lifetime = 1.76
 speed_scale = 1.88
-explosiveness = 0.08
+explosiveness = 0.18
 randomness = 1.0
 fixed_fps = 60
 local_coords = false
-texture = ExtResource( 1 )
-direction = Vector2( 0, -3.26 )
-spread = 34.18
+texture = ExtResource( 2 )
+direction = Vector2( 0, -500 )
+spread = 42.37
 gravity = Vector2( 0, 8.7 )
 initial_velocity = 143.54
 initial_velocity_random = 1.0
 angular_velocity = -11.73
 orbit_velocity_random = 1.0
-linear_accel = 4.94
-radial_accel = 17.28
+linear_accel = -12.35
+radial_accel = -2.47
 tangential_accel = 20.98
 tangential_accel_random = 1.0
 damping = 4.94
@@ -34,3 +36,34 @@ angle = 720.0
 angle_random = 1.0
 scale_amount = 0.04
 color_ramp = SubResource( 1 )
+hue_variation = 1.0
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+position = Vector2( 7, -16 )
+rotation = -0.202943
+amount = 100
+lifetime = 1.76
+speed_scale = 1.88
+explosiveness = 0.18
+randomness = 1.0
+fixed_fps = 60
+local_coords = false
+texture = ExtResource( 1 )
+direction = Vector2( 0, -500 )
+spread = 42.37
+gravity = Vector2( 0, 8.7 )
+initial_velocity = 143.54
+initial_velocity_random = 1.0
+angular_velocity = -11.73
+orbit_velocity_random = 1.0
+linear_accel = -12.35
+radial_accel = -2.47
+tangential_accel = 20.98
+tangential_accel_random = 1.0
+damping = 4.94
+damping_random = 0.9
+angle = 720.0
+angle_random = 1.0
+scale_amount = 0.04
+color_ramp = SubResource( 1 )
+hue_variation = 1.0
