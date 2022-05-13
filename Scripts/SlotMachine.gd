@@ -20,13 +20,13 @@ export(Array) var icones := [
 	preload("res://scenes/Bunny.tscn"),
 	preload("res://scenes/palhaço.tscn"),
 	preload("res://scenes/elefante.tscn"),
-	preload("res://scenes/Cards.tscn"),
-	preload("res://scenes/Cards.tscn"),
+	preload("res://scenes/Cards_J.tscn"),
+	preload("res://scenes/Cards_K.tscn"),
 	preload("res://scenes/Lion.tscn"),
 	preload("res://scenes/malabares.tscn"),
 	preload("res://scenes/Bombadissimo.tscn"),
-	preload("res://scenes/Cards.tscn"),
-	preload("res://scenes/Cards.tscn"),
+	preload("res://scenes/Cards_Q.tscn"),
+	preload("res://scenes/Cards_A.tscn"),
 ]
 
 export(int,1,20) var reels := 5
