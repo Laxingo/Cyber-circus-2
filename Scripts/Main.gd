@@ -12,6 +12,7 @@ func _on_Roll2_button_down():
 		rolled = true
 	else:
 		slot.stop()
+		
 
 func _on_slot_machine_stopped():
 	rolled = false

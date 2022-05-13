@@ -205,16 +205,17 @@ tracks/7/keys = {
 }
 
 [node name="Bunny" type="Node2D"]
+scale = Vector2( 0.5, 0.5 )
 
 [node name="chapeu" type="Sprite" parent="."]
-position = Vector2( 2, 50 )
+position = Vector2( -10, -10 )
 z_index = -1
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( -4.79358, 231.711, 399.81, 136.304 )
 
 [node name="cabeça" type="Sprite" parent="."]
-position = Vector2( 10, 177 )
+position = Vector2( -2, 117 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 304.535, -6.66034, 252.738, 250.542 )
@@ -227,7 +228,7 @@ region_enabled = true
 region_rect = Rect2( 12.4562, 3.19252, 306.572, 185.344 )
 
 [node name="partefrontal" type="Sprite" parent="."]
-position = Vector2( 3, 125 )
+position = Vector2( -9, 65 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 104.671, 367.531, 418.209, 152.756 )

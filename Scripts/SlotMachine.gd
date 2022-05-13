@@ -20,13 +20,13 @@ export(Array) var icones := [
 	preload("res://scenes/Bunny.tscn"),
 	preload("res://scenes/palhaço.tscn"),
 	preload("res://scenes/elefante.tscn"),
-	preload("res://scenes/Cards.tscn"),
-	preload("res://scenes/Cards.tscn"),
+	preload("res://scenes/Cards_J.tscn"),
+	preload("res://scenes/Cards_K.tscn"),
 	preload("res://scenes/Lion.tscn"),
 	preload("res://scenes/malabares.tscn"),
 	preload("res://scenes/Bombadissimo.tscn"),
-	preload("res://scenes/Cards.tscn"),
-	preload("res://scenes/Cards.tscn"),
+	preload("res://scenes/Cards_Q.tscn"),
+	preload("res://scenes/Cards_A.tscn"),
 ]
 
 export(int,1,20) var reels := 5
@@ -114,7 +114,7 @@ func _add_tile(col :int, row :int) -> void:
 	var tile := get_tile(col, row) 
 	tile.get_node('Tween').connect("tween_completed", self, "_on_tile_moved")
 	tile.set_icon(_randomIcones())
-	tile.set_size(tile_size)
+	tile.set_size(tile_size /2)
 	tile.set_name(tile_name)
 	tile.position = grid_pos[col][row]
 	tile.set_speed(speed_norm)

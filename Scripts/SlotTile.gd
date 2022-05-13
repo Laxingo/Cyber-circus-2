@@ -8,8 +8,9 @@ func _ready():
   pass
 
 func set_icon(tex):
-	$Node2D.add_child(tex)
-	tex.instance()
+	var icon = tex.instance()
+	$Node2D.add_child(icon)
+#	tex.instance()
 	set_size(size)
 
 func set_name(nam):
