@@ -114,7 +114,7 @@ func _add_tile(col :int, row :int) -> void:
 	var tile := get_tile(col, row) 
 	tile.get_node('Tween').connect("tween_completed", self, "_on_tile_moved")
 	tile.set_icon(_randomIcones())
-	tile.set_size(tile_size /2)
+	tile.set_size(tile_size)
 	tile.set_name(tile_name)
 	tile.position = grid_pos[col][row]
 	tile.set_speed(speed_norm)
