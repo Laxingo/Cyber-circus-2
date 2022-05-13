@@ -1,17 +1,12 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Scripts/SlotMachine.gd" type="Script" id=1]
 [ext_resource path="res://Imagens/UI/ui.png" type="Texture" id=2]
 [ext_resource path="res://Scripts/Main.gd" type="Script" id=3]
-[ext_resource path="res://scenes/Bunny.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Imagens/UI/slot.png" type="Texture" id=5]
 [ext_resource path="res://Imagens/UI/play1.png" type="Texture" id=6]
 [ext_resource path="res://Imagens/UI/fundo.png" type="Texture" id=7]
 [ext_resource path="res://Imagens/UI/botoes.png" type="Texture" id=8]
-[ext_resource path="res://scenes/Cards.tscn" type="PackedScene" id=9]
-[ext_resource path="res://scenes/Lion.tscn" type="PackedScene" id=10]
-[ext_resource path="res://scenes/Bonus.tscn" type="PackedScene" id=11]
-[ext_resource path="res://Imagens/UI/10.png" type="Texture" id=12]
 
 [node name="root" type="Node2D"]
 script = ExtResource( 3 )
@@ -50,14 +45,14 @@ position = Vector2( 962, 529 )
 texture = ExtResource( 8 )
 
 [node name="ViewportContainer" type="ViewportContainer" parent="."]
-margin_left = 186.0
-margin_top = 140.0
-margin_right = 1762.0
-margin_bottom = 941.0
+margin_left = 178.0
+margin_top = 130.0
+margin_right = 1900.0
+margin_bottom = 949.0
 stretch = true
 
 [node name="Viewport" type="Viewport" parent="ViewportContainer"]
-size = Vector2( 1576, 801 )
+size = Vector2( 1722, 819 )
 transparent_bg = true
 handle_input_locally = false
 render_target_update_mode = 3
@@ -65,21 +60,5 @@ render_target_update_mode = 3
 [node name="SlotMachine" type="Node2D" parent="ViewportContainer/Viewport"]
 position = Vector2( -50, -47 )
 script = ExtResource( 1 )
-
-[node name="Cards" parent="." instance=ExtResource( 9 )]
-position = Vector2( 466, 1776 )
-
-[node name="Lion" parent="." instance=ExtResource( 10 )]
-position = Vector2( -1531, -142 )
-
-[node name="Bunny" parent="." instance=ExtResource( 4 )]
-position = Vector2( 7, -527 )
-
-[node name="Bonus" parent="." instance=ExtResource( 11 )]
-position = Vector2( -1603, 1257 )
-
-[node name="CPUParticles2D" type="CPUParticles2D" parent="Bonus"]
-draw_order = 1
-texture = ExtResource( 12 )
 
 [connection signal="button_down" from="Botao" to="." method="_on_Roll2_button_down"]

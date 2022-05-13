@@ -45,7 +45,7 @@ onready var cells = rows * reels
 
 onready var random = RandomNumberGenerator.new()
 
-#var result_icon
+var result_icon
 
 enum State {OFF, ON, STOPPED}
 var state = State.OFF
@@ -114,7 +114,7 @@ func _add_tile(col :int, row :int) -> void:
 	var tile := get_tile(col, row) 
 	tile.get_node('Tween').connect("tween_completed", self, "_on_tile_moved")
 	tile.set_icon(_randomIcones())
-	tile.set_size(tile_size /2)
+	tile.set_size(tile_size)
 	tile.set_name(tile_name)
 	tile.position = grid_pos[col][row]
 	tile.set_speed(speed_norm)
@@ -149,7 +149,7 @@ func _stop() -> void:
 		idk()
 	buildResultMasks();
 
-
+#0.00164684
 
 func _spin_reel(reel :int) -> void:
   for row in rows:
@@ -168,7 +168,7 @@ func _on_tile_moved(tile: SlotTile, _nodePath) -> void:
 		tile.position.y = grid_pos[0][0].y
 	var current_idx = total_runs - reel_runs
 	if (current_idx < tiles_per_reel):
-#		var result_icon = icones[result.tiles[reel][current_idx]] 
+		var result_icon = icones[result.tiles[reel][current_idx]] 
 		var randomicon = _randomIcones()
 		tile.set_icon(randomicon)
 		tile.set_name(tile_name)
