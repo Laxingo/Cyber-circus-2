@@ -7,8 +7,9 @@ var tileName
 func _ready():
   pass
 
-func set_texture(tex):
-	$Sprite.texture = tex
+func set_icon(tex):
+	$Node2D.add_child(tex)
+	tex.instance()
 	set_size(size)
 
 func set_name(nam):
@@ -16,7 +17,7 @@ func set_name(nam):
 
 func set_size(new_size: Vector2):
   size = new_size
-  $Sprite.scale = size / $Sprite.texture.get_size()
+#  $Node2D.scale = size / $Node2D.texture.get_size()
   
 func set_speed(speed):
   $Tween.playback_speed = speed

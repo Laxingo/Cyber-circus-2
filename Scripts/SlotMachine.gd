@@ -16,6 +16,19 @@ export(Array, String) var pictures := [
   preload("res://Imagens/Simbolos/CyberCircus_Q.001_cropped.png"), 
 ]
 
+export(Array) var icones := [
+	preload("res://scenes/Bunny.tscn"),
+	preload("res://scenes/palhaço.tscn"),
+	preload("res://scenes/elefante.tscn"),
+	preload("res://scenes/Cards.tscn"),
+	preload("res://scenes/Cards.tscn"),
+	preload("res://scenes/Lion.tscn"),
+	preload("res://scenes/malabares.tscn"),
+	preload("res://scenes/Bombadissimo.tscn"),
+	preload("res://scenes/Cards.tscn"),
+	preload("res://scenes/Cards.tscn"),
+]
+
 export(int,1,20) var reels := 5
 export(int,1,20) var tiles_per_reel :=3 
 export(float,0,10) var runtime := 1.7
@@ -32,8 +45,7 @@ onready var cells = rows * reels
 
 onready var random = RandomNumberGenerator.new()
 
-var tileTex
-var result_texture
+#var result_icon
 
 enum State {OFF, ON, STOPPED}
 var state = State.OFF
@@ -101,7 +113,7 @@ func _add_tile(col :int, row :int) -> void:
 	tiles.append(SlotTile.instance())
 	var tile := get_tile(col, row) 
 	tile.get_node('Tween').connect("tween_completed", self, "_on_tile_moved")
-	tile.set_texture(_randomTexture())
+	tile.set_icon(_randomIcones())
 	tile.set_size(tile_size)
 	tile.set_name(tile_name)
 	tile.position = grid_pos[col][row]
@@ -156,13 +168,13 @@ func _on_tile_moved(tile: SlotTile, _nodePath) -> void:
 		tile.position.y = grid_pos[0][0].y
 	var current_idx = total_runs - reel_runs
 	if (current_idx < tiles_per_reel):
-		var result_texture = pictures[result.tiles[reel][current_idx]] 
-		var randomtex = _randomTexture()
-		tile.set_texture(randomtex)
+#		var result_icon = icones[result.tiles[reel][current_idx]] 
+		var randomicon = _randomIcones()
+		tile.set_icon(randomicon)
 		tile.set_name(tile_name)
 	else:
-		var randomtex = _randomTexture()
-		tile.set_texture(randomtex)
+		var randomicon = _randomIcones()
+		tile.set_icon(randomicon)
 		tile.set_name(tile_name)
 	if (state != State.OFF && reel_runs != total_runs):
 		tile.move_by(Vector2(0, tile_size.y))
@@ -187,7 +199,7 @@ func idk():
 func current_runs(reel := 0) -> int:
   return int(ceil(float(tiles_moved_per_reel[reel]) / rows))
 
-func _randomTexture() -> String:
+func _randomIcones():
 	random.randomize()
 	var num = random.randi_range(0, 8)
 	if num == 0:
@@ -208,7 +220,7 @@ func _randomTexture() -> String:
 		tile_name = symbolName[7]
 	elif num == 8:
 		tile_name = symbolName[8] 
-	return pictures[num  %pictures.size()]
+	return icones[num  %icones.size()]
 
 func _get_result() -> void:
   result = {

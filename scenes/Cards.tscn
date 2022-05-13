@@ -174,13 +174,14 @@ scale = Vector2( 0.985022, 1 )
 texture = ExtResource( 1 )
 hframes = 2
 vframes = 2
+frame = 3
 
 [node name="Control" type="Control" parent="."]
 margin_right = 40.0
 margin_bottom = 40.0
 
 [node name="Light2D" type="Light2D" parent="Control"]
-position = Vector2( -18, 23.6818 )
+position = Vector2( -18.0003, -336 )
 rotation = 1.21844
 scale = Vector2( 2.85119, 5.34667 )
 texture = ExtResource( 2 )
