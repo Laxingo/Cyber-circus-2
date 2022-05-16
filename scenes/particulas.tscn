@@ -7,9 +7,10 @@
 colors = PoolColorArray( 1, 1, 1, 1, 1, 1, 1, 0 )
 
 [node name="particulas" type="Node2D"]
+position = Vector2( -3, -1 )
 
 [node name="CPUParticles2D2" type="CPUParticles2D" parent="."]
-position = Vector2( 9, -16 )
+position = Vector2( 1, 1 )
 rotation = -0.0331861
 amount = 100
 lifetime = 1.76
@@ -39,7 +40,7 @@ color_ramp = SubResource( 1 )
 hue_variation = 1.0
 
 [node name="CPUParticles2D" type="CPUParticles2D" parent="."]
-position = Vector2( 7, -16 )
+position = Vector2( 3, 2 )
 rotation = -0.202943
 amount = 100
 lifetime = 1.76
