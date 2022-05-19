@@ -9,6 +9,8 @@
 [ext_resource path="res://Imagens/UI/botoes.png" type="Texture" id=8]
 
 [node name="root" type="Node2D"]
+position = Vector2( -3, 8 )
+scale = Vector2( 0.666304, 0.666304 )
 script = ExtResource( 3 )
 
 [node name="Botao" type="TextureButton" parent="."]
@@ -45,14 +47,15 @@ position = Vector2( 962, 529 )
 texture = ExtResource( 8 )
 
 [node name="ViewportContainer" type="ViewportContainer" parent="."]
-margin_left = 178.0
-margin_top = 130.0
-margin_right = 1900.0
-margin_bottom = 949.0
+margin_left = 180.396
+margin_top = 136.507
+margin_right = 1843.32
+margin_bottom = 946.64
+rect_scale = Vector2( 0.932624, 0.992657 )
 stretch = true
 
 [node name="Viewport" type="Viewport" parent="ViewportContainer"]
-size = Vector2( 1722, 819 )
+size = Vector2( 1662, 810 )
 transparent_bg = true
 handle_input_locally = false
 render_target_update_mode = 3
