@@ -3116,7 +3116,7 @@ rotation = 0.15369
 scale = Vector2( 0.910988, 0.815587 )
 frames = SubResource( 109 )
 animation = "burn"
-frame = 2
+frame = 7
 playing = true
 
 [node name="RightPaw" type="Sprite" parent="Lion tile/Head"]
@@ -3134,35 +3134,35 @@ rotation = -0.0349056
 scale = Vector2( 0.683358, 0.683087 )
 frames = SubResource( 110 )
 animation = "kwispy"
-frame = 6
+frame = 1
 playing = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Lion tile"]
 anims/lion_idle = SubResource( 111 )
 anims/lion_win = SubResource( 112 )
 
-[node name="Bombado tile" type="Sprite" parent="."]
+[node name="Bombadão tile" type="Sprite" parent="."]
 light_mask = 2048
 
-[node name="Viewport" type="Viewport" parent="Bombado tile"]
+[node name="Viewport" type="Viewport" parent="Bombadão tile"]
 size = Vector2( 560, 560 )
 own_world = true
 transparent_bg = true
 render_target_v_flip = true
 
-[node name="Sprite" type="Sprite" parent="Bombado tile/Viewport"]
+[node name="Sprite" type="Sprite" parent="Bombadão tile/Viewport"]
 light_mask = 2048
 texture = ExtResource( 13 )
 centered = false
 region_enabled = true
 region_rect = Rect2( -10, 100, 540, 430 )
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Bombado tile/Viewport"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Bombadão tile/Viewport"]
 root_node = NodePath("../..")
 anims/b1 = SubResource( 113 )
 anims/bomba_idle = SubResource( 114 )
 
-[node name="Polygon2D" type="Polygon2D" parent="Bombado tile"]
+[node name="Polygon2D" type="Polygon2D" parent="Bombadão tile"]
 light_mask = 2048
 position = Vector2( 5.50504, 4 )
 offset = Vector2( -273.808, -250 )
@@ -3174,7 +3174,7 @@ polygons = [ PoolIntArray( 4, 69, 76, 5 ), PoolIntArray( 5, 6, 77, 76 ), PoolInt
 bones = [ "Bone2D", PoolRealArray( 0, 0, 0, 0, 0.5, 0.5, 0.5, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Bone2D/Bone2D", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0.5, 0.5, 1, 1, 1, 0.5, 0.5, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0.5, 1, 0, 0, 0, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Bone2D/Bone2D/Bone2D", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0.5, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 0.5, 1, 1, 0, 0, 0, 0, 0, 0.5, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0.5, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Bone2D/Bone2D/Bone2D/Bone2D", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.8, 0.66, 0.66, 0.5, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 1, 1, 1, 0.66, 0.66, 0, 0, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.66, 0, 0, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.66, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Bone2D/Bone2D/Bone2D/Bone2D/Bone2D", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.45, 0.45, 0.45, 0.45, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.38, 0.58, 0.74, 0, 0, 0, 0, 0, 0, 1, 0.45, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.29, 0.74, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.45, 1, 0.9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.48, 0.77, 0, 0.45, 0.45, 0.45, 0.77, 0, 0, 0, 1, 0.93, 1, 0.5, 0.5, 0, 0, 0.48, 1, 0.77, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 0, 0, 0, 0.16, 0, 0, 0, 0, 0 ), "Bone2D/Bone2D/Bone2D/Bone2D/Bone2D/Bone2D", PoolRealArray( 1, 0.86, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0.86, 0.86, 0.86, 1, 0.86, 0.86, 0.86, 0.86, 1, 1, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 1, 0.47, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.94, 0.47, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.47, 0, 0, 0.47, 0.47, 1, 1, 1, 0.86, 0.86, 0.86, 1, 1, 0.86, 0.86, 0.86, 0.47, 0, 0, 0, 0, 0.47, 0.47, 0.47, 1, 0.47, 0.86, 0.86, 1, 0.86, 1, 1, 0.86, 0.86, 0.47, 0.86, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 1, 0.86, 1, 1, 1, 1 ), "Bone2D/Bone2D/Bone2D2", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0.52, 0.52, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.52, 0.52, 0.52, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0.84, 0, 0, 0, 1, 1, 0.52, 0, 0, 0.16, 0, 0, 0, 0.32, 0, 0, 0, 0.32, 0, 0.32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Bone2D/Bone2D/Bone2D2/Bone2D", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.52, 0.52, 0.52, 0.68, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.52, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.52, 0, 0, 0, 0, 0.52, 1, 1, 1, 0, 1, 0, 1, 0, 0.52, 0.68, 0.68, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Bone2D/Bone2D/Bone2D2/Bone2D/Bone2D", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.52, 0.68, 0.68, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.68, 1, 0, 0, 0.68, 1, 0.52, 0.52, 0.52, 0.68, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0.96, 0.16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "Bone2D/Bone2D/Bone2D2/Bone2D/Bone2D/Bone2D", PoolRealArray( 0.86, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 1, 0.86, 0.86, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0.47, 0.47, 0.47, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.47, 0.47, 0, 0, 0, 0, 0, 0, 0.47, 0.47, 0.36, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.47, 0.47, 0.47, 0.47, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.47, 0.5, 0, 0, 0.86, 0.86, 0.86, 1, 1, 1, 1, 1, 0.86, 0.86, 0.86, 0.86, 1, 0.36, 0, 0, 0.47, 0.47, 0.47, 0.86, 0.47, 0.86, 0.72, 1, 1, 1, 1, 0.86, 0.86, 1, 1, 0.36, 1, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 0.86, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0.86, 0.86, 0.86, 0.86 ), "Bone2D/Bone2D/Bone2D3", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ) ]
 internal_vertex_count = 205
 
-[node name="Sprite2" type="Sprite" parent="Bombado tile"]
+[node name="Sprite2" type="Sprite" parent="Bombadão tile"]
 light_mask = 2048
 position = Vector2( 11.1304, -29.4225 )
 rotation = -0.00120914
@@ -3184,7 +3184,7 @@ offset = Vector2( 179.832, -94.567 )
 region_enabled = true
 region_rect = Rect2( 410, 140, 100, 160 )
 
-[node name="Sprite" type="Sprite" parent="Bombado tile"]
+[node name="Sprite" type="Sprite" parent="Bombadão tile"]
 light_mask = 2048
 position = Vector2( -475.623, -25.5062 )
 scale = Vector2( 1.29009, 1.29009 )
@@ -3193,65 +3193,65 @@ offset = Vector2( 179.832, -94.567 )
 region_enabled = true
 region_rect = Rect2( 20, 150, 100, 150 )
 
-[node name="Skeleton2D" type="Skeleton2D" parent="Bombado tile"]
+[node name="Skeleton2D" type="Skeleton2D" parent="Bombadão tile"]
 visible = false
 
-[node name="Bone2D" type="Bone2D" parent="Bombado tile/Skeleton2D"]
+[node name="Bone2D" type="Bone2D" parent="Bombadão tile/Skeleton2D"]
 position = Vector2( 279, 378 )
 rotation = -1.43333
 scale = Vector2( 4.47521, 12.4028 )
 rest = Transform2D( 0.613255, -4.43299, 12.2858, 1.6996, 279, 378 )
 
-[node name="Bone2D" type="Bone2D" parent="Bombado tile/Skeleton2D/Bone2D"]
+[node name="Bone2D" type="Bone2D" parent="Bombadão tile/Skeleton2D/Bone2D"]
 position = Vector2( 10.6176, 0.0397799 )
 rest = Transform2D( 1, 0, 0, 1, 10.6176, 0.0397799 )
 
-[node name="Bone2D" type="Bone2D" parent="Bombado tile/Skeleton2D/Bone2D/Bone2D"]
+[node name="Bone2D" type="Bone2D" parent="Bombadão tile/Skeleton2D/Bone2D/Bone2D"]
 position = Vector2( 16.6865, -0.89034 )
 rotation = 1.11076
 scale = Vector2( 0.376366, 1.1672 )
 rest = Transform2D( 0.167099, 0.337238, -1.04585, 0.518214, 14.8507, -0.715849 )
 
-[node name="Bone2D" type="Bone2D" parent="Bombado tile/Skeleton2D/Bone2D/Bone2D/Bone2D"]
+[node name="Bone2D" type="Bone2D" parent="Bombadão tile/Skeleton2D/Bone2D/Bone2D/Bone2D"]
 position = Vector2( 19.4243, -2.61211 )
 rotation = -0.146884
 rest = Transform2D( 0.995724, -0.0923742, 0.0923742, 0.995724, 22.5532, -0.858718 )
 
-[node name="Bone2D" type="Bone2D" parent="Bombado tile/Skeleton2D/Bone2D/Bone2D/Bone2D/Bone2D"]
+[node name="Bone2D" type="Bone2D" parent="Bombadão tile/Skeleton2D/Bone2D/Bone2D/Bone2D/Bone2D"]
 position = Vector2( 22.2842, -2.42787 )
 rotation = -0.180584
 rest = Transform2D( 0.979446, -0.201708, 0.201708, 0.979446, 27.8203, -5.66779 )
 
-[node name="Bone2D" type="Bone2D" parent="Bombado tile/Skeleton2D/Bone2D/Bone2D/Bone2D/Bone2D/Bone2D"]
+[node name="Bone2D" type="Bone2D" parent="Bombadão tile/Skeleton2D/Bone2D/Bone2D/Bone2D/Bone2D/Bone2D"]
 position = Vector2( 27.6676, -5.46151 )
 rotation = -0.242251
 rest = Transform2D( 0.970801, -0.239888, 0.239888, 0.970801, 29.5826, -5.8189 )
 
-[node name="Bone2D2" type="Bone2D" parent="Bombado tile/Skeleton2D/Bone2D/Bone2D"]
+[node name="Bone2D2" type="Bone2D" parent="Bombadão tile/Skeleton2D/Bone2D/Bone2D"]
 position = Vector2( 16.6277, -1.25184 )
 rotation = -1.79729
 scale = Vector2( 0.334009, 0.918862 )
 rest = Transform2D( -0.075005, -0.325478, 0.895395, -0.20634, 15.2909, -1.28738 )
 
-[node name="Bone2D" type="Bone2D" parent="Bombado tile/Skeleton2D/Bone2D/Bone2D/Bone2D2"]
+[node name="Bone2D" type="Bone2D" parent="Bombadão tile/Skeleton2D/Bone2D/Bone2D/Bone2D2"]
 position = Vector2( 17.1761, 2.97083 )
 rotation = 0.452611
 scale = Vector2( 0.724301, 3.79612 )
 rest = Transform2D( 0.65137, 0.316748, -1.6601, 3.41388, 18.0335, 0.162031 )
 
-[node name="Bone2D" type="Bone2D" parent="Bombado tile/Skeleton2D/Bone2D/Bone2D/Bone2D2/Bone2D"]
+[node name="Bone2D" type="Bone2D" parent="Bombadão tile/Skeleton2D/Bone2D/Bone2D/Bone2D2/Bone2D"]
 position = Vector2( 18.7928, 1.27345 )
 rotation = 0.496867
 scale = Vector2( 0.741635, -3.36 )
 rest = Transform2D( 0.656876, 0.344291, 1.55982, -2.976, 18.4355, 2.54302 )
 
-[node name="Bone2D" type="Bone2D" parent="Bombado tile/Skeleton2D/Bone2D/Bone2D/Bone2D2/Bone2D/Bone2D"]
+[node name="Bone2D" type="Bone2D" parent="Bombadão tile/Skeleton2D/Bone2D/Bone2D/Bone2D2/Bone2D/Bone2D"]
 position = Vector2( 11.8768, -0.244051 )
 rotation = -0.107198
 scale = Vector2( 0.347438, -0.749009 )
 rest = Transform2D( 0.345444, -0.0371734, -0.0801387, -0.74471, 11.8768, -0.244051 )
 
-[node name="Bone2D3" type="Bone2D" parent="Bombado tile/Skeleton2D/Bone2D/Bone2D"]
+[node name="Bone2D3" type="Bone2D" parent="Bombadão tile/Skeleton2D/Bone2D/Bone2D"]
 position = Vector2( 24.79, -1.33873 )
 rotation = -0.0426496
 scale = Vector2( 1.02646, 1 )
