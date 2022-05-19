@@ -2943,9 +2943,10 @@ scale = Vector2( 0.433319, 0.433319 )
 texture = ExtResource( 2 )
 
 [node name="Bunny" type="Sprite" parent="Sprite"]
+visible = false
 light_mask = 128
-position = Vector2( 1113.34, 324.549 )
-scale = Vector2( 2, 2 )
+position = Vector2( 1063.88, 221.546 )
+scale = Vector2( 2.53307, 2.53307 )
 offset = Vector2( -192, -148 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite/Bunny"]
@@ -2996,8 +2997,8 @@ region_rect = Rect2( 104.671, 367.531, 418.209, 152.756 )
 [node name="Lion" type="Sprite" parent="Sprite"]
 visible = false
 light_mask = 2
-position = Vector2( 1117.34, 367.548 )
-scale = Vector2( 2, 2 )
+position = Vector2( 1114.65, 420.014 )
+scale = Vector2( 2.13939, 2.13939 )
 
 [node name="ManeViewport" type="Viewport" parent="Sprite/Lion"]
 size = Vector2( 516, 516 )
@@ -3121,7 +3122,7 @@ rotation = 0.15369
 scale = Vector2( 0.910988, 0.815587 )
 frames = SubResource( 109 )
 animation = "burn"
-frame = 3
+frame = 9
 playing = true
 
 [node name="RightPaw" type="Sprite" parent="Sprite/Lion/Head"]
@@ -3139,7 +3140,7 @@ rotation = -0.0349056
 scale = Vector2( 0.683358, 0.683087 )
 frames = SubResource( 110 )
 animation = "kwispy"
-frame = 7
+frame = 3
 playing = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite/Lion"]
@@ -3150,7 +3151,7 @@ anims/lion_win = SubResource( 112 )
 visible = false
 light_mask = 2048
 position = Vector2( 1117.34, 367.548 )
-scale = Vector2( 2, 2 )
+scale = Vector2( 2.28435, 2.28435 )
 
 [node name="Viewport" type="Viewport" parent="Sprite/Strongman"]
 size = Vector2( 560, 560 )
@@ -3267,7 +3268,7 @@ rest = Transform2D( 1.02553, -0.0437648, 0.0426366, 0.999091, 25.1568, -1.34117 
 
 [node name="Ticket" type="Sprite" parent="Sprite"]
 visible = false
-position = Vector2( 1117.34, 367.549 )
+position = Vector2( 1126.19, 311.549 )
 scale = Vector2( 2, 2 )
 
 [node name="CyberCircusTicketEmission1" type="Sprite" parent="Sprite/Ticket"]
@@ -3297,7 +3298,7 @@ energy = 0.43
 [node name="Roulette" type="Sprite" parent="Sprite"]
 visible = false
 light_mask = 4
-position = Vector2( 1088.34, 341.549 )
+position = Vector2( 1008.5, 240.008 )
 scale = Vector2( 2, 2 )
 
 [node name="Roulette" type="Sprite" parent="Sprite/Roulette"]
@@ -3492,8 +3493,8 @@ anims/Q_Sweep = SubResource( 136 )
 [node name="Juggle" type="Sprite" parent="Sprite"]
 visible = false
 light_mask = 512
-position = Vector2( 1082.34, 314.549 )
-scale = Vector2( 2, 2 )
+position = Vector2( 948.493, 62.3098 )
+scale = Vector2( 3.17383, 3.17383 )
 offset = Vector2( 4, 1 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Sprite/Juggle"]
@@ -3506,8 +3507,8 @@ frame = 2
 [node name="Clown" type="Sprite" parent="Sprite"]
 visible = false
 light_mask = 1024
-position = Vector2( 1121.34, 311.549 )
-scale = Vector2( 2, 2 )
+position = Vector2( 1123.88, 143.082 )
+scale = Vector2( 3.00439, 3.00439 )
 
 [node name="Sprite3" type="Sprite" parent="Sprite/Clown"]
 light_mask = 1024
@@ -3600,8 +3601,9 @@ region_rect = Rect2( 194, 1, 283, 132 )
 [node name="Elephant" type="Sprite" parent="Sprite"]
 visible = false
 light_mask = 256
-position = Vector2( 1117.34, 367.548 )
-scale = Vector2( 2, 2 )
+position = Vector2( 1114.65, 288.471 )
+rotation = 0.217709
+scale = Vector2( 2.7653, 2.7653 )
 offset = Vector2( 2765, -1167 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite/Elephant"]
