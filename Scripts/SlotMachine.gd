@@ -72,7 +72,7 @@ var col3Mid_name
 var col4Mid_name
 var col5Mid_name
 
-var symbolName = ["bunny", "clown", "elephant", "J", "K", "Lion", "Malabare", "Strongman", "Q", "A"];
+export(Array) var symbolName := ["bunny", "clown", "elephant", "J", "K", "Lion", "Malabare", "Strongman", "Q", "A"];
 
 var bunny = 0
 var clown= 0
@@ -98,7 +98,7 @@ func _ready():
 		grid_pos.append([])
 		tiles_moved_per_reel.append(0)
 		for row in range(rows): 
-			grid_pos[col].append(Vector2(col, row - 0.9 *extra_tiles) * tile_size) 
+			grid_pos[col].append(Vector2(col, row - 0.5 *extra_tiles) * tile_size) 
 			_add_tile(col, row)
 
 func setPrizeMasks():
