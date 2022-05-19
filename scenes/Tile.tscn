@@ -25,7 +25,7 @@ resource_name = "bunny"
 length = 1.5
 loop = true
 tracks/0/type = "value"
-tracks/0/path = NodePath("chapeu:position")
+tracks/0/path = NodePath("ViewportContainer/chapeu:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -37,7 +37,7 @@ tracks/0/keys = {
 "values": [ Vector2( 2, 50 ) ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("chapeu:rotation_degrees")
+tracks/1/path = NodePath("ViewportContainer/chapeu:rotation_degrees")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -49,7 +49,7 @@ tracks/1/keys = {
 "values": [ 0.0 ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("cabeça/orelhas:rotation_degrees")
+tracks/2/path = NodePath("ViewportContainer/cabeça/orelhas:rotation_degrees")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
@@ -61,7 +61,7 @@ tracks/2/keys = {
 "values": [ 0.0, 0.0, -12.8321, 7.98748, 16.6341, 0.0, 0.0 ]
 }
 tracks/3/type = "value"
-tracks/3/path = NodePath("cabeça/orelhas:position")
+tracks/3/path = NodePath("ViewportContainer/cabeça/orelhas:position")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/imported = false
@@ -73,7 +73,7 @@ tracks/3/keys = {
 "values": [ Vector2( -5, -192 ), Vector2( -10, -188 ), Vector2( -35.8072, -184.483 ), Vector2( 16.912, -191.695 ), Vector2( 33.7251, -187.232 ), Vector2( -3, -189 ), Vector2( -7, -191 ), Vector2( -5, -192 ) ]
 }
 tracks/4/type = "value"
-tracks/4/path = NodePath("cabeça:rotation_degrees")
+tracks/4/path = NodePath("ViewportContainer/cabeça:rotation_degrees")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/imported = false
@@ -85,7 +85,7 @@ tracks/4/keys = {
 "values": [ 0.0, 0.0, -5.715, 5.65174, 0.0, 0.0 ]
 }
 tracks/5/type = "value"
-tracks/5/path = NodePath("cabeça:position")
+tracks/5/path = NodePath("ViewportContainer/cabeça:position")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/imported = false
@@ -97,7 +97,7 @@ tracks/5/keys = {
 "values": [ Vector2( 10, 177 ), Vector2( 0, 24 ), Vector2( 0, 24 ), Vector2( 4, 8 ), Vector2( 10, 177 ) ]
 }
 tracks/6/type = "value"
-tracks/6/path = NodePath("partefrontal:position")
+tracks/6/path = NodePath("ViewportContainer/partefrontal:position")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/imported = false
@@ -109,7 +109,7 @@ tracks/6/keys = {
 "values": [ Vector2( 3, 125 ), Vector2( 3, 125 ) ]
 }
 tracks/7/type = "value"
-tracks/7/path = NodePath("partefrontal:rotation_degrees")
+tracks/7/path = NodePath("ViewportContainer/partefrontal:rotation_degrees")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/imported = false
@@ -126,7 +126,7 @@ resource_name = "bunny_idle"
 length = 1.5
 loop = true
 tracks/0/type = "value"
-tracks/0/path = NodePath("chapeu:position")
+tracks/0/path = NodePath("ViewportContainer/chapeu:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -138,7 +138,7 @@ tracks/0/keys = {
 "values": [ Vector2( 2, 50 ) ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("chapeu:rotation_degrees")
+tracks/1/path = NodePath("ViewportContainer/chapeu:rotation_degrees")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -150,7 +150,7 @@ tracks/1/keys = {
 "values": [ 0.0 ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("cabeça:position")
+tracks/2/path = NodePath("ViewportContainer/cabeça:position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
@@ -162,7 +162,7 @@ tracks/2/keys = {
 "values": [ Vector2( 10, 176 ) ]
 }
 tracks/3/type = "value"
-tracks/3/path = NodePath("cabeça:rotation_degrees")
+tracks/3/path = NodePath("ViewportContainer/cabeça:rotation_degrees")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/imported = false
@@ -174,7 +174,7 @@ tracks/3/keys = {
 "values": [ 0.0, -1.77422, 2.35242, -0.806498 ]
 }
 tracks/4/type = "value"
-tracks/4/path = NodePath("cabeça/orelhas:position")
+tracks/4/path = NodePath("ViewportContainer/cabeça/orelhas:position")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/imported = false
@@ -186,7 +186,7 @@ tracks/4/keys = {
 "values": [ Vector2( -10, -188 ), Vector2( -35, -183 ), Vector2( 10, -186 ), Vector2( -35, -183 ), Vector2( -7, -185 ) ]
 }
 tracks/5/type = "value"
-tracks/5/path = NodePath("cabeça/orelhas:rotation_degrees")
+tracks/5/path = NodePath("ViewportContainer/cabeça/orelhas:rotation_degrees")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/imported = false
@@ -198,7 +198,7 @@ tracks/5/keys = {
 "values": [ 0.0, -13.2781, 7.98774, -13.2781, 1.23487 ]
 }
 tracks/6/type = "value"
-tracks/6/path = NodePath("partefrontal:position")
+tracks/6/path = NodePath("ViewportContainer/partefrontal:position")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/imported = false
@@ -210,7 +210,7 @@ tracks/6/keys = {
 "values": [ Vector2( 3, 125 ), Vector2( 3, 125 ) ]
 }
 tracks/7/type = "value"
-tracks/7/path = NodePath("partefrontal:rotation_degrees")
+tracks/7/path = NodePath("ViewportContainer/partefrontal:rotation_degrees")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/imported = false
@@ -2943,47 +2943,55 @@ scale = Vector2( 0.433319, 0.433319 )
 texture = ExtResource( 2 )
 
 [node name="Bunny" type="Sprite" parent="Sprite"]
-visible = false
 light_mask = 128
 position = Vector2( 1113.34, 324.549 )
 scale = Vector2( 2, 2 )
 offset = Vector2( -192, -148 )
 
-[node name="chapeu" type="Sprite" parent="Sprite/Bunny"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite/Bunny"]
+anims/bunny = SubResource( 106 )
+anims/bunny_idle = SubResource( 107 )
+
+[node name="ViewportContainer" type="ViewportContainer" parent="Sprite/Bunny"]
+margin_left = -231.275
+margin_top = -260.355
+margin_right = -191.275
+margin_bottom = -220.355
+rect_scale = Vector2( 12.3238, 11.544 )
+rect_clip_content = true
+
+[node name="chapeu" type="Sprite" parent="Sprite/Bunny/ViewportContainer"]
 light_mask = 128
-position = Vector2( 2, 50 )
+position = Vector2( 18.9288, 26.8845 )
+scale = Vector2( 0.0811437, 0.0866251 )
 z_index = -1
 texture = ExtResource( 9 )
 region_enabled = true
 region_rect = Rect2( -4.79358, 231.711, 399.81, 136.304 )
 
-[node name="cabeça" type="Sprite" parent="Sprite/Bunny"]
+[node name="cabeça" type="Sprite" parent="Sprite/Bunny/ViewportContainer"]
 light_mask = 128
-position = Vector2( 10, 176 )
-rotation = 0.0221804
+position = Vector2( 19.5779, 37.8859 )
+scale = Vector2( 0.0811437, 0.0866251 )
 texture = ExtResource( 9 )
 region_enabled = true
 region_rect = Rect2( 304.535, -6.66034, 252.738, 250.542 )
 
-[node name="orelhas" type="Sprite" parent="Sprite/Bunny/cabeça"]
+[node name="orelhas" type="Sprite" parent="Sprite/Bunny/ViewportContainer/cabeça"]
 light_mask = 128
-position = Vector2( -20.7257, -183.952 )
-rotation = -0.114013
+position = Vector2( -5, -192 )
 z_index = -1
 texture = ExtResource( 9 )
 region_enabled = true
 region_rect = Rect2( 12.4562, 3.19252, 306.572, 185.344 )
 
-[node name="partefrontal" type="Sprite" parent="Sprite/Bunny"]
+[node name="partefrontal" type="Sprite" parent="Sprite/Bunny/ViewportContainer"]
 light_mask = 128
-position = Vector2( 3, 125 )
+position = Vector2( 19.0099, 33.3814 )
+scale = Vector2( 0.0811437, 0.0866251 )
 texture = ExtResource( 9 )
 region_enabled = true
 region_rect = Rect2( 104.671, 367.531, 418.209, 152.756 )
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite/Bunny"]
-anims/bunny = SubResource( 106 )
-anims/bunny_idle = SubResource( 107 )
 
 [node name="Lion" type="Sprite" parent="Sprite"]
 visible = false
@@ -3113,7 +3121,7 @@ rotation = 0.15369
 scale = Vector2( 0.910988, 0.815587 )
 frames = SubResource( 109 )
 animation = "burn"
-frame = 4
+frame = 3
 playing = true
 
 [node name="RightPaw" type="Sprite" parent="Sprite/Lion/Head"]
@@ -3131,7 +3139,7 @@ rotation = -0.0349056
 scale = Vector2( 0.683358, 0.683087 )
 frames = SubResource( 110 )
 animation = "kwispy"
-frame = 8
+frame = 7
 playing = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite/Lion"]
