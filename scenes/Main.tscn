@@ -3120,7 +3120,7 @@ rotation = 0.15369
 scale = Vector2( 0.910988, 0.815587 )
 frames = SubResource( 51 )
 animation = "burn"
-frame = 2
+frame = 7
 playing = true
 
 [node name="RightPaw" type="Sprite" parent="Lion tile/Head"]
@@ -3138,7 +3138,7 @@ rotation = -0.0349056
 scale = Vector2( 0.683358, 0.683087 )
 frames = SubResource( 52 )
 animation = "kwispy"
-frame = 6
+frame = 1
 playing = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Lion tile"]
