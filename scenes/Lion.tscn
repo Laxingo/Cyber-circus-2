@@ -668,7 +668,7 @@ texture = ExtResource( 1 )
 centered = false
 hframes = 5
 vframes = 2
-frame = 1
+frame = 7
 
 [node name="ManePolygon" type="Polygon2D" parent="."]
 position = Vector2( -26, -55 )
@@ -683,46 +683,45 @@ bones = [ "CenterOfCombustion", PoolRealArray( 0.26, 0.26, 0.26, 0.26, 0.76, 1, 
 internal_vertex_count = 21
 
 [node name="ManeSkeleton" type="Skeleton2D" parent="."]
-visible = false
 
 [node name="CenterOfCombustion" type="Bone2D" parent="ManeSkeleton"]
-position = Vector2( -7.01772, 5.31913 )
-rotation = 0.0305447
+position = Vector2( 16.5945, -1.26041 )
+rotation = 0.039733
 rest = Transform2D( 1, 0, 0, 1, -5, -27 )
 
 [node name="Bone2D" type="Bone2D" parent="ManeSkeleton/CenterOfCombustion"]
-position = Vector2( 30.0445, -193.761 )
-rotation = 0.144706
+position = Vector2( -49.361, -176.867 )
+rotation = -0.144999
 rest = Transform2D( 1, 0, 0, 1, 11.4539, -178 )
 
 [node name="Bone2D2" type="Bone2D" parent="ManeSkeleton/CenterOfCombustion"]
-position = Vector2( 146.232, -120.109 )
-rotation = 0.144706
+position = Vector2( 112.439, -98.6314 )
+rotation = -0.144999
 rest = Transform2D( 1, 0, 0, 1, 118.454, -109 )
 
 [node name="Bone2D3" type="Bone2D" parent="ManeSkeleton/CenterOfCombustion"]
-position = Vector2( 201.594, 3.40162 )
-rotation = 0.144706
+position = Vector2( 157.393, 18.7893 )
+rotation = -0.144999
 rest = Transform2D( 1, 0, 0, 1, 191.454, 17 )
 
 [node name="Bone2D4" type="Bone2D" parent="ManeSkeleton/CenterOfCombustion"]
-position = Vector2( 129.862, 120.721 )
-rotation = 0.144706
+position = Vector2( 65.4836, 144.688 )
+rotation = -0.144999
 rest = Transform2D( 1, 0, 0, 1, 120.454, 137 )
 
 [node name="Bone2D5" type="Bone2D" parent="ManeSkeleton/CenterOfCombustion"]
-position = Vector2( -67.47, 157.061 )
-rotation = 0.144706
+position = Vector2( -117.631, 165.974 )
+rotation = -0.144999
 rest = Transform2D( 1, 0, 0, 1, -83.5461, 177 )
 
 [node name="Bone2D6" type="Bone2D" parent="ManeSkeleton/CenterOfCombustion"]
-position = Vector2( -165.905, -0.169603 )
-rotation = 0.144706
+position = Vector2( -197.256, 13.2894 )
+rotation = -0.144999
 rest = Transform2D( 1, 0, 0, 1, -196.546, 16 )
 
 [node name="Bone2D7" type="Bone2D" parent="ManeSkeleton/CenterOfCombustion"]
-position = Vector2( -116.933, -118.133 )
-rotation = 0.144706
+position = Vector2( -154.771, -115.999 )
+rotation = -0.144999
 rest = Transform2D( 1, 0, 0, 1, -141.546, -96 )
 
 [node name="Light2D" type="Light2D" parent="ManeSkeleton/CenterOfCombustion"]
@@ -736,19 +735,19 @@ __meta__ = {
 }
 
 [node name="Head" type="Sprite" parent="."]
-position = Vector2( -5.25001, 11.625 )
-rotation = 0.0379104
+position = Vector2( 9.01085, 4.70189 )
+rotation = 0.0581605
 scale = Vector2( 0.73758, 0.73758 )
 z_index = 1
 texture = ExtResource( 3 )
 hframes = 5
 vframes = 2
-frame = 1
+frame = 7
 region_rect = Rect2( 278, 39, 168, 159 )
 
 [node name="Mouth" type="Sprite" parent="Head"]
-position = Vector2( 10.0841, 109.16 )
-rotation = -0.00588119
+position = Vector2( 12.7193, 111.934 )
+rotation = -0.0264101
 scale = Vector2( 1.56266, 1.59988 )
 z_index = 2
 texture = ExtResource( 6 )
@@ -756,17 +755,17 @@ region_enabled = true
 region_rect = Rect2( 315, 211, 109, 44 )
 
 [node name="Ears" type="Sprite" parent="Head"]
-position = Vector2( -2.16777, -83.7972 )
-rotation = 0.0122547
-scale = Vector2( 1.20852, 1.20852 )
+position = Vector2( -2.27896, -83.7305 )
+rotation = 0.0114018
+scale = Vector2( 1.20726, 1.20726 )
 texture = ExtResource( 6 )
 region_enabled = true
 region_rect = Rect2( 41, 32, 204, 92 )
 
 [node name="LeftPaw" type="Sprite" parent="Head"]
-position = Vector2( 95.2962, 173.844 )
-rotation = -0.0100792
-scale = Vector2( 1.13434, 1.13434 )
+position = Vector2( 126.817, 169.872 )
+rotation = -0.293235
+scale = Vector2( 1.21032, 1.06966 )
 z_index = 3
 texture = ExtResource( 6 )
 region_enabled = true
@@ -778,13 +777,13 @@ rotation = 0.15369
 scale = Vector2( 0.910988, 0.815587 )
 frames = SubResource( 16 )
 animation = "burn"
-frame = 4
+frame = 9
 playing = true
 
 [node name="RightPaw" type="Sprite" parent="Head"]
-position = Vector2( -80.2369, 198.76 )
-rotation = 0.393607
-scale = Vector2( 1.31472, 1.31472 )
+position = Vector2( -51.3216, 188.923 )
+rotation = -0.0148501
+scale = Vector2( 1.24659, 1.24659 )
 z_index = 3
 texture = ExtResource( 6 )
 region_enabled = true
@@ -796,7 +795,7 @@ rotation = -0.0349056
 scale = Vector2( 0.683358, 0.683087 )
 frames = SubResource( 27 )
 animation = "kwispy"
-frame = 8
+frame = 3
 playing = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

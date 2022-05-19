@@ -112,7 +112,7 @@ func setPrizeMasks():
 func _add_tile(col :int, row :int) -> void:
 	tiles.append(SlotTile.instance())
 	var tile := get_tile(col, row) 
-	tile.get_node('Tween').connect("tween_completed", self, "_on_tile_moved")
+	tile.get_node('Tween').connect("tween_completed", self, "_on_tile_moved", [], CONNECT_DEFERRED)
 	tile.set_icon(_randomIcones())
 	tile.set_size(tile_size)
 	tile.set_name(tile_name)
@@ -137,7 +137,7 @@ func stop():
 	state = State.STOPPED
 	runs_stopped = current_runs()
 	total_runs = runs_stopped + tiles_per_reel + 1
-	print("STOOOOOOOOPPPPP")
+#	print("STOOOOOOOOPPPPP")
 	
 
 func _stop() -> void:
