@@ -9,27 +9,27 @@ func _ready():
 
 func set_icon(tex):
 	if (tex =="A"):
-		$Node2D.add_child($A)
+		get_node("A").visible = true
+		print("AAAAAAAAAAAAA")
+#		$A.visible
 	elif(tex =="bunny"):
-		$Node2D.add_child($Bunny)
+		$Bunny.visible= true
 	elif(tex =="clown"):
-		$Node2D.add_child($Clown)
+		$Clown.visible
 	elif(tex =="elephant"):
-		$Node2D.add_child($Elephant)
+		$Elephant.visible= true
 	elif(tex =="J"):
-		$Node2D.add_child($J)
+		$J.visible= true
 	elif(tex =="K"):
-		$Node2D.add_child($K)
+		$K.visible
 	elif(tex =="Lion"):
-		$Node2D.add_child($Lion)
+		$Lion.visible= true
 	elif(tex =="Malabare"):
-		$Node2D.add_child($Juggle)
+		$Juggle.visible= true
 	elif(tex =="Strongman"):
-		$Node2D.add_child($Strongman)
+		$Strongman.visible= true
 	elif(tex =="Q"):
-		$Node2D.add_child($Q)
-	elif(tex =="A"):
-		$Node2D.add_child($A)
+		$Q.visible= true
 	set_size(size)
 
 func set_name(nam):
@@ -37,7 +37,6 @@ func set_name(nam):
 
 func set_size(new_size: Vector2):
   size = new_size
-#  $Node2D.scale = size / $Node2D.get_size()
   
 func set_speed(speed):
   $Tween.playback_speed = speed

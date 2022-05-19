@@ -4,30 +4,30 @@ const SlotTile := preload("res://scenes/Tile.tscn")
 const SPIN_UP_DISTANCE = 100.0
 signal stopped
 
-export(Array, String) var pictures := [
-  preload("res://Imagens/Simbolos/CyberCircus_Bunny.png"),
-  preload("res://Imagens/Simbolos/CyberCircus_GeorgeCloony.png"),
-  preload("res://Imagens/Simbolos/CyberCircus_Elephant.png"),
-  preload("res://Imagens/Simbolos/CyberCircus_J.001_cropped.png"),
-  preload("res://Imagens/Simbolos/CyberCircus_K.001_cropped.png"),
-  preload("res://Imagens/Simbolos/CyberCircus_Lion.png"),
-  preload("res://Imagens/Simbolos/CyberCircus_Malabare.png"),
-  preload("res://Imagens/Simbolos/CyberCircus_MuscleMan.png"),
-  preload("res://Imagens/Simbolos/CyberCircus_Q.001_cropped.png"), 
-]
+#export(Array, String) var pictures := [
+#  preload("res://Imagens/Simbolos/CyberCircus_Bunny.png"),
+#  preload("res://Imagens/Simbolos/CyberCircus_GeorgeCloony.png"),
+#  preload("res://Imagens/Simbolos/CyberCircus_Elephant.png"),
+#  preload("res://Imagens/Simbolos/CyberCircus_J.001_cropped.png"),
+#  preload("res://Imagens/Simbolos/CyberCircus_K.001_cropped.png"),
+#  preload("res://Imagens/Simbolos/CyberCircus_Lion.png"),
+#  preload("res://Imagens/Simbolos/CyberCircus_Malabare.png"),
+#  preload("res://Imagens/Simbolos/CyberCircus_MuscleMan.png"),
+#  preload("res://Imagens/Simbolos/CyberCircus_Q.001_cropped.png"), 
+#]
 
-export(Array) var icones := [
-	preload("res://scenes/Bunny.tscn"),
-	preload("res://scenes/palhaço.tscn"),
-	preload("res://scenes/elefante.tscn"),
-	preload("res://scenes/Cards_J.tscn"),
-	preload("res://scenes/Cards_K.tscn"),
-	preload("res://scenes/Lion.tscn"),
-	preload("res://scenes/malabares.tscn"),
-	preload("res://scenes/Bombadissimo.tscn"),
-	preload("res://scenes/Cards_Q.tscn"),
-	preload("res://scenes/Cards_A.tscn"),
-]
+#export(Array) var icones := [
+#	preload("res://scenes/Bunny.tscn"),
+#	preload("res://scenes/palhaço.tscn"),
+#	preload("res://scenes/elefante.tscn"),
+#	preload("res://scenes/Cards_J.tscn"),
+#	preload("res://scenes/Cards_K.tscn"),
+#	preload("res://scenes/Lion.tscn"),
+#	preload("res://scenes/malabares.tscn"),
+#	preload("res://scenes/Bombadissimo.tscn"),
+#	preload("res://scenes/Cards_Q.tscn"),
+#	preload("res://scenes/Cards_A.tscn"),
+#]
 
 export(int,1,20) var reels := 5
 export(int,1,20) var tiles_per_reel :=3 
@@ -168,7 +168,7 @@ func _on_tile_moved(tile: SlotTile, _nodePath) -> void:
 		tile.position.y = grid_pos[0][0].y
 	var current_idx = total_runs - reel_runs
 	if (current_idx < tiles_per_reel):
-		var result_icon = icones[result.tiles[reel][current_idx]] 
+		var result_icon = symbolName[result.tiles[reel][current_idx]] 
 		var randomicon = _randomIcones()
 		tile.set_icon(randomicon)
 		tile.set_name(tile_name)
@@ -222,7 +222,7 @@ func _randomIcones():
 		tile_name = symbolName[8] 
 	elif num == 9:
 		tile_name = symbolName[9] 
-	return icones[num  %icones.size()]
+	return symbolName[num  %symbolName.size()]
 
 func _get_result() -> void:
   result = {
