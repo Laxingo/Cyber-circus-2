@@ -34,7 +34,7 @@ tracks/1/keys = {
 "values": [ 0.0, -15.0, -0.179308, 15.0, 0.0 ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("Sprite4:position")
+tracks/2/path = NodePath("Sprlte4:position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
@@ -46,7 +46,7 @@ tracks/2/keys = {
 "values": [ Vector2( -8, 86 ), Vector2( -8, 69 ), Vector2( -8, 82.1818 ), Vector2( -8, 60.3636 ), Vector2( -8, 86 ) ]
 }
 tracks/3/type = "value"
-tracks/3/path = NodePath("Sprite4:rotation_degrees")
+tracks/3/path = NodePath("Sprlte4:rotation_degrees")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/imported = false
@@ -58,7 +58,7 @@ tracks/3/keys = {
 "values": [ 0.0 ]
 }
 tracks/4/type = "bezier"
-tracks/4/path = NodePath("Sprite4:scale:x")
+tracks/4/path = NodePath("Sprlte4:scale:x")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/imported = false
@@ -68,7 +68,7 @@ tracks/4/keys = {
 "times": PoolRealArray( 0, 0.4, 0.8, 1.2, 1.5 )
 }
 tracks/5/type = "bezier"
-tracks/5/path = NodePath("Sprite4:scale:y")
+tracks/5/path = NodePath("Sprlte4:scale:y")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/imported = false
@@ -243,7 +243,7 @@ tracks/10/keys = {
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ]
 }
 tracks/11/type = "value"
-tracks/11/path = NodePath("Sprite4:self_modulate")
+tracks/11/path = NodePath("Sprlte4:self_modulate")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/imported = false
@@ -331,7 +331,7 @@ rest = Transform2D( -3.60337, 0.870703, -0.234876, -0.972025, -77, 75 )
 position = Vector2( 15.7695, 0.751621 )
 rest = Transform2D( 1, 0, 0, 1, 15.7695, 0.751621 )
 
-[node name="Sprite4" type="Sprite" parent="."]
+[node name="Sprlte4" type="Sprite" parent="."]
 position = Vector2( -5.21625, 28 )
 scale = Vector2( 0.874231, 0.874231 )
 z_index = 1
