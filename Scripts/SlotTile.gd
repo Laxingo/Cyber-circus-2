@@ -8,8 +8,28 @@ func _ready():
   pass
 
 func set_icon(tex):
-	var icon = tex.instance()
-	$Node2D.add_child(icon)
+	if (tex =="A"):
+		$Node2D.add_child($A)
+	elif(tex =="bunny"):
+		$Node2D.add_child($Bunny)
+	elif(tex =="clown"):
+		$Node2D.add_child($Clown)
+	elif(tex =="elephant"):
+		$Node2D.add_child($Elephant)
+	elif(tex =="J"):
+		$Node2D.add_child($J)
+	elif(tex =="K"):
+		$Node2D.add_child($K)
+	elif(tex =="Lion"):
+		$Node2D.add_child($Lion)
+	elif(tex =="Malabare"):
+		$Node2D.add_child($Juggle)
+	elif(tex =="Strongman"):
+		$Node2D.add_child($Strongman)
+	elif(tex =="Q"):
+		$Node2D.add_child($Q)
+	elif(tex =="A"):
+		$Node2D.add_child($A)
 	set_size(size)
 
 func set_name(nam):

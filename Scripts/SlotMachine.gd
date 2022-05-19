@@ -72,7 +72,7 @@ var col3Mid_name
 var col4Mid_name
 var col5Mid_name
 
-var symbolName = ["bunny", "clown", "elephant", "J", "K", "Lion", "Malabare", "Strongman", "Q"];
+var symbolName = ["bunny", "clown", "elephant", "J", "K", "Lion", "Malabare", "Strongman", "Q", "A"];
 
 var bunny = 0
 var clown= 0
@@ -201,7 +201,7 @@ func current_runs(reel := 0) -> int:
 
 func _randomIcones():
 	random.randomize()
-	var num = random.randi_range(0, 8)
+	var num = random.randi_range(0, 9)
 	if num == 0:
 		tile_name = symbolName[0]
 	elif num == 1:
@@ -220,6 +220,8 @@ func _randomIcones():
 		tile_name = symbolName[7]
 	elif num == 8:
 		tile_name = symbolName[8] 
+	elif num == 9:
+		tile_name = symbolName[9] 
 	return icones[num  %icones.size()]
 
 func _get_result() -> void:
