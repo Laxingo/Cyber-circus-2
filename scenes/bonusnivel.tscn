@@ -1,10 +1,9 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Fonts/CarnivaleeFreakshowDemo-AGn2.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Imagens/Simbolos/Light_Ball.png" type="Texture" id=2]
 [ext_resource path="res://Imagens/CyberCircus_roulette_bonus.png" type="Texture" id=3]
 [ext_resource path="res://Imagens/UI/fundo.png" type="Texture" id=4]
-[ext_resource path="res://Imagens/Simbolos/Light_Ray.png" type="Texture" id=5]
 [ext_resource path="res://Imagens/f1.jpg" type="Texture" id=6]
 [ext_resource path="res://Imagens/f2.jpg" type="Texture" id=7]
 
@@ -162,7 +161,7 @@ tracks/11/keys = {
 "values": [ false ]
 }
 tracks/12/type = "value"
-tracks/12/path = NodePath("luz/azul:position")
+tracks/12/path = NodePath("luz/amarela:texture_scale")
 tracks/12/interp = 1
 tracks/12/loop_wrap = true
 tracks/12/imported = false
@@ -171,10 +170,10 @@ tracks/12/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Vector2( -11.0654, -215.578 ) ]
+"values": [ 1.69 ]
 }
 tracks/13/type = "value"
-tracks/13/path = NodePath("luz/azul:rotation_degrees")
+tracks/13/path = NodePath("luz/rosa:position")
 tracks/13/interp = 1
 tracks/13/loop_wrap = true
 tracks/13/imported = false
@@ -183,27 +182,15 @@ tracks/13/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ -89.7863 ]
+"values": [ Vector2( 0, 0 ) ]
 }
 tracks/14/type = "value"
-tracks/14/path = NodePath("luz/amarela:texture_scale")
+tracks/14/path = NodePath("luz/rosa:rotation_degrees")
 tracks/14/interp = 1
 tracks/14/loop_wrap = true
 tracks/14/imported = false
 tracks/14/enabled = true
 tracks/14/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ 1.69 ]
-}
-tracks/15/type = "value"
-tracks/15/path = NodePath("luz/azul:energy")
-tracks/15/interp = 1
-tracks/15/loop_wrap = true
-tracks/15/imported = false
-tracks/15/enabled = true
-tracks/15/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
@@ -498,7 +485,7 @@ tracks/12/keys = {
 
 [sub_resource type="Animation" id=5]
 resource_name = "bonus3"
-length = 0.8
+length = 2.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("Label:self_modulate")
 tracks/0/interp = 1
@@ -555,7 +542,7 @@ tracks/4/imported = false
 tracks/4/enabled = true
 tracks/4/keys = {
 "points": PoolRealArray( 0.0680223, -0.25, 0, 0.25, 0, 1.31826, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.5 )
+"times": PoolRealArray( 0, 0.3 )
 }
 tracks/5/type = "bezier"
 tracks/5/path = NodePath("luz/amarela:scale:y")
@@ -565,75 +552,59 @@ tracks/5/imported = false
 tracks/5/enabled = true
 tracks/5/keys = {
 "points": PoolRealArray( 0.0680223, -0.25, 0, 0.25, 0, 1.31826, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.5 )
+"times": PoolRealArray( 0, 0.3 )
 }
 tracks/6/type = "value"
-tracks/6/path = NodePath("luz/azul:position")
+tracks/6/path = NodePath("luz/amarela:texture_scale")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/imported = false
 tracks/6/enabled = true
 tracks/6/keys = {
-"times": PoolRealArray( 0.4, 0.8 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0, 0.3, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( -11.0654, -215.578 ), Vector2( -11.1426, -623.735 ) ]
+"values": [ 1.69, 1.69, 0.01 ]
 }
-tracks/7/type = "value"
-tracks/7/path = NodePath("luz/azul:rotation_degrees")
+tracks/7/type = "bezier"
+tracks/7/path = NodePath("luz/rosa:scale:x")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/imported = false
 tracks/7/enabled = true
 tracks/7/keys = {
-"times": PoolRealArray( 0.4, 0.8 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ -89.7863, -89.7863 ]
+"points": PoolRealArray( 1.31826, -0.25, 0, 0.25, 0, 214.837, -0.25, 0, 0.25, 0, -1.94738, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0.4, 0.7, 0.9 )
 }
 tracks/8/type = "bezier"
-tracks/8/path = NodePath("luz/azul:scale:x")
+tracks/8/path = NodePath("luz/rosa:scale:y")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/imported = false
 tracks/8/enabled = true
 tracks/8/keys = {
-"points": PoolRealArray( 1.19667, -0.25, 0, 0.25, 0, 1.12094, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0.4, 0.8 )
+"points": PoolRealArray( 1.31826, -0.25, 0, 0.25, 0, 214.837, -0.25, 0, 0.25, 0, -1.94738, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0.4, 0.7, 0.9 )
 }
 tracks/9/type = "bezier"
-tracks/9/path = NodePath("luz/azul:scale:y")
+tracks/9/path = NodePath("luz/azul3:scale:x")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/imported = false
 tracks/9/enabled = true
 tracks/9/keys = {
-"points": PoolRealArray( 0.355197, -0.25, 0, 0.25, 0, 0.789708, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0.4, 0.8 )
+"points": PoolRealArray(  ),
+"times": PoolRealArray(  )
 }
-tracks/10/type = "value"
-tracks/10/path = NodePath("luz/amarela:texture_scale")
+tracks/10/type = "bezier"
+tracks/10/path = NodePath("luz/azul3:scale:y")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/imported = false
 tracks/10/enabled = true
 tracks/10/keys = {
-"times": PoolRealArray( 0, 0.5, 0.8 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
-"update": 0,
-"values": [ 1.69, 1.69, 0.01 ]
-}
-tracks/11/type = "value"
-tracks/11/path = NodePath("luz/azul:energy")
-tracks/11/interp = 1
-tracks/11/loop_wrap = true
-tracks/11/imported = false
-tracks/11/enabled = true
-tracks/11/keys = {
-"times": PoolRealArray( 0, 0.3, 0.4, 0.8 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
-"update": 0,
-"values": [ 0.0, 0.0, 0.89, 0.0 ]
+"points": PoolRealArray(  ),
+"times": PoolRealArray(  )
 }
 
 [node name="Node2D" type="Node2D"]
@@ -680,6 +651,7 @@ texture = ExtResource( 7 )
 visible = false
 self_modulate = Color( 1, 1, 1, 0 )
 position = Vector2( -5, -999 )
+z_index = 2
 texture = ExtResource( 3 )
 
 [node name="Fundo" type="Sprite" parent="."]
@@ -700,23 +672,19 @@ position = Vector2( -13, 76 )
 scale = Vector2( 0.718999, 0.72308 )
 
 [node name="amarela" type="Light2D" parent="luz"]
-scale = Vector2( 1.23763, 1.23763 )
+scale = Vector2( 1.31826, 1.31826 )
 texture = ExtResource( 2 )
 texture_scale = 1.69
 color = Color( 0.992157, 0.831373, 0.0980392, 1 )
 
-[node name="azul" type="Light2D" parent="luz"]
-position = Vector2( -11.0654, -215.578 )
-rotation = -1.56707
-scale = Vector2( 1.19667, 0.355197 )
-texture = ExtResource( 5 )
-color = Color( 0.172549, 0.952941, 0.972549, 1 )
-energy = 0.0
+[node name="azul3" type="Light2D" parent="luz"]
+scale = Vector2( 1.31826, 1.31826 )
+texture = ExtResource( 2 )
+texture_scale = 0.01
+color = Color( 0.152941, 0.854902, 0.905882, 1 )
 
-[node name="azul2" type="Light2D" parent="luz"]
-position = Vector2( -15.2524, 206.085 )
-rotation = -4.7277
-scale = Vector2( 1.19667, 0.355197 )
-texture = ExtResource( 5 )
-color = Color( 0.172549, 0.952941, 0.972549, 1 )
-energy = 0.67
+[node name="rosa" type="Light2D" parent="luz"]
+scale = Vector2( -1.94738, -1.94738 )
+texture = ExtResource( 2 )
+texture_scale = 0.01
+color = Color( 0.792157, 0.0745098, 0.85098, 1 )
