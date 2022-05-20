@@ -72,7 +72,7 @@ var col3Mid_name
 var col4Mid_name
 var col5Mid_name
 
-export(Array, String) var symbolName := ["bunny", "clown", "elephant", "J", "K", "Lion", "Malabare", "Strongman", "Q", "A", "ticket"];
+export(Array, String) var symbolName := ["bunny", "clown", "elephant", "J", "K", "Lion", "Malabare", "Strongman", "Q", "A", "ticket", "roulette"];
 
 var bunny = 0
 var clown= 0
@@ -201,7 +201,7 @@ func current_runs(reel := 0) -> int:
 
 func _randomIcones() -> String:
 	random.randomize()
-	var num = random.randi_range(0, 10)
+	var num = random.randi_range(0, 11)
 	if num == 0:
 		tile_name = symbolName[0]
 	elif num == 1:
@@ -224,6 +224,8 @@ func _randomIcones() -> String:
 		tile_name = symbolName[9] 
 	elif num == 10:
 		tile_name = symbolName[10] 
+	elif num == 11:
+		tile_name = symbolName[11] 
 	return symbolName[num  %symbolName.size()]
 
 func _get_result() -> void:
@@ -265,7 +267,6 @@ func buildResultMasks():
 func getPizes(result_masks):
 	var prizeInfo = [];
 	for i in result_masks.size():
-		
 		for p in  prizeMasks.size():
 			if (result_masks[i] & prizeMasks[p] == prizeMasks[p]):
 				prizeInfo.push_back([i, p]) # First position -> Synbol IDX; Second Position -> Prize IDX
