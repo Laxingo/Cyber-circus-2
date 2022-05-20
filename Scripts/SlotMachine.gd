@@ -239,6 +239,7 @@ func _get_result() -> void:
 func buildResultMasks():
 	var resultSymbols = [];
 	var resultMasks = [];
+	var tileAnim = SlotTile
 	
 	for r in range(0, rows):
 		if(r < rows - tiles_per_reel):
@@ -256,6 +257,10 @@ func buildResultMasks():
 	print("Result Masks: ", resultMasks);
 	prizesToAnim = [];
 	prizesToAnim = getPizes(resultMasks);
+	for a in prizesToAnim.size():
+		print("AAAA ", prizesToAnim)
+		prizesToAnim.animate_icon(prizesToAnim)
+
 
 func getPizes(result_masks):
 	var prizeInfo = [];

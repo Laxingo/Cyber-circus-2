@@ -165,4 +165,30 @@ func spin_up():
   
 func spin_down():
   $Animations.play('SPIN_DOWN')
-  
+
+func animate_icon(tex):
+	if (tex =="A"):
+		$Sprite/A/AnimationPlayer.play("A_Sweep")
+	elif(tex =="bunny"):
+		$Sprite/Bunny/AnimationPlayer.play("bunny_idle")
+	elif(tex =="clown"):
+		$Sprite/Clown/AnimationPlayer.play("pidle")
+	elif(tex =="elephant"):
+		$Sprite/Elephant/AnimationPlayer.play("ele_bola_idle")
+	elif(tex =="J"):
+		$Sprite/J/AnimationPlayer.play("J_Sweep")
+	elif(tex =="K"):
+		$Sprite/K/AnimationPlayer.play("K_Sweep")
+	elif(tex =="Lion"):
+		$Sprite/Lion/AnimationPlayer.play("lion_idle")
+	elif(tex =="Malabare"):
+		$Sprite/A.visible = true
+	elif(tex =="Strongman"):
+		$Sprite/Strongman/Viewport/AnimationPlayer.play("bomba_idle")
+		print("AAAAA")
+	elif(tex =="Q"):
+		$Sprite/Q/AnimationPlayer.play("Q_Sweep")
+		print("AAAAA")
+	elif(tex =="ticket"):
+		$Sprite/Ticket/AnimationPlayer.play("New Anim")
+		print("AAAAA")
