@@ -259,10 +259,10 @@ func buildResultMasks():
 	print("Result Masks: ", resultMasks);
 	prizesToAnim = [];
 	prizesToAnim = getPizes(resultMasks);
-	for a in prizesToAnim.size():
-		print("AAAA ", prizesToAnim)
-		prizesToAnim.animate_icon(prizesToAnim)
-
+#	for a in prizesToAnim.size():
+#		print("AAAA ", prizesToAnim)
+#		prizesToAnim.animate_icon(prizesToAnim)
+	
 
 func getPizes(result_masks):
 	var prizeInfo = [];
