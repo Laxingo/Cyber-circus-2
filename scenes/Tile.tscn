@@ -1,4 +1,4 @@
-[gd_scene load_steps=107 format=2]
+[gd_scene load_steps=108 format=2]
 
 [ext_resource path="res://Scripts/SlotTile.gd" type="Script" id=1]
 [ext_resource path="res://Imagens/CyberCircus_roulette_bonus.png" type="Texture" id=2]
@@ -1296,7 +1296,6 @@ viewport_path = NodePath("Sprite/Strongman/Viewport")
 [sub_resource type="Animation" id=116]
 resource_name = "New Anim"
 length = 0.5
-loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
@@ -2390,6 +2389,21 @@ animations = [ {
 [sub_resource type="ViewportTexture" id=141]
 viewport_path = NodePath("Sprite/Clown/Viewport")
 
+[sub_resource type="Animation" id=149]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite4:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+
 [sub_resource type="Animation" id=142]
 resource_name = "palhaço"
 length = 1.5
@@ -2493,6 +2507,18 @@ tracks/8/keys = {
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Sprite4:self_modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0, 1.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ]
 }
 
 [sub_resource type="Animation" id=143]
@@ -3241,7 +3267,7 @@ rotation = 0.15369
 scale = Vector2( 0.910988, 0.815587 )
 frames = SubResource( 109 )
 animation = "burn"
-frame = 5
+frame = 4
 playing = true
 
 [node name="RightPaw" type="Sprite" parent="Sprite/Lion/Head"]
@@ -3259,7 +3285,7 @@ rotation = -0.0349056
 scale = Vector2( 0.683358, 0.683087 )
 frames = SubResource( 110 )
 animation = "kwispy"
-frame = 9
+frame = 8
 playing = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite/Lion"]
@@ -3647,15 +3673,16 @@ scale = Vector2( 3.00439, 3.00439 )
 
 [node name="Sprite3" type="Sprite" parent="Sprite/Clown"]
 light_mask = 1024
-position = Vector2( -2, -11 )
+position = Vector2( -10.0559, -10.1417 )
+rotation = -0.119665
 texture = ExtResource( 6 )
 region_enabled = true
 region_rect = Rect2( -6, 227, 193, 202 )
 
 [node name="Sprite2" type="Sprite" parent="Sprite/Clown"]
 light_mask = 1024
-position = Vector2( 0.686375, 139.372 )
-scale = Vector2( 1.04053, 1.04053 )
+position = Vector2( 0.946358, 137.24 )
+scale = Vector2( 0.976321, 0.976321 )
 z_index = 1
 texture = ExtResource( 6 )
 region_enabled = true
@@ -3677,7 +3704,6 @@ transparent_bg = true
 render_target_v_flip = true
 
 [node name="Sprite" type="Sprite" parent="Sprite/Clown/Viewport"]
-self_modulate = Color( 1, 1, 1, 0 )
 light_mask = 1024
 position = Vector2( 1, 1 )
 texture = ExtResource( 6 )
@@ -3686,7 +3712,7 @@ region_rect = Rect2( 5, 314, 497, 87 )
 
 [node name="Polygon2D" type="Polygon2D" parent="Sprite/Clown"]
 light_mask = 1024
-position = Vector2( -278.216, -432 )
+position = Vector2( -282.672, -382.53 )
 offset = Vector2( 16, -2 )
 texture = SubResource( 141 )
 skeleton = NodePath("../Skeleton2D")
@@ -3696,6 +3722,7 @@ polygons = [ PoolIntArray( 6, 4, 5, 30 ), PoolIntArray( 5, 8, 31, 30 ), PoolIntA
 bones = [ "B1d", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0.5, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5 ), "B1d/B2d", PoolRealArray( 0, 0, 0.5, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.32, 0.96, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0.32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0.34, 0.5, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0 ), "B1e", PoolRealArray( 0, 0, 0, 0, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0.5, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "B1e/B2e", PoolRealArray( 0.5, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.32, 0.5, 0.5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0.5, 0.34, 0, 0, 0, 0, 0, 0, 0, 0.68, 0.68, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ) ]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite/Clown"]
+anims/RESET = SubResource( 149 )
 "anims/palhaço" = SubResource( 142 )
 anims/pidle = SubResource( 143 )
 
@@ -3705,7 +3732,7 @@ position = Vector2( 0, 1 )
 
 [node name="B1d" type="Bone2D" parent="Sprite/Clown/Skeleton2D"]
 position = Vector2( 49, 73.5 )
-rotation = 1.13704
+rotation = 1.17107
 scale = Vector2( 3.67989, 0.99997 )
 rest = Transform2D( 3.63625, 0.565755, -0.153738, 0.988112, 57, 79 )
 
@@ -3715,7 +3742,7 @@ rest = Transform2D( 0.996217, 0.086895, -0.086895, 0.996217, 19.6555, -0.568893 
 
 [node name="B1e" type="Bone2D" parent="Sprite/Clown/Skeleton2D"]
 position = Vector2( -68.5, 69.5 )
-rotation = 1.9147
+rotation = 1.84664
 scale = Vector2( 3.70696, 0.999976 )
 rest = Transform2D( -3.60337, 0.870703, -0.234876, -0.972025, -77, 75 )
 
@@ -3724,10 +3751,9 @@ position = Vector2( 15.7695, 0.751621 )
 rest = Transform2D( 1, 0, 0, 1, 15.7695, 0.751621 )
 
 [node name="Sprite4" type="Sprite" parent="Sprite/Clown"]
-self_modulate = Color( 1, 1, 1, 0 )
 light_mask = 1024
-position = Vector2( -8, 86 )
-scale = Vector2( 0.874231, 0.874231 )
+position = Vector2( -8, 64.4912 )
+scale = Vector2( 1.2277, 1.2277 )
 z_index = 1
 texture = ExtResource( 6 )
 region_enabled = true
