@@ -1,12 +1,14 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Imagens/Simbolos/Light_Ray.png" type="Texture" id=1]
 [ext_resource path="res://Fonts/Carnevalee Freakshow.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Imagens/particulas/blue.png" type="Texture" id=3]
+[ext_resource path="res://Imagens/particulas/hotpink.png" type="Texture" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 size = 100
 outline_size = 2
-outline_color = Color( 0.937255, 0.901961, 0.0196078, 1 )
+outline_color = Color( 0.972549, 0.14902, 0.933333, 1 )
 font_data = ExtResource( 2 )
 
 [sub_resource type="Animation" id=2]
@@ -80,6 +82,54 @@ tracks/5/keys = {
 "update": 0,
 "values": [ 69.8115, 69.8115, 69.8115 ]
 }
+tracks/6/type = "value"
+tracks/6/path = NodePath("CPUParticles2D2:emitting")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0.8, 0.9, 2.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("CPUParticles2D:emitting")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0.8, 0.9, 2.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("CPUParticles2D3:emitting")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0.8, 0.9, 2.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("CPUParticles2D4:emitting")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0.8, 0.9, 2.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
+}
 
 [sub_resource type="Animation" id=3]
 length = 0.001
@@ -131,6 +181,57 @@ tracks/3/keys = {
 "update": 0,
 "values": [ 69.8115 ]
 }
+tracks/4/type = "value"
+tracks/4/path = NodePath("CPUParticles2D2:emitting")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("CPUParticles2D:emitting")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("CPUParticles2D3:emitting")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("CPUParticles2D4:emitting")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+
+[sub_resource type="Gradient" id=4]
+colors = PoolColorArray( 1, 1, 1, 1, 1, 1, 1, 0 )
 
 [node name="Node2D" type="Node2D"]
 
@@ -141,9 +242,9 @@ margin_right = 310.0
 margin_bottom = 120.0
 rect_scale = Vector2( 0.0285756, 0.0285756 )
 rect_pivot_offset = Vector2( 150.091, 61.528 )
-custom_colors/font_color = Color( 1, 0.913725, 0.184314, 1 )
-custom_colors/font_outline_modulate = Color( 0.235294, 0.192157, 0.596078, 1 )
-custom_colors/font_color_shadow = Color( 0.933333, 0.611765, 0.145098, 1 )
+custom_colors/font_color = Color( 0.827451, 0.956863, 0.952941, 1 )
+custom_colors/font_outline_modulate = Color( 0.835294, 0.705882, 0.819608, 1 )
+custom_colors/font_color_shadow = Color( 0.00392157, 0.254902, 0.247059, 1 )
 custom_fonts/font = SubResource( 1 )
 text = "Big Win"
 __meta__ = {
@@ -160,3 +261,127 @@ rotation = 1.21844
 scale = Vector2( 2.85119, 5.34667 )
 texture = ExtResource( 1 )
 color = Color( 0.737255, 0.443137, 0.760784, 1 )
+
+[node name="CPUParticles2D2" type="CPUParticles2D" parent="."]
+position = Vector2( 180, 73 )
+rotation = -0.0331861
+z_index = 2
+amount = 100
+lifetime = 1.76
+speed_scale = 1.88
+explosiveness = 0.18
+randomness = 1.0
+fixed_fps = 60
+local_coords = false
+texture = ExtResource( 4 )
+direction = Vector2( 0, -500 )
+spread = 42.37
+gravity = Vector2( 0, 8.7 )
+initial_velocity = 143.54
+initial_velocity_random = 1.0
+angular_velocity = -11.73
+orbit_velocity_random = 1.0
+linear_accel = -12.35
+radial_accel = -2.47
+tangential_accel = 20.98
+tangential_accel_random = 1.0
+damping = 4.94
+damping_random = 0.9
+angle = 720.0
+angle_random = 1.0
+scale_amount = 0.04
+color_ramp = SubResource( 4 )
+hue_variation = 1.0
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+position = Vector2( 182, 74 )
+rotation = -0.202943
+z_index = 2
+amount = 100
+lifetime = 1.76
+speed_scale = 1.88
+explosiveness = 0.18
+randomness = 1.0
+fixed_fps = 60
+local_coords = false
+texture = ExtResource( 3 )
+direction = Vector2( 0, -500 )
+spread = 42.37
+gravity = Vector2( 0, 8.7 )
+initial_velocity = 143.54
+initial_velocity_random = 1.0
+angular_velocity = -11.73
+orbit_velocity_random = 1.0
+linear_accel = -12.35
+radial_accel = -2.47
+tangential_accel = 20.98
+tangential_accel_random = 1.0
+damping = 4.94
+damping_random = 0.9
+angle = 720.0
+angle_random = 1.0
+scale_amount = 0.04
+color_ramp = SubResource( 4 )
+hue_variation = 1.0
+
+[node name="CPUParticles2D3" type="CPUParticles2D" parent="."]
+position = Vector2( -253, 67 )
+rotation = -0.0331861
+z_index = 2
+amount = 100
+lifetime = 1.76
+speed_scale = 1.88
+explosiveness = 0.18
+randomness = 1.0
+fixed_fps = 60
+local_coords = false
+texture = ExtResource( 4 )
+direction = Vector2( 0, -500 )
+spread = 42.37
+gravity = Vector2( 0, 8.7 )
+initial_velocity = 143.54
+initial_velocity_random = 1.0
+angular_velocity = -11.73
+orbit_velocity_random = 1.0
+linear_accel = -12.35
+radial_accel = -2.47
+tangential_accel = 20.98
+tangential_accel_random = 1.0
+damping = 4.94
+damping_random = 0.9
+angle = 720.0
+angle_random = 1.0
+scale_amount = 0.04
+color_ramp = SubResource( 4 )
+hue_variation = 1.0
+
+[node name="CPUParticles2D4" type="CPUParticles2D" parent="."]
+position = Vector2( -251, 68 )
+rotation = -0.202943
+z_index = 2
+amount = 100
+lifetime = 1.76
+speed_scale = 1.88
+explosiveness = 0.18
+randomness = 1.0
+fixed_fps = 60
+local_coords = false
+texture = ExtResource( 3 )
+direction = Vector2( 0, -500 )
+spread = 42.37
+gravity = Vector2( 0, 8.7 )
+initial_velocity = 143.54
+initial_velocity_random = 1.0
+angular_velocity = -11.73
+orbit_velocity_random = 1.0
+linear_accel = -12.35
+radial_accel = -2.47
+tangential_accel = 20.98
+tangential_accel_random = 1.0
+damping = 4.94
+damping_random = 0.9
+angle = 720.0
+angle_random = 1.0
+scale_amount = 0.04
+color_ramp = SubResource( 4 )
+hue_variation = 1.0
