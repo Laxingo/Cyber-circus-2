@@ -384,6 +384,30 @@ tracks/29/keys = {
 "update": 0,
 "values": [ 0.0 ]
 }
+tracks/30/type = "value"
+tracks/30/path = NodePath("../2:modulate")
+tracks/30/interp = 1
+tracks/30/loop_wrap = true
+tracks/30/imported = false
+tracks/30/enabled = true
+tracks/30/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/31/type = "value"
+tracks/31/path = NodePath("../2:self_modulate")
+tracks/31/interp = 1
+tracks/31/loop_wrap = true
+tracks/31/imported = false
+tracks/31/enabled = true
+tracks/31/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
 
 [sub_resource type="Animation" id=3]
 resource_name = "popup1c"
@@ -660,11 +684,34 @@ tracks/23/keys = {
 "update": 1,
 "values": [ false, false ]
 }
+tracks/24/type = "value"
+tracks/24/path = NodePath("../1:modulate")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/keys = {
+"times": PoolRealArray( 0, 0.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/25/type = "value"
+tracks/25/path = NodePath("../1:self_modulate")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/keys = {
+"times": PoolRealArray( 0, 0.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ]
+}
 
 [sub_resource type="Animation" id=1]
 resource_name = "popup1o"
 length = 0.7
-loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
@@ -937,11 +984,34 @@ tracks/23/keys = {
 "update": 1,
 "values": [ false, false ]
 }
+tracks/24/type = "value"
+tracks/24/path = NodePath("../1:self_modulate")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/keys = {
+"times": PoolRealArray( 0, 0.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/25/type = "value"
+tracks/25/path = NodePath("../1:modulate")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/keys = {
+"times": PoolRealArray( 0, 0.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ]
+}
 
 [sub_resource type="Animation" id=5]
 resource_name = "popup2c"
 length = 0.7
-loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
@@ -1213,6 +1283,30 @@ tracks/23/keys = {
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ 0.0, 0.0 ]
+}
+tracks/24/type = "value"
+tracks/24/path = NodePath("../2:modulate")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/keys = {
+"times": PoolRealArray( 0, 0.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/25/type = "value"
+tracks/25/path = NodePath("../2:self_modulate")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/keys = {
+"times": PoolRealArray( 0, 0.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ]
 }
 
 [sub_resource type="Animation" id=4]
@@ -1490,6 +1584,30 @@ tracks/23/keys = {
 "update": 0,
 "values": [ 0.0, 0.0 ]
 }
+tracks/24/type = "value"
+tracks/24/path = NodePath("../2:modulate")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/keys = {
+"times": PoolRealArray( 0, 0.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/25/type = "value"
+tracks/25/path = NodePath("../2:self_modulate")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/keys = {
+"times": PoolRealArray( 0, 0.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ]
+}
 
 [node name="Node2D" type="Node2D"]
 
@@ -1560,7 +1678,7 @@ margin_left = -232.816
 margin_top = -153.239
 margin_right = 283.184
 margin_bottom = 362.761
-rect_scale = Vector2( 0.179841, 0.179841 )
+rect_scale = Vector2( 0.180018, 0.180018 )
 texture_normal = ExtResource( 13 )
 texture_hover = ExtResource( 10 )
 __meta__ = {
@@ -1573,7 +1691,7 @@ margin_left = -104.0
 margin_top = -211.0
 margin_right = 412.0
 margin_bottom = 305.0
-rect_scale = Vector2( 0.0462994, 0.0462994 )
+rect_scale = Vector2( 0.177708, 0.177708 )
 texture_normal = ExtResource( 12 )
 texture_hover = ExtResource( 6 )
 __meta__ = {
@@ -1586,7 +1704,7 @@ margin_left = 23.0
 margin_top = -212.0
 margin_right = 539.0
 margin_bottom = 304.0
-rect_scale = Vector2( 0.0318269, 0.0318269 )
+rect_scale = Vector2( 0.179453, 0.179453 )
 texture_normal = ExtResource( 8 )
 texture_hover = ExtResource( 11 )
 __meta__ = {
@@ -1599,7 +1717,7 @@ margin_left = 126.0
 margin_top = -134.0
 margin_right = 642.0
 margin_bottom = 382.0
-rect_scale = Vector2( 0.0242439, 0.0247162 )
+rect_scale = Vector2( 0.175793, 0.175793 )
 texture_normal = ExtResource( 9 )
 texture_hover = ExtResource( 7 )
 __meta__ = {
@@ -1615,7 +1733,7 @@ margin_left = -211.0
 margin_top = -138.0
 margin_right = 305.0
 margin_bottom = 378.0
-rect_scale = Vector2( 0.0324726, 0.0324726 )
+rect_scale = Vector2( 0.178311, 0.178311 )
 texture_normal = ExtResource( 20 )
 texture_hover = ExtResource( 21 )
 __meta__ = {
@@ -1628,7 +1746,7 @@ margin_left = -106.0
 margin_top = -212.0
 margin_right = 410.0
 margin_bottom = 304.0
-rect_scale = Vector2( 0.0276583, 0.0276583 )
+rect_scale = Vector2( 0.1827, 0.1827 )
 texture_normal = ExtResource( 16 )
 texture_hover = ExtResource( 14 )
 __meta__ = {
@@ -1641,7 +1759,7 @@ margin_left = 24.0
 margin_top = -212.0
 margin_right = 540.0
 margin_bottom = 304.0
-rect_scale = Vector2( 0.0320264, 0.0320264 )
+rect_scale = Vector2( 0.175928, 0.175928 )
 texture_normal = ExtResource( 19 )
 texture_hover = ExtResource( 17 )
 __meta__ = {
@@ -1654,7 +1772,7 @@ margin_left = 126.0
 margin_top = -135.0
 margin_right = 642.0
 margin_bottom = 381.0
-rect_scale = Vector2( 0.0477685, 0.0477685 )
+rect_scale = Vector2( 0.177306, 0.177306 )
 texture_normal = ExtResource( 18 )
 texture_hover = ExtResource( 15 )
 __meta__ = {
