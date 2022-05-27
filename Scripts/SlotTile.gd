@@ -190,29 +190,29 @@ func spin_up():
 func spin_down():
   $Animations.play('SPIN_DOWN')
 
-func animate_icon(tex):
-	if (tex =="A"):
+func animate_icon(symbol):
+	if (symbol =="A"):
 		$Sprite/A/AnimationPlayer.play("A_Sweep")
-	elif(tex =="bunny"):
-		$Sprite/Bunny/AnimationPlayer.play("bunny_idle")
-	elif(tex =="clown"):
-		$Sprite/Clown/AnimationPlayer.play("pidle")
-	elif(tex =="elephant"):
-		$Sprite/Elephant/AnimationPlayer.play("ele_bola_idle")
-	elif(tex =="J"):
+	elif(symbol =="bunny"):
+		$Sprite/Bunny/AnimationPlayer.play("bunny")
+	elif(symbol =="clown"):
+		$Sprite/Clown/AnimationPlayer.play("palhaço")
+	elif(symbol =="elephant"):
+		$Sprite/Elephant/AnimationPlayer.play("ele_bola")
+	elif(symbol =="J"):
 		$Sprite/J/AnimationPlayer.play("J_Sweep")
-	elif(tex =="K"):
+	elif(symbol =="K"):
 		$Sprite/K/AnimationPlayer.play("K_Sweep")
-	elif(tex =="Lion"):
-		$Sprite/Lion/AnimationPlayer.play("lion_idle")
-	elif(tex =="Malabare"):
+	elif(symbol =="Lion"):
+		$Sprite/Lion/AnimationPlayer.play("lion_win")
+	elif(symbol =="Malabare"):
 		$Sprite/A.visible = true
-	elif(tex =="Strongman"):
-		$Sprite/Strongman/Viewport/AnimationPlayer.play("bomba_idle")
+	elif(symbol =="Strongman"):
+		$Sprite/Strongman/Viewport/AnimationPlayer.play("b1")
 		print("AAAAA")
-	elif(tex =="Q"):
+	elif(symbol =="Q"):
 		$Sprite/Q/AnimationPlayer.play("Q_Sweep")
 		print("AAAAA")
-	elif(tex =="ticket"):
+	elif(symbol =="ticket"):
 		$Sprite/Ticket/AnimationPlayer.play("New Anim")
 		print("AAAAA")

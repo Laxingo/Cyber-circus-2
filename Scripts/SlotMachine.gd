@@ -47,7 +47,7 @@ var col3Mid_name
 var col4Mid_name
 var col5Mid_name
 
-export(Array, String) var symbolName := ["bunny", "clown", "elephant", "J", "K", "Lion", "Malabare", "Strongman", "Q", "A", "ticket", "roulette"];
+export(Array, String) var symbolName := ["bunny", "clown", "elephant"];
 
 var bunny = 0
 var clown= 0
@@ -177,7 +177,7 @@ func current_runs(reel := 0) -> int:
 
 func _randomIcones() -> String:
 	random.randomize()
-	var num = random.randi_range(0, 11)
+	var num = random.randi_range(0, 2)
 	if num == 0:
 		tile_name = symbolName[0]
 	elif num == 1:
@@ -248,9 +248,41 @@ func getPrizes(result_masks):
 	return prizeInfo;
 
 func animPrizes():
+	var firstReel
+	var scndReel
+	var thirdReel
+	var forthReel
+	var fifthReel
+	
+	var oTile
+	var estaReel
+	var estaCol
 	for p in prizesToAnim.size():
 		for i in cells:
 			var prizeID = symbolName[prizesToAnim[p][0]];
 			if(prizeMasks[prizesToAnim[p][1]] & 1<<i):
 				var _pcell = reels * tiles_per_reel - 1 - i
-				print("Animacao",prizeID, "Celulaa:", reels * tiles_per_reel - 1 - i);
+				print("ANIMAÇÃO: ",prizeID, "  CÉLULAS: ", _pcell);
+				
+				if(_pcell == 0 or _pcell == 5 or _pcell == 10):
+					estaReel = 0
+				elif(_pcell == 1 or _pcell == 6 or _pcell == 11):
+					estaReel = 1
+				elif(_pcell == 2 or _pcell == 7 or _pcell == 12):
+					estaReel = 2
+				elif(_pcell == 3 or _pcell == 8 or _pcell == 13):
+					estaReel = 3
+				elif(_pcell == 4 or _pcell == 9 or _pcell == 14):
+					estaReel = 4
+					
+				if (_pcell == 0 or _pcell == 1 or _pcell == 2 or _pcell == 3 or _pcell == 4):
+					estaCol = 0
+				if (_pcell == 5 or _pcell == 6 or _pcell == 7 or _pcell == 8 or _pcell == 9):
+					estaCol = 1
+				if (_pcell == 10 or _pcell == 11 or _pcell == 12 or _pcell == 13 or _pcell == 14):
+					estaCol = 2
+					
+					
+				oTile = get_tile(estaCol, estaReel)
+				oTile.animate_icon(prizeID)
+				
