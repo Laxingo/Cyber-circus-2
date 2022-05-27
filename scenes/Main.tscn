@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Scripts/SlotMachine.gd" type="Script" id=1]
 [ext_resource path="res://Imagens/UI/ui.png" type="Texture" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://Imagens/UI/fundo.png" type="Texture" id=7]
 [ext_resource path="res://Imagens/UI/botoes.png" type="Texture" id=8]
 [ext_resource path="res://Imagens/Simbolos/luz.png" type="Texture" id=9]
+[ext_resource path="res://Imagens/UI/options.png" type="Texture" id=10]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -507,8 +508,8 @@ position = Vector2( 65, 55 )
 texture = ExtResource( 7 )
 
 [node name="Light2D" type="Light2D" parent="Luzes"]
-position = Vector2( 518.302, 339.686 )
-rotation = 0.683683
+position = Vector2( 464.69, 249.188 )
+rotation = 0.784421
 scale = Vector2( 2.21001, 4.92555 )
 texture = ExtResource( 9 )
 color = Color( 0.964706, 0.952941, 0.231373, 1 )
@@ -516,8 +517,8 @@ energy = 0.750103
 range_height = -809.1
 
 [node name="Light2D2" type="Light2D" parent="Luzes"]
-position = Vector2( -455.614, 237.524 )
-rotation = -0.642368
+position = Vector2( -480.972, 281.678 )
+rotation = -0.598448
 scale = Vector2( 2.21001, 4.92555 )
 texture = ExtResource( 9 )
 color = Color( 0.964706, 0.952941, 0.231373, 1 )
@@ -609,5 +610,10 @@ margin_right = 1101.46
 margin_bottom = 1059.96
 texture_normal = ExtResource( 6 )
 expand = true
+
+[node name="Options" type="Sprite" parent="."]
+position = Vector2( 822.448, 1004.05 )
+scale = Vector2( 0.208364, 0.208364 )
+texture = ExtResource( 10 )
 
 [connection signal="button_down" from="Botao" to="." method="_on_Roll2_button_down"]
