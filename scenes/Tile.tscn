@@ -3089,8 +3089,8 @@ texture = ExtResource( 2 )
 [node name="Bunny" type="Sprite" parent="Sprite"]
 visible = false
 light_mask = 128
-position = Vector2( 484.631, -549.249 )
-scale = Vector2( 2.53307, 2.53307 )
+position = Vector2( 604.635, -489.247 )
+scale = Vector2( 2.20671, 2.20671 )
 offset = Vector2( -192, -148 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite/Bunny"]
@@ -3144,8 +3144,8 @@ texture = ExtResource( 21 )
 [node name="Lion" type="Sprite" parent="Sprite"]
 visible = false
 light_mask = 2
-position = Vector2( 1188.5, 422.322 )
-scale = Vector2( 2.13939, 2.13939 )
+position = Vector2( 1202.35, 390.013 )
+scale = Vector2( 1.78859, 1.78859 )
 
 [node name="ManeViewport" type="Viewport" parent="Sprite/Lion"]
 size = Vector2( 516, 516 )
@@ -3265,7 +3265,7 @@ rotation = 0.15369
 scale = Vector2( 0.910988, 0.815587 )
 frames = SubResource( 109 )
 animation = "burn"
-frame = 7
+frame = 4
 playing = true
 
 [node name="RightPaw" type="Sprite" parent="Sprite/Lion/Head"]
@@ -3283,7 +3283,7 @@ rotation = -0.0349056
 scale = Vector2( 0.683358, 0.683087 )
 frames = SubResource( 110 )
 animation = "kwispy"
-frame = 1
+frame = 8
 playing = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite/Lion"]
@@ -3298,8 +3298,8 @@ texture = ExtResource( 22 )
 [node name="Strongman" type="Sprite" parent="Sprite"]
 visible = false
 light_mask = 2048
-position = Vector2( 1191.19, 369.856 )
-scale = Vector2( 2.28435, 2.28435 )
+position = Vector2( 1188.5, 332.319 )
+scale = Vector2( 1.90072, 1.90072 )
 
 [node name="Viewport" type="Viewport" parent="Sprite/Strongman"]
 size = Vector2( 560, 560 )
@@ -3423,7 +3423,7 @@ texture = ExtResource( 23 )
 [node name="Ticket" type="Sprite" parent="Sprite"]
 visible = false
 position = Vector2( 1200.04, 313.857 )
-scale = Vector2( 2, 2 )
+scale = Vector2( 1.87153, 1.87153 )
 
 [node name="CyberCircusTicketEmission1" type="Sprite" parent="Sprite/Ticket"]
 self_modulate = Color( 1, 1, 1, 0.713726 )
@@ -3458,7 +3458,7 @@ texture = ExtResource( 25 )
 visible = false
 light_mask = 4
 position = Vector2( 572.327, -170.775 )
-scale = Vector2( 2, 2 )
+scale = Vector2( 1.95625, 1.95625 )
 
 [node name="Position2D" type="Position2D" parent="Sprite/Roulette"]
 position = Vector2( 270.006, 272.317 )
@@ -3532,8 +3532,8 @@ range_item_cull_mask = 65536
 [node name="A" type="Sprite" parent="Sprite"]
 visible = false
 light_mask = 8
-position = Vector2( 1191.19, 369.856 )
-scale = Vector2( 2, 2 )
+position = Vector2( 1190.81, 341.55 )
+scale = Vector2( 1.85427, 1.85427 )
 
 [node name="Sprite" type="Sprite" parent="Sprite/A"]
 light_mask = 8
@@ -3573,8 +3573,8 @@ texture = ExtResource( 25 )
 [node name="J" type="Sprite" parent="Sprite"]
 visible = false
 light_mask = 16
-position = Vector2( 1191.19, 369.856 )
-scale = Vector2( 2, 2 )
+position = Vector2( 1176.96, 350.781 )
+scale = Vector2( 1.86724, 1.86724 )
 
 [node name="Sprite" type="Sprite" parent="Sprite/J"]
 light_mask = 16
@@ -3612,8 +3612,8 @@ texture = ExtResource( 25 )
 [node name="K" type="Sprite" parent="Sprite"]
 visible = false
 light_mask = 32
-position = Vector2( 1191.19, 369.856 )
-scale = Vector2( 2, 2 )
+position = Vector2( 1200.04, 350.781 )
+scale = Vector2( 1.82918, 1.82918 )
 
 [node name="Sprite" type="Sprite" parent="Sprite/K"]
 light_mask = 32
@@ -3651,7 +3651,7 @@ texture = ExtResource( 25 )
 visible = false
 light_mask = 64
 position = Vector2( 1191.19, 369.856 )
-scale = Vector2( 2, 2 )
+scale = Vector2( 1.84487, 1.84487 )
 
 [node name="Sprite" type="Sprite" parent="Sprite/Q"]
 light_mask = 64
@@ -3687,8 +3687,8 @@ texture = ExtResource( 25 )
 [node name="Juggle" type="Sprite" parent="Sprite"]
 visible = false
 light_mask = 512
-position = Vector2( 1022.34, 64.6175 )
-scale = Vector2( 3.17383, 3.17383 )
+position = Vector2( 1146.96, 242.316 )
+scale = Vector2( 2.44095, 2.44095 )
 offset = Vector2( 4, 1 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Sprite/Juggle"]
@@ -3707,8 +3707,8 @@ texture = ExtResource( 25 )
 [node name="Clown" type="Sprite" parent="Sprite"]
 visible = false
 light_mask = 1024
-position = Vector2( 1197.73, 145.39 )
-scale = Vector2( 3.00439, 3.00439 )
+position = Vector2( 1216.19, 186.929 )
+scale = Vector2( 2.15814, 2.15814 )
 
 [node name="Sprite3" type="Sprite" parent="Sprite/Clown"]
 light_mask = 1024
@@ -3806,9 +3806,9 @@ texture = ExtResource( 24 )
 [node name="Elephant" type="Sprite" parent="Sprite"]
 visible = false
 light_mask = 256
-position = Vector2( 1188.5, 290.779 )
+position = Vector2( 1165.42, 290.779 )
 rotation = 0.217709
-scale = Vector2( 2.7653, 2.7653 )
+scale = Vector2( 1.88583, 1.88583 )
 offset = Vector2( 2765, -1167 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite/Elephant"]
