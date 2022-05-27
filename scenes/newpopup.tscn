@@ -1713,9 +1713,6 @@ margin_right = 415.0
 margin_bottom = 417.0
 rect_scale = Vector2( 0.402957, 0.402957 )
 texture_normal = ExtResource( 5 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="replay" type="TextureButton" parent="."]
 margin_left = 112.0
@@ -1724,9 +1721,6 @@ margin_right = 628.0
 margin_bottom = 513.0
 rect_scale = Vector2( 0.318699, 0.318699 )
 texture_normal = ExtResource( 3 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="options" type="TextureButton" parent="."]
 margin_left = -268.0
@@ -1735,9 +1729,6 @@ margin_right = 248.0
 margin_bottom = 514.0
 rect_scale = Vector2( 0.327545, 0.327545 )
 texture_normal = ExtResource( 2 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="1" type="Node2D" parent="."]
 visible = false
@@ -1750,12 +1741,9 @@ margin_left = -232.816
 margin_top = -153.239
 margin_right = 283.184
 margin_bottom = 362.761
-rect_scale = Vector2( 0.180018, 0.180018 )
+rect_scale = Vector2( 0.0241672, 0.0241672 )
 texture_normal = ExtResource( 13 )
 texture_hover = ExtResource( 10 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="historico" type="TextureButton" parent="1"]
 self_modulate = Color( 1, 1, 1, 0 )
@@ -1763,12 +1751,9 @@ margin_left = -104.0
 margin_top = -211.0
 margin_right = 412.0
 margin_bottom = 305.0
-rect_scale = Vector2( 0.177708, 0.177708 )
+rect_scale = Vector2( 0.0350709, 0.0350709 )
 texture_normal = ExtResource( 12 )
 texture_hover = ExtResource( 6 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="money" type="TextureButton" parent="1"]
 self_modulate = Color( 1, 1, 1, 0 )
@@ -1776,12 +1761,9 @@ margin_left = 23.0
 margin_top = -212.0
 margin_right = 539.0
 margin_bottom = 304.0
-rect_scale = Vector2( 0.179453, 0.179453 )
+rect_scale = Vector2( 0.0318269, 0.0318269 )
 texture_normal = ExtResource( 8 )
 texture_hover = ExtResource( 11 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="info" type="TextureButton" parent="1"]
 self_modulate = Color( 1, 1, 1, 0 )
@@ -1789,12 +1771,9 @@ margin_left = 126.0
 margin_top = -134.0
 margin_right = 642.0
 margin_bottom = 382.0
-rect_scale = Vector2( 0.175793, 0.175793 )
+rect_scale = Vector2( 0.0242439, 0.0247162 )
 texture_normal = ExtResource( 9 )
 texture_hover = ExtResource( 7 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="2" type="Node2D" parent="."]
 visible = false
