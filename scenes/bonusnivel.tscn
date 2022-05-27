@@ -1,11 +1,14 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Fonts/CarnivaleeFreakshowDemo-AGn2.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Imagens/Simbolos/Light_Ball.png" type="Texture" id=2]
 [ext_resource path="res://Imagens/bonus/CyberCircus_roulette_bonus.png" type="Texture" id=3]
 [ext_resource path="res://Imagens/UI/fundo.png" type="Texture" id=4]
+[ext_resource path="res://Imagens/bonus/bazul.png" type="Texture" id=5]
 [ext_resource path="res://Imagens/bonus/f1.jpg" type="Texture" id=6]
 [ext_resource path="res://Imagens/bonus/f2.jpg" type="Texture" id=7]
+[ext_resource path="res://Imagens/Simbolos/CyberCircus_Rolette.png" type="Texture" id=8]
+[ext_resource path="res://Imagens/bonus/bmao.png" type="Texture" id=9]
 
 [sub_resource type="DynamicFont" id=1]
 size = 200
@@ -195,6 +198,54 @@ tracks/14/keys = {
 "transitions": PoolRealArray( 1 ),
 "update": 0,
 "values": [ 0.0 ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("CyberCircusRolette:position")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1183, 503 ) ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("CyberCircusRolette:rotation_degrees")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -67.0186 ]
+}
+tracks/17/type = "value"
+tracks/17/path = NodePath("Bazul:self_modulate")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/18/type = "value"
+tracks/18/path = NodePath("CyberCircusRolette:self_modulate")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
 }
 
 [sub_resource type="Animation" id=3]
@@ -663,6 +714,78 @@ tracks/14/keys = {
 "values": [ true ]
 }
 
+[sub_resource type="Animation" id=6]
+resource_name = "bonus4"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("CyberCircusRolette:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.2, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1183, 503 ), Vector2( 72, -155 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CyberCircusRolette:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.2, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ -67.0186, -67.0186 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Bazul:self_modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.5, 0.6, 0.8, 1, 1.2, 1.4, 1.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0.513726 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.513726 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.513726 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("CyberCircusRolette:self_modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0.2, 0.5, 1.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/4/type = "bezier"
+tracks/4/path = NodePath("Bmao:scale:x")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"points": PoolRealArray( 0.392828, -0.25, 0, 0.25, 0, 0.542787, -0.25, 0, 0.25, 0, 0.392828, -0.25, 0, 0.25, 0, 0.542787, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6 )
+}
+tracks/5/type = "bezier"
+tracks/5/path = NodePath("Bmao:scale:y")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"points": PoolRealArray( 0.415458, -0.25, 0, 0.25, 0, 0.574055, -0.25, 0, 0.25, 0, 0.415458, -0.25, 0, 0.25, 0, 0.574055, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6 )
+}
+
 [node name="Node2D" type="Node2D"]
 
 [node name="Label" type="Label" parent="."]
@@ -721,6 +844,7 @@ anims/RESET = SubResource( 2 )
 anims/bonus1 = SubResource( 3 )
 anims/bonus2 = SubResource( 4 )
 anims/bonus3 = SubResource( 5 )
+anims/bonus4 = SubResource( 6 )
 
 [node name="luz" type="Node2D" parent="."]
 visible = false
@@ -728,7 +852,7 @@ position = Vector2( -13, 76 )
 scale = Vector2( 0.718999, 0.72308 )
 
 [node name="amarela" type="Light2D" parent="luz"]
-scale = Vector2( 1.31826, 1.31826 )
+scale = Vector2( 0.0680223, 0.0680223 )
 texture = ExtResource( 2 )
 texture_scale = 1.69
 color = Color( 0.992157, 0.831373, 0.0980392, 1 )
@@ -740,7 +864,7 @@ texture_scale = 0.01
 color = Color( 0.152941, 0.854902, 0.905882, 1 )
 
 [node name="rosa" type="Light2D" parent="luz"]
-scale = Vector2( -1.94738, -1.94738 )
+scale = Vector2( 1.31826, 1.31826 )
 texture = ExtResource( 2 )
 texture_scale = 0.01
 color = Color( 0.792157, 0.0745098, 0.85098, 1 )
@@ -750,3 +874,23 @@ scale = Vector2( -1.94738, -1.94738 )
 texture = ExtResource( 2 )
 texture_scale = 0.01
 color = Color( 0.133333, 0.85098, 0.0745098, 1 )
+
+[node name="Bazul" type="Sprite" parent="."]
+self_modulate = Color( 1, 1, 1, 0 )
+position = Vector2( -20, -223 )
+scale = Vector2( 0.683632, 0.683632 )
+z_index = 2
+texture = ExtResource( 5 )
+
+[node name="CyberCircusRolette" type="Sprite" parent="."]
+position = Vector2( 1183, 503 )
+rotation = -1.16969
+z_index = 2
+texture = ExtResource( 8 )
+region_enabled = true
+region_rect = Rect2( 59.1006, 243.212, 80.4782, 220.44 )
+
+[node name="Bmao" type="Sprite" parent="."]
+position = Vector2( 722, -4 )
+scale = Vector2( 0.542787, 0.574055 )
+texture = ExtResource( 9 )
