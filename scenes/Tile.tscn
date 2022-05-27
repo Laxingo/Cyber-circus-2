@@ -3712,16 +3712,16 @@ scale = Vector2( 2.15814, 2.15814 )
 
 [node name="Sprite3" type="Sprite" parent="Sprite/Clown"]
 light_mask = 1024
-position = Vector2( -11, -11 )
-rotation = -0.1309
+position = Vector2( -12.6557, -17.4929 )
+rotation = -0.098175
 texture = ExtResource( 6 )
 region_enabled = true
 region_rect = Rect2( -6, 227, 193, 202 )
 
 [node name="Sprite2" type="Sprite" parent="Sprite/Clown"]
 light_mask = 1024
-position = Vector2( 1, 136.8 )
-scale = Vector2( 0.975856, 0.975856 )
+position = Vector2( 0.497678, 140.919 )
+scale = Vector2( 1.09238, 1.09238 )
 z_index = 1
 texture = ExtResource( 6 )
 region_enabled = true
@@ -3743,6 +3743,7 @@ transparent_bg = true
 render_target_v_flip = true
 
 [node name="Sprite" type="Sprite" parent="Sprite/Clown/Viewport"]
+self_modulate = Color( 1, 1, 1, 0 )
 light_mask = 1024
 position = Vector2( 1, 1 )
 texture = ExtResource( 6 )
@@ -3770,7 +3771,7 @@ position = Vector2( 0, 1 )
 
 [node name="B1d" type="Bone2D" parent="Sprite/Clown/Skeleton2D"]
 position = Vector2( 49, 73.5 )
-rotation = 1.1781
+rotation = 1.11234
 scale = Vector2( 3.67989, 0.99997 )
 rest = Transform2D( 3.63625, 0.565755, -0.153738, 0.988112, 57, 79 )
 
@@ -3780,7 +3781,7 @@ rest = Transform2D( 0.996217, 0.086895, -0.086895, 0.996217, 19.6555, -0.568893 
 
 [node name="B1e" type="Bone2D" parent="Sprite/Clown/Skeleton2D"]
 position = Vector2( -68.5, 69.5 )
-rotation = 1.8326
+rotation = 1.9641
 scale = Vector2( 3.70696, 0.999976 )
 rest = Transform2D( -3.60337, 0.870703, -0.234876, -0.972025, -77, 75 )
 
@@ -3789,10 +3790,9 @@ position = Vector2( 15.7695, 0.751621 )
 rest = Transform2D( 1, 0, 0, 1, 15.7695, 0.751621 )
 
 [node name="Sprite4" type="Sprite" parent="Sprite/Clown"]
-self_modulate = Color( 1, 1, 1, 0 )
 light_mask = 1024
-position = Vector2( -8, 79.6703 )
-scale = Vector2( 0.911101, 0.911101 )
+position = Vector2( -8, 75.2537 )
+scale = Vector2( 1.00075, 1.00075 )
 z_index = 1
 texture = ExtResource( 6 )
 region_enabled = true

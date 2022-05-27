@@ -123,6 +123,7 @@ func _stop() -> void:
 	if state == State.OFF:
 		idk()
 	buildResultMasks();
+	animPrizes();
 
 #0.00164684
 
@@ -233,17 +234,23 @@ func buildResultMasks():
 	
 	print("Result Masks: ", resultMasks);
 	prizesToAnim = [];
-	prizesToAnim = getPizes(resultMasks);
+	prizesToAnim = getPrizes(resultMasks);
 
-func getPizes(result_masks):
+func getPrizes(result_masks):
 	var prizeInfo = [];
 	for i in result_masks.size():
 		for p in  prizeMasks.size():
 			if (result_masks[i] & prizeMasks[p] == prizeMasks[p]):
 				prizeInfo.push_back([i, p]) # First position -> Synbol IDX; Second Position -> Prize IDX
-				print(symbolName[i])
 			
 		
 	print("Prize  Info: ", prizeInfo);
 	return prizeInfo;
 
+func animPrizes():
+	for p in prizesToAnim.size():
+		for i in cells:
+			var prizeID = symbolName[prizesToAnim[p][0]];
+			if(prizeMasks[prizesToAnim[p][1]] & 1<<i):
+				var _pcell = reels * tiles_per_reel - 1 - i
+				print("Animacao",prizeID, "Celulaa:", reels * tiles_per_reel - 1 - i);
