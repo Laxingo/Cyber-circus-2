@@ -4,31 +4,6 @@ const SlotTile := preload("res://scenes/Tile.tscn")
 const SPIN_UP_DISTANCE = 100.0
 signal stopped
 
-#export(Array, String) var pictures := [
-#  preload("res://Imagens/Simbolos/CyberCircus_Bunny.png"),
-#  preload("res://Imagens/Simbolos/CyberCircus_GeorgeCloony.png"),
-#  preload("res://Imagens/Simbolos/CyberCircus_Elephant.png"),
-#  preload("res://Imagens/Simbolos/CyberCircus_J.001_cropped.png"),
-#  preload("res://Imagens/Simbolos/CyberCircus_K.001_cropped.png"),
-#  preload("res://Imagens/Simbolos/CyberCircus_Lion.png"),
-#  preload("res://Imagens/Simbolos/CyberCircus_Malabare.png"),
-#  preload("res://Imagens/Simbolos/CyberCircus_MuscleMan.png"),
-#  preload("res://Imagens/Simbolos/CyberCircus_Q.001_cropped.png"), 
-#]
-
-#export(Array) var icones := [
-#	preload("res://scenes/Bunny.tscn"),
-#	preload("res://scenes/palhaço.tscn"),
-#	preload("res://scenes/elefante.tscn"),
-#	preload("res://scenes/Cards_J.tscn"),
-#	preload("res://scenes/Cards_K.tscn"),
-#	preload("res://scenes/Lion.tscn"),
-#	preload("res://scenes/malabares.tscn"),
-#	preload("res://scenes/Bombadissimo.tscn"),
-#	preload("res://scenes/Cards_Q.tscn"),
-#	preload("res://scenes/Cards_A.tscn"),
-#]
-
 export(int,1,20) var reels := 5
 export(int,1,20) var tiles_per_reel :=3 
 export(float,0,10) var runtime := 1.7
@@ -249,7 +224,7 @@ func buildResultMasks():
 		for l in range(0, reels):
 			var tile = get_tile(l , r)
 			resultSymbols.push_back(tile.tileName);
-
+	
 	for p in symbolName.size():
 		var _tmpResultMask = 0b0;
 		for i in resultSymbols.size():
@@ -259,10 +234,6 @@ func buildResultMasks():
 	print("Result Masks: ", resultMasks);
 	prizesToAnim = [];
 	prizesToAnim = getPizes(resultMasks);
-#	for a in prizesToAnim.size():
-#		print("AAAA ", prizesToAnim)
-#		prizesToAnim.animate_icon(prizesToAnim)
-	
 
 func getPizes(result_masks):
 	var prizeInfo = [];
@@ -270,6 +241,9 @@ func getPizes(result_masks):
 		for p in  prizeMasks.size():
 			if (result_masks[i] & prizeMasks[p] == prizeMasks[p]):
 				prizeInfo.push_back([i, p]) # First position -> Synbol IDX; Second Position -> Prize IDX
-				
+				print(symbolName[i])
+			
+		
 	print("Prize  Info: ", prizeInfo);
 	return prizeInfo;
+
