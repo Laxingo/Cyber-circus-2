@@ -603,7 +603,7 @@ script = ExtResource( 1 )
 position = Vector2( 962, 529 )
 texture = ExtResource( 8 )
 
-[node name="Botao" type="TextureButton" parent="."]
+[node name="play" type="TextureButton" parent="."]
 margin_left = 846.46
 margin_top = 847.961
 margin_right = 1101.46
@@ -611,9 +611,14 @@ margin_bottom = 1059.96
 texture_normal = ExtResource( 6 )
 expand = true
 
-[node name="Options" type="Sprite" parent="."]
-position = Vector2( 822.448, 1004.05 )
-scale = Vector2( 0.208364, 0.208364 )
-texture = ExtResource( 10 )
+[node name="options" type="TextureButton" parent="."]
+margin_left = 764.0
+margin_top = 938.0
+margin_right = 881.0
+margin_bottom = 1075.0
+texture_normal = ExtResource( 10 )
+expand = true
+stretch_mode = 5
 
-[connection signal="button_down" from="Botao" to="." method="_on_Roll2_button_down"]
+[connection signal="button_down" from="play" to="." method="_on_Roll2_button_down"]
+[connection signal="button_down" from="options" to="." method="_on_options_button_down"]

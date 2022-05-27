@@ -18,3 +18,7 @@ func _on_Roll2_button_down():
 
 func _on_slot_machine_stopped():
 	rolled = false
+
+
+func _on_options_button_down():
+	pass # Replace with function body.
