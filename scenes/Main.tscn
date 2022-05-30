@@ -2516,6 +2516,9 @@ margin_right = 1850.0
 margin_bottom = 948.421
 rect_scale = Vector2( 0.932624, 0.992657 )
 stretch = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Viewport" type="Viewport" parent="ViewportContainer"]
 size = Vector2( 1662, 810 )

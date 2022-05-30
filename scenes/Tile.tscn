@@ -1,4 +1,4 @@
-[gd_scene load_steps=113 format=2]
+[gd_scene load_steps=117 format=2]
 
 [ext_resource path="res://Scripts/SlotTile.gd" type="Script" id=1]
 [ext_resource path="res://Imagens/bonus/CyberCircus_roulette_bonus.png" type="Texture" id=2]
@@ -25,11 +25,12 @@
 [ext_resource path="res://Imagens/Simbolos/pentagono.png" type="Texture" id=23]
 [ext_resource path="res://Imagens/Simbolos/estrelas.png" type="Texture" id=24]
 [ext_resource path="res://Imagens/Simbolos/quadrado.png" type="Texture" id=25]
+[ext_resource path="res://Imagens/moldura.png" type="Texture" id=26]
 
-[sub_resource type="Animation" id=147]
+[sub_resource type="Animation" id=149]
 length = 0.001
 tracks/0/type = "value"
-tracks/0/path = NodePath("ViewportContainer/chapeu:position")
+tracks/0/path = NodePath("Light2D3:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -38,10 +39,10 @@ tracks/0/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Vector2( 262.357, 368.156 ) ]
+"values": [ Vector2( 61.7019, 191.381 ) ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("ViewportContainer/chapeu:rotation_degrees")
+tracks/1/path = NodePath("Light2D3:rotation_degrees")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -50,79 +51,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ 0.0 ]
-}
-tracks/2/type = "value"
-tracks/2/path = NodePath("ViewportContainer/cabeça:rotation_degrees")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ 0.0 ]
-}
-tracks/3/type = "value"
-tracks/3/path = NodePath("ViewportContainer/cabeça:position")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ Vector2( 270.357, 495.156 ) ]
-}
-tracks/4/type = "value"
-tracks/4/path = NodePath("ViewportContainer/cabeça/orelhas:rotation_degrees")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ 0.0 ]
-}
-tracks/5/type = "value"
-tracks/5/path = NodePath("ViewportContainer/cabeça/orelhas:position")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ Vector2( -5, -192 ) ]
-}
-tracks/6/type = "value"
-tracks/6/path = NodePath("ViewportContainer/partefrontal:position")
-tracks/6/interp = 1
-tracks/6/loop_wrap = true
-tracks/6/imported = false
-tracks/6/enabled = true
-tracks/6/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ Vector2( 263.357, 443.156 ) ]
-}
-tracks/7/type = "value"
-tracks/7/path = NodePath("ViewportContainer/partefrontal:rotation_degrees")
-tracks/7/interp = 1
-tracks/7/loop_wrap = true
-tracks/7/imported = false
-tracks/7/enabled = true
-tracks/7/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ 0.0 ]
+"values": [ 0.0660032 ]
 }
 
 [sub_resource type="Animation" id=106]
@@ -224,6 +153,30 @@ tracks/7/keys = {
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ 0.0, 0.0 ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Light2D3:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 0.3, 0.8, 1.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 61.7019, 191.381 ), Vector2( 58.5647, 607.608 ), Vector2( 550.089, 536.493 ), Vector2( 484.204, 55.4274 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Light2D3:rotation_degrees")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0, 0.3, 0.8, 1.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0660032, 0.0660032, -89.3805, 0.349911 ]
 }
 
 [sub_resource type="Animation" id=107]
@@ -445,6 +398,33 @@ animations = [ {
 "name": "kwispy",
 "speed": 12.0
 } ]
+
+[sub_resource type="Animation" id=152]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Espirais:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 5.39392, -24.8103 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Espirais:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
 
 [sub_resource type="Animation" id=111]
 resource_name = "lion_idle"
@@ -973,6 +953,57 @@ tracks/27/keys = {
 "update": 0,
 "values": [ 0.533171, -2.36729 ]
 }
+tracks/28/type = "value"
+tracks/28/path = NodePath("Espirais:position")
+tracks/28/interp = 1
+tracks/28/loop_wrap = true
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 5.39392, -24.8103 ) ]
+}
+tracks/29/type = "value"
+tracks/29/path = NodePath("Espirais:rotation_degrees")
+tracks/29/interp = 1
+tracks/29/loop_wrap = true
+tracks/29/imported = false
+tracks/29/enabled = true
+tracks/29/keys = {
+"times": PoolRealArray( 0, 0.42, 0.798, 1.218 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, -82.3493, -188.436, 0.0 ]
+}
+
+[sub_resource type="Animation" id=150]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Light2D3:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -218.547, -237.974 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Light2D3:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.21473 ]
+}
 
 [sub_resource type="Animation" id=113]
 resource_name = "b1"
@@ -1193,6 +1224,30 @@ tracks/17/keys = {
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
 "update": 0,
 "values": [ -1.08723, -1.08723, 0.394028, 0.0237131, 0.0237131, -1.08723 ]
+}
+tracks/18/type = "value"
+tracks/18/path = NodePath("Light2D3:position")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"times": PoolRealArray( 0, 0.3, 0.8, 1.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -218.547, -237.974 ), Vector2( -201.55, 264.686 ), Vector2( 267.114, 196.693 ), Vector2( 211.263, -274.399 ) ]
+}
+tracks/19/type = "value"
+tracks/19/path = NodePath("Light2D3:rotation_degrees")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/keys = {
+"times": PoolRealArray( 0, 0.3, 0.8, 1.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.21473, 0.21473, -90.9429, 0.479647 ]
 }
 
 [sub_resource type="Animation" id=114]
@@ -2395,6 +2450,33 @@ animations = [ {
 [sub_resource type="ViewportTexture" id=141]
 viewport_path = NodePath("Sprite/Clown/Viewport")
 
+[sub_resource type="Animation" id=151]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Estrelas:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 2.30505, 81.4218 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Estrelas:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -0.994436 ]
+}
+
 [sub_resource type="Animation" id=142]
 resource_name = "palhaço"
 length = 1.5
@@ -2510,6 +2592,30 @@ tracks/9/keys = {
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("Estrelas:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0, 0.4, 0.9, 1.2, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 2.30505, 81.4218 ), Vector2( 2.30505, 81.4218 ), Vector2( 2.30505, 81.4218 ), Vector2( 2.30505, 81.4218 ), Vector2( 2.30505, 81.4218 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("Estrelas:rotation_degrees")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0, 0.4, 0.9, 1.2, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ -0.994436, -84.5106, -166.502, -232.371, -0.994436 ]
 }
 
 [sub_resource type="Animation" id=143]
@@ -2847,6 +2953,30 @@ tracks/15/keys = {
 "points": PoolRealArray( 1.00605, -0.25, 0, 0.25, 0, 1.04301, -0.25, 0, 0.25, 0, 1.00605, -0.25, 0, 0.25, 0 ),
 "times": PoolRealArray( 0, 0.8, 1.5 )
 }
+tracks/16/type = "value"
+tracks/16/path = NodePath("Light2D3:position")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0, 0.3, 0.8, 1.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -202.804, -94.3211 ), Vector2( -128.035, 314.529 ), Vector2( 330.999, 169.422 ), Vector2( 179.987, -257.797 ) ]
+}
+tracks/17/type = "value"
+tracks/17/path = NodePath("Light2D3:rotation_degrees")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray( 0, 0.3, 0.8, 1.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ -11.8806, -11.8806, -100.948, -13.887 ]
+}
 
 [sub_resource type="Animation" id=145]
 resource_name = "ele_bola_idle"
@@ -3089,12 +3219,12 @@ texture = ExtResource( 2 )
 [node name="Bunny" type="Sprite" parent="Sprite"]
 visible = false
 light_mask = 128
-position = Vector2( 604.635, -489.247 )
+position = Vector2( 616.174, -514.633 )
 scale = Vector2( 2.20671, 2.20671 )
 offset = Vector2( -192, -148 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite/Bunny"]
-anims/RESET = SubResource( 147 )
+anims/RESET = SubResource( 149 )
 anims/bunny = SubResource( 106 )
 anims/bunny_idle = SubResource( 107 )
 
@@ -3107,7 +3237,7 @@ rect_clip_content = true
 
 [node name="chapeu" type="Sprite" parent="Sprite/Bunny/ViewportContainer"]
 light_mask = 128
-position = Vector2( 262.357, 368.156 )
+position = Vector2( 266.028, 369.889 )
 z_index = -1
 texture = ExtResource( 9 )
 region_enabled = true
@@ -3115,7 +3245,7 @@ region_rect = Rect2( -4.79358, 231.711, 399.81, 136.304 )
 
 [node name="cabeça" type="Sprite" parent="Sprite/Bunny/ViewportContainer"]
 light_mask = 128
-position = Vector2( 270.357, 495.156 )
+position = Vector2( 268.762, 430.93 )
 texture = ExtResource( 9 )
 region_enabled = true
 region_rect = Rect2( 304.535, -6.66034, 252.738, 250.542 )
@@ -3130,17 +3260,32 @@ region_rect = Rect2( 12.4562, 3.19252, 306.572, 185.344 )
 
 [node name="partefrontal" type="Sprite" parent="Sprite/Bunny/ViewportContainer"]
 light_mask = 128
-position = Vector2( 263.357, 443.156 )
+position = Vector2( 266.939, 443.684 )
 texture = ExtResource( 9 )
 region_enabled = true
 region_rect = Rect2( 104.671, 367.531, 418.209, 152.756 )
 
 [node name="Triangulo" type="Sprite" parent="Sprite/Bunny"]
+visible = false
 position = Vector2( 262.495, 450.738 )
 rotation = -0.710847
 scale = Vector2( 0.911056, 0.911056 )
 z_index = -2
 texture = ExtResource( 21 )
+
+[node name="Moldura" type="Sprite" parent="Sprite/Bunny"]
+position = Vector2( 268.77, 323.151 )
+z_index = -2
+texture = ExtResource( 26 )
+
+[node name="Light2D3" type="Light2D" parent="Sprite/Bunny"]
+position = Vector2( 61.7019, 191.381 )
+rotation = 0.00115197
+scale = Vector2( 0.0820399, 0.32204 )
+texture = ExtResource( 8 )
+texture_scale = 1.69
+energy = 3.0
+shadow_color = Color( 0.215686, 1, 0.964706, 0 )
 
 [node name="Lion" type="Sprite" parent="Sprite"]
 visible = false
@@ -3160,6 +3305,7 @@ texture = ExtResource( 7 )
 centered = false
 hframes = 5
 vframes = 2
+frame = 1
 
 [node name="ManePolygon" type="Polygon2D" parent="Sprite/Lion"]
 light_mask = 2
@@ -3178,42 +3324,43 @@ internal_vertex_count = 21
 visible = false
 
 [node name="CenterOfCombustion" type="Bone2D" parent="Sprite/Lion/ManeSkeleton"]
-position = Vector2( -5, -27 )
+position = Vector2( -7.09132, 5.42304 )
+rotation = 0.0308251
 rest = Transform2D( 1, 0, 0, 1, -5, -27 )
 
 [node name="Bone2D" type="Bone2D" parent="Sprite/Lion/ManeSkeleton/CenterOfCombustion"]
-position = Vector2( -8.54475, -189.438 )
-rotation = -0.0665743
+position = Vector2( 29.9724, -193.877 )
+rotation = 0.142057
 rest = Transform2D( 1, 0, 0, 1, 11.4539, -178 )
 
 [node name="Bone2D2" type="Bone2D" parent="Sprite/Lion/ManeSkeleton/CenterOfCombustion"]
-position = Vector2( 135.21, -110.326 )
-rotation = -0.0665743
+position = Vector2( 146.384, -120.112 )
+rotation = 0.142057
 rest = Transform2D( 1, 0, 0, 1, 118.454, -109 )
 
 [node name="Bone2D3" type="Bone2D" parent="Sprite/Lion/ManeSkeleton/CenterOfCombustion"]
-position = Vector2( 173.075, 8.59285 )
-rotation = -0.0665743
+position = Vector2( 201.316, 3.33819 )
+rotation = 0.142057
 rest = Transform2D( 1, 0, 0, 1, 191.454, 17 )
 
 [node name="Bone2D4" type="Bone2D" parent="Sprite/Lion/ManeSkeleton/CenterOfCombustion"]
-position = Vector2( 91.5508, 127.918 )
-rotation = -0.0665743
+position = Vector2( 129.566, 120.592 )
+rotation = 0.142057
 rest = Transform2D( 1, 0, 0, 1, 120.454, 137 )
 
 [node name="Bone2D5" type="Bone2D" parent="Sprite/Lion/ManeSkeleton/CenterOfCombustion"]
-position = Vector2( -94.4453, 154.707 )
-rotation = -0.0665743
+position = Vector2( -67.6035, 156.843 )
+rotation = 0.142057
 rest = Transform2D( 1, 0, 0, 1, -83.5461, 177 )
 
 [node name="Bone2D6" type="Bone2D" parent="Sprite/Lion/ManeSkeleton/CenterOfCombustion"]
-position = Vector2( -173.741, 2.28184 )
-rotation = -0.0665743
+position = Vector2( -165.683, -0.295788 )
+rotation = 0.142057
 rest = Transform2D( 1, 0, 0, 1, -196.546, 16 )
 
 [node name="Bone2D7" type="Bone2D" parent="Sprite/Lion/ManeSkeleton/CenterOfCombustion"]
-position = Vector2( -132.094, -125.181 )
-rotation = -0.0665743
+position = Vector2( -116.858, -118.404 )
+rotation = 0.142057
 rest = Transform2D( 1, 0, 0, 1, -141.546, -96 )
 
 [node name="Light2D" type="Light2D" parent="Sprite/Lion/ManeSkeleton/CenterOfCombustion"]
@@ -3228,16 +3375,19 @@ __meta__ = {
 
 [node name="Head" type="Sprite" parent="Sprite/Lion"]
 light_mask = 2
-position = Vector2( -2, -11 )
+position = Vector2( -5.37816, 11.9088 )
+rotation = 0.0388357
 scale = Vector2( 0.73758, 0.73758 )
 z_index = 1
 texture = ExtResource( 12 )
 hframes = 5
 vframes = 2
+frame = 1
 region_rect = Rect2( 278, 39, 168, 159 )
 
 [node name="Mouth" type="Sprite" parent="Sprite/Lion/Head"]
-position = Vector2( 13.8064, 111.707 )
+position = Vector2( 10.1317, 109.21 )
+rotation = -0.00625189
 scale = Vector2( 1.56266, 1.59988 )
 z_index = 2
 texture = ExtResource( 10 )
@@ -3245,16 +3395,17 @@ region_enabled = true
 region_rect = Rect2( 315, 211, 109, 44 )
 
 [node name="Ears" type="Sprite" parent="Sprite/Lion/Head"]
-position = Vector2( -3.76539, -82.8386 )
-scale = Vector2( 1.19041, 1.19041 )
+position = Vector2( 2.39892, -86.5372 )
+rotation = 0.0472839
+scale = Vector2( 1.26028, 1.26028 )
 texture = ExtResource( 10 )
 region_enabled = true
 region_rect = Rect2( 41, 32, 204, 92 )
 
 [node name="LeftPaw" type="Sprite" parent="Sprite/Lion/Head"]
-position = Vector2( 100.328, 200.656 )
-rotation = -0.0138259
-scale = Vector2( 1.05331, 0.998373 )
+position = Vector2( 95.4298, 172.814 )
+rotation = -0.00746203
+scale = Vector2( 1.13168, 1.13168 )
 z_index = 3
 texture = ExtResource( 10 )
 region_enabled = true
@@ -3266,13 +3417,12 @@ rotation = 0.15369
 scale = Vector2( 0.910988, 0.815587 )
 frames = SubResource( 109 )
 animation = "burn"
-frame = 8
 playing = true
 
 [node name="RightPaw" type="Sprite" parent="Sprite/Lion/Head"]
-position = Vector2( -81.3471, 216.926 )
-rotation = 0.537303
-scale = Vector2( 1.37947, 1.37947 )
+position = Vector2( -79.8877, 199.205 )
+rotation = 0.388835
+scale = Vector2( 1.31692, 1.31692 )
 z_index = 3
 texture = ExtResource( 10 )
 region_enabled = true
@@ -3284,10 +3434,11 @@ rotation = -0.0349056
 scale = Vector2( 0.683358, 0.683087 )
 frames = SubResource( 110 )
 animation = "kwispy"
-frame = 2
+frame = 4
 playing = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite/Lion"]
+anims/RESET = SubResource( 152 )
 anims/lion_idle = SubResource( 111 )
 anims/lion_win = SubResource( 112 )
 
@@ -3299,7 +3450,7 @@ texture = ExtResource( 22 )
 [node name="Strongman" type="Sprite" parent="Sprite"]
 visible = false
 light_mask = 2048
-position = Vector2( 1188.5, 332.319 )
+position = Vector2( 1176.96, 325.395 )
 scale = Vector2( 1.90072, 1.90072 )
 
 [node name="Viewport" type="Viewport" parent="Sprite/Strongman"]
@@ -3317,6 +3468,7 @@ region_rect = Rect2( -10, 100, 540, 430 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite/Strongman/Viewport"]
 root_node = NodePath("../..")
+anims/RESET = SubResource( 150 )
 anims/b1 = SubResource( 113 )
 anims/bomba_idle = SubResource( 114 )
 
@@ -3334,8 +3486,8 @@ internal_vertex_count = 205
 
 [node name="Sprite2" type="Sprite" parent="Sprite/Strongman"]
 light_mask = 2048
-position = Vector2( 24.3058, -2.80885 )
-rotation = -0.0189757
+position = Vector2( 22.8099, -12.4202 )
+rotation = 0.00650545
 scale = Vector2( 1.29009, 1.29009 )
 texture = ExtResource( 17 )
 offset = Vector2( 179.832, -94.567 )
@@ -3344,7 +3496,8 @@ region_rect = Rect2( 410, 140, 100, 160 )
 
 [node name="Sprite" type="Sprite" parent="Sprite/Strongman"]
 light_mask = 2048
-position = Vector2( -470.58, 0.534332 )
+position = Vector2( -452.331, 11.3684 )
+rotation = -0.0742931
 scale = Vector2( 1.29009, 1.29009 )
 texture = ExtResource( 17 )
 offset = Vector2( 179.832, -94.567 )
@@ -3365,13 +3518,13 @@ position = Vector2( 10.6176, 0.0397799 )
 rest = Transform2D( 1, 0, 0, 1, 10.6176, 0.0397799 )
 
 [node name="Bone2D" type="Bone2D" parent="Sprite/Strongman/Skeleton2D/Bone2D/Bone2D"]
-position = Vector2( 12.2663, -0.430362 )
+position = Vector2( 14.8311, -0.697064 )
 rotation = 1.11076
 scale = Vector2( 0.376366, 1.1672 )
 rest = Transform2D( 0.167099, 0.337238, -1.04585, 0.518214, 14.8507, -0.715849 )
 
 [node name="Bone2D" type="Bone2D" parent="Sprite/Strongman/Skeleton2D/Bone2D/Bone2D/Bone2D"]
-position = Vector2( 20.4227, -1.45799 )
+position = Vector2( 21.7817, -0.667164 )
 rotation = -0.146884
 rest = Transform2D( 0.995724, -0.0923742, 0.0923742, 0.995724, 22.5532, -0.858718 )
 
@@ -3386,13 +3539,13 @@ rotation = -0.242251
 rest = Transform2D( 0.970801, -0.239888, 0.239888, 0.970801, 29.5826, -5.8189 )
 
 [node name="Bone2D2" type="Bone2D" parent="Sprite/Strongman/Skeleton2D/Bone2D/Bone2D"]
-position = Vector2( 13.4168, -1.28251 )
+position = Vector2( 14.5364, -0.872587 )
 rotation = -1.79729
 scale = Vector2( 0.334009, 0.918862 )
 rest = Transform2D( -0.075005, -0.325478, 0.895395, -0.20634, 15.2909, -1.28738 )
 
 [node name="Bone2D" type="Bone2D" parent="Sprite/Strongman/Skeleton2D/Bone2D/Bone2D/Bone2D2"]
-position = Vector2( 18.7319, 0.980264 )
+position = Vector2( 19.1674, -0.293551 )
 rotation = 0.452611
 scale = Vector2( 0.724301, 3.79612 )
 rest = Transform2D( 0.65137, 0.316748, -1.6601, 3.41388, 18.0335, 0.162031 )
@@ -3410,16 +3563,31 @@ scale = Vector2( 0.347438, -0.749009 )
 rest = Transform2D( 0.345444, -0.0371734, -0.0801387, -0.74471, 11.8768, -0.244051 )
 
 [node name="Bone2D3" type="Bone2D" parent="Sprite/Strongman/Skeleton2D/Bone2D/Bone2D"]
-position = Vector2( 25.0472, -1.34578 )
+position = Vector2( 23.3726, -1.29987 )
 rotation = -0.0426496
 scale = Vector2( 1.02646, 1 )
 rest = Transform2D( 1.02553, -0.0437648, 0.0426366, 0.999091, 25.1568, -1.34117 )
 
 [node name="Pentagono" type="Sprite" parent="Sprite/Strongman"]
+visible = false
 position = Vector2( 1.2146, 2.42815 )
 rotation = -0.188716
 z_index = -1
 texture = ExtResource( 23 )
+
+[node name="Moldura" type="Sprite" parent="Sprite/Strongman"]
+position = Vector2( -7.28448, -9.71342 )
+z_index = -1
+texture = ExtResource( 26 )
+
+[node name="Light2D3" type="Light2D" parent="Sprite/Strongman"]
+position = Vector2( -218.547, -237.974 )
+rotation = 0.00374775
+scale = Vector2( 0.0820399, 0.32204 )
+texture = ExtResource( 8 )
+texture_scale = 1.69
+energy = 3.0
+shadow_color = Color( 0.215686, 1, 0.964706, 0 )
 
 [node name="Ticket" type="Sprite" parent="Sprite"]
 visible = false
@@ -3697,7 +3865,7 @@ light_mask = 512
 rotation = 0.00549665
 frames = SubResource( 140 )
 animation = "malabares"
-frame = 6
+frame = 9
 
 [node name="Quadrado" type="Sprite" parent="Sprite/Juggle"]
 position = Vector2( 27.6312, 51.6258 )
@@ -3713,8 +3881,8 @@ scale = Vector2( 2.15814, 2.15814 )
 
 [node name="Sprite3" type="Sprite" parent="Sprite/Clown"]
 light_mask = 1024
-position = Vector2( 5.95856, -17.3669 )
-rotation = 0.0694516
+position = Vector2( 16.8603, -26.0882 )
+rotation = 0.164587
 texture = ExtResource( 6 )
 region_enabled = true
 region_rect = Rect2( -6, 227, 193, 202 )
@@ -3722,7 +3890,7 @@ region_rect = Rect2( -6, 227, 193, 202 )
 [node name="Sprite2" type="Sprite" parent="Sprite/Clown"]
 light_mask = 1024
 position = Vector2( 0.497678, 140.919 )
-scale = Vector2( 1.05448, 1.05448 )
+scale = Vector2( 1.09554, 1.09554 )
 z_index = 1
 texture = ExtResource( 6 )
 region_enabled = true
@@ -3763,6 +3931,7 @@ polygons = [ PoolIntArray( 6, 4, 5, 30 ), PoolIntArray( 5, 8, 31, 30 ), PoolIntA
 bones = [ "B1d", PoolRealArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0.5, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5 ), "B1d/B2d", PoolRealArray( 0, 0, 0.5, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.32, 0.96, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0.32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0.34, 0.5, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0 ), "B1e", PoolRealArray( 0, 0, 0, 0, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0.5, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ), "B1e/B2e", PoolRealArray( 0.5, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.32, 0.5, 0.5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0.5, 0.34, 0, 0, 0, 0, 0, 0, 0, 0.68, 0.68, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ) ]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite/Clown"]
+anims/RESET = SubResource( 151 )
 "anims/palhaço" = SubResource( 142 )
 anims/pidle = SubResource( 143 )
 
@@ -3792,8 +3961,8 @@ rest = Transform2D( 1, 0, 0, 1, 15.7695, 0.751621 )
 
 [node name="Sprite4" type="Sprite" parent="Sprite/Clown"]
 light_mask = 1024
-position = Vector2( -8, 74.6651 )
-scale = Vector2( 0.967084, 0.967084 )
+position = Vector2( -8, 61.1457 )
+scale = Vector2( 1.24053, 1.24053 )
 z_index = 1
 texture = ExtResource( 6 )
 region_enabled = true
@@ -3801,6 +3970,7 @@ region_rect = Rect2( 194, 1, 283, 132 )
 
 [node name="Estrelas" type="Sprite" parent="Sprite/Clown"]
 position = Vector2( 2.30505, 81.4218 )
+rotation = -0.0173562
 z_index = -1
 texture = ExtResource( 24 )
 
@@ -3883,7 +4053,7 @@ region_rect = Rect2( 290, 60, 230, 160 )
 [node name="orelhaf" type="Sprite" parent="Sprite/Elephant/cabeçaf"]
 light_mask = 256
 position = Vector2( -177.8, 6.32732 )
-rotation = -0.00248973
+rotation = -0.00444228
 scale = Vector2( 1.00605, 1.00605 )
 texture = ExtResource( 11 )
 region_enabled = true
@@ -3904,10 +4074,26 @@ texture = ExtResource( 11 )
 region_enabled = true
 region_rect = Rect2( 360, 370, 150, 150 )
 
+[node name="Moldura" type="Sprite" parent="Sprite/Elephant"]
+position = Vector2( 25.463, 24.4469 )
+rotation = -0.222556
+z_index = -1
+texture = ExtResource( 26 )
+
 [node name="Circulos" type="Sprite" parent="Sprite/Elephant"]
+visible = false
 position = Vector2( 39.2562, 30.6331 )
 z_index = -1
 texture = ExtResource( 20 )
+
+[node name="Light2D3" type="Light2D" parent="Sprite/Elephant"]
+position = Vector2( -202.804, -94.3211 )
+rotation = -0.207356
+scale = Vector2( 0.0820399, 0.32204 )
+texture = ExtResource( 8 )
+texture_scale = 1.69
+energy = 3.0
+shadow_color = Color( 0.215686, 1, 0.964706, 0 )
 
 [node name="Animations" type="AnimationPlayer" parent="."]
 anims/SPIN_DOWN = SubResource( 1 )
