@@ -3136,7 +3136,8 @@ region_enabled = true
 region_rect = Rect2( 104.671, 367.531, 418.209, 152.756 )
 
 [node name="Triangulo" type="Sprite" parent="Sprite/Bunny"]
-position = Vector2( 242.341, 408.153 )
+position = Vector2( 262.495, 450.738 )
+rotation = -0.710847
 scale = Vector2( 0.911056, 0.911056 )
 z_index = -2
 texture = ExtResource( 21 )
@@ -3265,7 +3266,7 @@ rotation = 0.15369
 scale = Vector2( 0.910988, 0.815587 )
 frames = SubResource( 109 )
 animation = "burn"
-frame = 1
+frame = 8
 playing = true
 
 [node name="RightPaw" type="Sprite" parent="Sprite/Lion/Head"]
@@ -3283,7 +3284,7 @@ rotation = -0.0349056
 scale = Vector2( 0.683358, 0.683087 )
 frames = SubResource( 110 )
 animation = "kwispy"
-frame = 5
+frame = 2
 playing = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite/Lion"]
@@ -3415,7 +3416,8 @@ scale = Vector2( 1.02646, 1 )
 rest = Transform2D( 1.02553, -0.0437648, 0.0426366, 0.999091, 25.1568, -1.34117 )
 
 [node name="Pentagono" type="Sprite" parent="Sprite/Strongman"]
-position = Vector2( 1.85358, 4.78291 )
+position = Vector2( 1.2146, 2.42815 )
+rotation = -0.188716
 z_index = -1
 texture = ExtResource( 23 )
 
