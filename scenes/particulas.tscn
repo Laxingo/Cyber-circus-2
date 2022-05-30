@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Imagens/particulas/blue.png" type="Texture" id=1]
 [ext_resource path="res://Imagens/particulas/hotpink.png" type="Texture" id=2]
@@ -9,6 +9,8 @@
 [ext_resource path="res://Imagens/particulas/5.png" type="Texture" id=7]
 [ext_resource path="res://Imagens/particulas/4.png" type="Texture" id=8]
 [ext_resource path="res://Imagens/particulas/6.png" type="Texture" id=9]
+[ext_resource path="res://Fonts/Carnevalee Freakshow.ttf" type="DynamicFontData" id=10]
+[ext_resource path="res://Imagens/particulas/caixa.png" type="Texture" id=11]
 
 [sub_resource type="Gradient" id=1]
 colors = PoolColorArray( 1, 1, 1, 1, 1, 1, 1, 0 )
@@ -16,7 +18,7 @@ colors = PoolColorArray( 1, 1, 1, 1, 1, 1, 1, 0 )
 [sub_resource type="AnimatedTexture" id=2]
 flags = 4
 frames = 7
-fps = 24.0
+fps = 7.0
 frame_0/texture = ExtResource( 3 )
 frame_1/texture = ExtResource( 4 )
 frame_1/delay_sec = 0.0
@@ -30,6 +32,12 @@ frame_5/texture = ExtResource( 9 )
 frame_5/delay_sec = 0.0
 frame_6/texture = ExtResource( 6 )
 frame_6/delay_sec = 0.0
+
+[sub_resource type="DynamicFont" id=3]
+size = 100
+outline_size = 2
+outline_color = Color( 0.972549, 0.14902, 0.933333, 1 )
+font_data = ExtResource( 10 )
 
 [node name="particulas" type="Node2D"]
 position = Vector2( -3, -1 )
@@ -96,33 +104,52 @@ scale_amount = 0.04
 color_ramp = SubResource( 1 )
 hue_variation = 1.0
 
-[node name="CPUParticles2D4" type="CPUParticles2D" parent="."]
-position = Vector2( 3, 2 )
-rotation = -0.202943
-emitting = false
-amount = 100
-lifetime = 1.76
-speed_scale = 1.88
-explosiveness = 0.18
-randomness = 1.0
+[node name="moedas" type="CPUParticles2D" parent="."]
+position = Vector2( -414, 375 )
+rotation = -6.33599
+amount = 107
+lifetime = 5.0
+speed_scale = 3.37
+explosiveness = 0.24
+randomness = 0.25
 fixed_fps = 60
-local_coords = false
 texture = SubResource( 2 )
 direction = Vector2( 0, -500 )
-spread = 42.37
 gravity = Vector2( 0, 8.7 )
-initial_velocity = 143.54
+initial_velocity = 172.84
 initial_velocity_random = 1.0
-angular_velocity = -11.73
+angular_velocity = -17.78
 orbit_velocity_random = 1.0
-linear_accel = -12.35
-radial_accel = -2.47
-tangential_accel = 20.98
+linear_accel = -11.11
+radial_accel = -4.94
+tangential_accel = 19.75
 tangential_accel_random = 1.0
-damping = 4.94
-damping_random = 0.9
+damping = 5.25
+damping_random = 0.89
 angle = 720.0
 angle_random = 1.0
-scale_amount = 0.04
-color_ramp = SubResource( 1 )
-hue_variation = 1.0
+scale_amount = 29.7
+
+[node name="Label" type="Label" parent="."]
+margin_left = -140.0
+margin_top = -21.0
+margin_right = 171.0
+margin_bottom = 99.0
+rect_scale = Vector2( 1.52476, 1.52476 )
+rect_pivot_offset = Vector2( 150.091, 61.528 )
+custom_colors/font_color = Color( 0.827451, 0.956863, 0.952941, 1 )
+custom_colors/font_outline_modulate = Color( 0.835294, 0.705882, 0.819608, 1 )
+custom_colors/font_color_shadow = Color( 0.00392157, 0.254902, 0.247059, 1 )
+custom_fonts/font = SubResource( 3 )
+text = "Big Win"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Caixa" type="Sprite" parent="."]
+self_modulate = Color( 1, 1, 1, 0.764706 )
+position = Vector2( 2.00001, 203 )
+rotation = 0.000975788
+scale = Vector2( 0.447511, 0.275729 )
+z_index = -1
+texture = ExtResource( 11 )

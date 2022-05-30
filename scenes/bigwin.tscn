@@ -240,7 +240,7 @@ margin_left = -1.0
 margin_top = 3.8147e-06
 margin_right = 310.0
 margin_bottom = 120.0
-rect_scale = Vector2( 0.00537187, 0.00537187 )
+rect_scale = Vector2( 0.0285756, 0.0285756 )
 rect_pivot_offset = Vector2( 150.091, 61.528 )
 custom_colors/font_color = Color( 0.827451, 0.956863, 0.952941, 1 )
 custom_colors/font_outline_modulate = Color( 0.835294, 0.705882, 0.819608, 1 )
@@ -263,6 +263,7 @@ texture = ExtResource( 1 )
 color = Color( 0.737255, 0.443137, 0.760784, 1 )
 
 [node name="CPUParticles2D2" type="CPUParticles2D" parent="."]
+visible = false
 position = Vector2( 180, 73 )
 rotation = -0.0331861
 z_index = 2
@@ -294,6 +295,7 @@ color_ramp = SubResource( 4 )
 hue_variation = 1.0
 
 [node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+visible = false
 position = Vector2( 182, 74 )
 rotation = -0.202943
 z_index = 2
@@ -325,6 +327,7 @@ color_ramp = SubResource( 4 )
 hue_variation = 1.0
 
 [node name="CPUParticles2D3" type="CPUParticles2D" parent="."]
+visible = false
 position = Vector2( -253, 67 )
 rotation = -0.0331861
 z_index = 2
@@ -356,6 +359,7 @@ color_ramp = SubResource( 4 )
 hue_variation = 1.0
 
 [node name="CPUParticles2D4" type="CPUParticles2D" parent="."]
+visible = false
 position = Vector2( -251, 68 )
 rotation = -0.202943
 z_index = 2
