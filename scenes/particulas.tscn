@@ -9,7 +9,7 @@
 [ext_resource path="res://Imagens/particulas/4.png" type="Texture" id=8]
 [ext_resource path="res://Imagens/particulas/6.png" type="Texture" id=9]
 [ext_resource path="res://Fonts/Carnevalee Freakshow.ttf" type="DynamicFontData" id=10]
-[ext_resource path="res://Imagens/particulas/caixa.png" type="Texture" id=11]
+[ext_resource path="res://Imagens/UI/caixa.png" type="Texture" id=11]
 
 [sub_resource type="AnimatedTexture" id=2]
 flags = 4
