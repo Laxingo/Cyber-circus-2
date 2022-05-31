@@ -1,6 +1,6 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=17 format=2]
 
-[ext_resource path="res://Fonts/CarnivaleeFreakshowDemo-AGn2.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Fonts/Carnevalee Freakshow.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Imagens/Simbolos/Light_Ball.png" type="Texture" id=2]
 [ext_resource path="res://Imagens/bonus/CyberCircus_roulette_bonus.png" type="Texture" id=3]
 [ext_resource path="res://Imagens/UI/fundo.png" type="Texture" id=4]
@@ -9,6 +9,7 @@
 [ext_resource path="res://Imagens/bonus/f2.jpg" type="Texture" id=7]
 [ext_resource path="res://Imagens/Simbolos/CyberCircus_Rolette.png" type="Texture" id=8]
 [ext_resource path="res://Imagens/bonus/bmao.png" type="Texture" id=9]
+[ext_resource path="res://Imagens/UI/aaaaaaaaaaa.png" type="Texture" id=10]
 
 [sub_resource type="DynamicFont" id=1]
 size = 200
@@ -16,6 +17,33 @@ outline_size = 4
 outline_color = Color( 0.0980392, 0.733333, 0.913725, 0.862745 )
 use_filter = true
 font_data = ExtResource( 1 )
+
+[sub_resource type="Animation" id=7]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Label2/Light2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -228.522, 133.26 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Label2/Light2D:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.403326 ]
+}
 
 [sub_resource type="Animation" id=3]
 resource_name = "bonus1"
@@ -150,6 +178,7 @@ tracks/10/keys = {
 
 [sub_resource type="Animation" id=4]
 resource_name = "bonus2"
+length = 3.0
 tracks/0/type = "value"
 tracks/0/path = NodePath("F1:position")
 tracks/0/interp = 1
@@ -261,10 +290,10 @@ tracks/9/loop_wrap = true
 tracks/9/imported = false
 tracks/9/enabled = true
 tracks/9/keys = {
-"times": PoolRealArray( 0, 0.001, 0.5, 1 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"times": PoolRealArray( 2, 2.5, 3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( -5, -999 ), Vector2( -5, -999 ), Vector2( -5, -999 ), Vector2( -12, 37 ) ]
+"values": [ Vector2( -5, -999 ), Vector2( -5, -999 ), Vector2( -12, 37 ) ]
 }
 tracks/10/type = "value"
 tracks/10/path = NodePath("CyberCircusRouletteBonus:rotation_degrees")
@@ -273,7 +302,7 @@ tracks/10/loop_wrap = true
 tracks/10/imported = false
 tracks/10/enabled = true
 tracks/10/keys = {
-"times": PoolRealArray( 0, 0.5, 1 ),
+"times": PoolRealArray( 2, 2.5, 3 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
 "values": [ 0.0, 0.0, 0.0 ]
@@ -297,7 +326,7 @@ tracks/12/loop_wrap = true
 tracks/12/imported = false
 tracks/12/enabled = true
 tracks/12/keys = {
-"times": PoolRealArray( 0, 1 ),
+"times": PoolRealArray( 2, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ true, true ]
@@ -309,10 +338,74 @@ tracks/13/loop_wrap = true
 tracks/13/imported = false
 tracks/13/enabled = true
 tracks/13/keys = {
-"times": PoolRealArray( 0, 1 ),
+"times": PoolRealArray( 2, 3 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/14/type = "bezier"
+tracks/14/path = NodePath("Label2:rect_scale:x")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"points": PoolRealArray( 0.00622284, -0.25, 0, 0.25, 0, 1.31552, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0.6, 1.2 )
+}
+tracks/15/type = "bezier"
+tracks/15/path = NodePath("Label2:rect_scale:y")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"points": PoolRealArray( 0.00622284, -0.25, 0, 0.25, 0, 1.31552, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0.6, 1.2 )
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("Label2/Light2D:position")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 1.2, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -228.522, 133.26 ), Vector2( 1619.25, 124.395 ) ]
+}
+tracks/17/type = "value"
+tracks/17/path = NodePath("Label2/Light2D:rotation_degrees")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray( 1.2, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.403326, 0.403326 ]
+}
+tracks/18/type = "bezier"
+tracks/18/path = NodePath("Light2D:scale:x")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 8.32, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 2, 2.8 )
+}
+tracks/19/type = "bezier"
+tracks/19/path = NodePath("Light2D:scale:y")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 2, 2.8 )
 }
 
 [sub_resource type="Animation" id=5]
@@ -558,12 +651,13 @@ tracks/5/keys = {
 [node name="Node2D" type="Node2D"]
 
 [node name="Label" type="Label" parent="."]
+self_modulate = Color( 1, 1, 1, 0 )
 margin_left = -247.0
 margin_top = -83.0
 margin_right = 234.0
 margin_bottom = 142.001
-rect_rotation = -13.9058
-rect_scale = Vector2( 1.92466, 1.92466 )
+rect_rotation = 335.302
+rect_scale = Vector2( 0.16019, 0.16019 )
 rect_pivot_offset = Vector2( 232.421, 139.313 )
 custom_colors/font_color = Color( 0.956863, 0.905882, 0.752941, 1 )
 custom_fonts/font = SubResource( 1 )
@@ -572,30 +666,43 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Radial" type="Light2D" parent="Label"]
-show_behind_parent = true
-light_mask = 2
-position = Vector2( 244.506, 123.98 )
-rotation = -0.0265182
-scale = Vector2( 0.764811, 0.707833 )
+[node name="Label2" type="Label" parent="."]
+margin_left = -622.0
+margin_top = -116.0
+margin_right = 672.0
+margin_bottom = 109.001
+rect_rotation = 359.597
+rect_scale = Vector2( 1.31552, 1.31552 )
+rect_pivot_offset = Vector2( 656.691, 102.094 )
+custom_colors/font_color = Color( 0.956863, 0.905882, 0.752941, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Throw the Knife"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Light2D" type="Light2D" parent="Label2"]
+position = Vector2( -228.522, 133.26 )
+rotation = 0.00703937
+scale = Vector2( 1.04152, 1.04152 )
+z_index = 1
 texture = ExtResource( 2 )
-color = Color( 0.0745098, 0.72549, 0.709804, 1 )
-energy = 0.77
-range_z_max = 1202
-range_item_cull_mask = 2
 
 [node name="F1" type="Sprite" parent="."]
+light_mask = 2
 position = Vector2( -489, 59 )
 z_index = -1
 texture = ExtResource( 6 )
 
 [node name="F2" type="Sprite" parent="."]
+light_mask = 2
 position = Vector2( 472, 60 )
 z_index = -1
 texture = ExtResource( 7 )
 
 [node name="CyberCircusRouletteBonus" type="Sprite" parent="."]
-position = Vector2( -5, -999 )
+light_mask = 4
+position = Vector2( -12, 37 )
 z_index = 2
 texture = ExtResource( 3 )
 
@@ -606,6 +713,7 @@ z_index = -2
 texture = ExtResource( 4 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 7 )
 anims/bonus1 = SubResource( 3 )
 anims/bonus2 = SubResource( 4 )
 anims/bonus3 = SubResource( 5 )
@@ -660,3 +768,10 @@ visible = false
 position = Vector2( 722, -4 )
 scale = Vector2( 0.542787, 0.574055 )
 texture = ExtResource( 9 )
+
+[node name="Light2D" type="Light2D" parent="."]
+position = Vector2( -1144, 15 )
+scale = Vector2( 8.32, 1 )
+texture = ExtResource( 10 )
+mode = 3
+shadow_item_cull_mask = 2
