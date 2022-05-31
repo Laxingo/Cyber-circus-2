@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://Fonts/Carnevalee Freakshow.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Imagens/luz/Light_Ball.png" type="Texture" id=2]
@@ -13,6 +13,10 @@
 [ext_resource path="res://Imagens/bonus/curtainTransition_spritesheet.png" type="Texture" id=11]
 [ext_resource path="res://Imagens/particulas/hotpink.png" type="Texture" id=12]
 [ext_resource path="res://Imagens/bonus/luzrosa.png" type="Texture" id=13]
+[ext_resource path="res://Imagens/particulas/blue.png" type="Texture" id=14]
+[ext_resource path="res://Imagens/bonus/caixaazul.png" type="Texture" id=15]
+[ext_resource path="res://Imagens/bonus/caixaamarela.png" type="Texture" id=16]
+[ext_resource path="res://Imagens/particulas/yellow.png" type="Texture" id=17]
 
 [sub_resource type="DynamicFont" id=1]
 size = 200
@@ -21,10 +25,10 @@ outline_color = Color( 0.0980392, 0.733333, 0.913725, 0.862745 )
 use_filter = true
 font_data = ExtResource( 1 )
 
-[sub_resource type="Animation" id=7]
+[sub_resource type="Animation" id=9]
 length = 0.001
 tracks/0/type = "value"
-tracks/0/path = NodePath("escondidinho:visible")
+tracks/0/path = NodePath("knife:visible")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -36,7 +40,7 @@ tracks/0/keys = {
 "values": [ false ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("knife:visible")
+tracks/1/path = NodePath("CyberCircusRouletteBonus:visible")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -45,10 +49,10 @@ tracks/1/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ false ]
+"values": [ true ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("bonus:visible")
+tracks/2/path = NodePath("CyberCircusRouletteBonus:position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
@@ -57,10 +61,10 @@ tracks/2/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ false ]
+"values": [ Vector2( -10, 68 ) ]
 }
 tracks/3/type = "value"
-tracks/3/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Centroazulrosa:position")
+tracks/3/path = NodePath("CyberCircusRouletteBonus:rotation_degrees")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/imported = false
@@ -69,10 +73,10 @@ tracks/3/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Vector2( -181, 197 ) ]
+"values": [ 0.0 ]
 }
 tracks/4/type = "value"
-tracks/4/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Centroazulrosa:rotation_degrees")
+tracks/4/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzazul:position")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/imported = false
@@ -81,10 +85,10 @@ tracks/4/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ 0.0 ]
+"values": [ Vector2( -196, 210 ) ]
 }
 tracks/5/type = "value"
-tracks/5/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzazul:position")
+tracks/5/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzazul:rotation_degrees")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/imported = false
@@ -93,10 +97,10 @@ tracks/5/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Vector2( -178, 200 ) ]
+"values": [ 0.0 ]
 }
 tracks/6/type = "value"
-tracks/6/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzazul:rotation_degrees")
+tracks/6/path = NodePath("caixas/Caixaazul:position")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/imported = false
@@ -105,10 +109,10 @@ tracks/6/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ 0.0 ]
+"values": [ Vector2( -31.9777, 18.0322 ) ]
 }
 tracks/7/type = "value"
-tracks/7/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzrosa:position")
+tracks/7/path = NodePath("caixas/Caixaazul:rotation_degrees")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/imported = false
@@ -117,10 +121,10 @@ tracks/7/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Vector2( -187, 207 ) ]
+"values": [ 179.435 ]
 }
 tracks/8/type = "value"
-tracks/8/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzrosa:rotation_degrees")
+tracks/8/path = NodePath("caixas/Caixarosa:visible")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/imported = false
@@ -129,10 +133,10 @@ tracks/8/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ 0.0 ]
+"values": [ false ]
 }
 tracks/9/type = "value"
-tracks/9/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Centroazulrosa:self_modulate")
+tracks/9/path = NodePath("particulas/particulasazul2:emitting")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/imported = false
@@ -141,10 +145,10 @@ tracks/9/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Color( 1, 1, 1, 0.913725 ) ]
+"values": [ true ]
 }
 tracks/10/type = "value"
-tracks/10/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzazul:self_modulate")
+tracks/10/path = NodePath("particulas/particulasazul:emitting")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/imported = false
@@ -153,10 +157,10 @@ tracks/10/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Color( 1, 1, 1, 0.588235 ) ]
+"values": [ true ]
 }
 tracks/11/type = "value"
-tracks/11/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzrosa:self_modulate")
+tracks/11/path = NodePath("particulas:visible")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/imported = false
@@ -165,10 +169,10 @@ tracks/11/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Color( 1, 1, 1, 0.654902 ) ]
+"values": [ false ]
 }
 tracks/12/type = "value"
-tracks/12/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzamarela:self_modulate")
+tracks/12/path = NodePath("caixas/Caixaazul:visible")
 tracks/12/interp = 1
 tracks/12/loop_wrap = true
 tracks/12/imported = false
@@ -177,10 +181,10 @@ tracks/12/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Color( 1, 1, 1, 0.439216 ) ]
+"values": [ false ]
 }
 tracks/13/type = "value"
-tracks/13/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzamarela:position")
+tracks/13/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzmuitoamarela:position")
 tracks/13/interp = 1
 tracks/13/loop_wrap = true
 tracks/13/imported = false
@@ -189,10 +193,10 @@ tracks/13/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Vector2( -185, 200 ) ]
+"values": [ Vector2( -185, 201 ) ]
 }
 tracks/14/type = "value"
-tracks/14/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzamarela:rotation_degrees")
+tracks/14/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzmuitoamarela:rotation_degrees")
 tracks/14/interp = 1
 tracks/14/loop_wrap = true
 tracks/14/imported = false
@@ -204,7 +208,7 @@ tracks/14/keys = {
 "values": [ 0.0 ]
 }
 tracks/15/type = "value"
-tracks/15/path = NodePath("Caixarosa:position")
+tracks/15/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzmuitoamarela:self_modulate")
 tracks/15/interp = 1
 tracks/15/loop_wrap = true
 tracks/15/imported = false
@@ -213,10 +217,10 @@ tracks/15/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Vector2( 0.999999, 66 ) ]
+"values": [ Color( 1, 1, 1, 0.537255 ) ]
 }
 tracks/16/type = "value"
-tracks/16/path = NodePath("Caixarosa:rotation_degrees")
+tracks/16/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzrosa:self_modulate")
 tracks/16/interp = 1
 tracks/16/loop_wrap = true
 tracks/16/imported = false
@@ -225,10 +229,10 @@ tracks/16/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ 0.464653 ]
+"values": [ Color( 1, 0.0313726, 0.909804, 0 ) ]
 }
 tracks/17/type = "value"
-tracks/17/path = NodePath("particulasrosa:emitting")
+tracks/17/path = NodePath("particulas/particulasrosa:emitting")
 tracks/17/interp = 1
 tracks/17/loop_wrap = true
 tracks/17/imported = false
@@ -240,7 +244,7 @@ tracks/17/keys = {
 "values": [ false ]
 }
 tracks/18/type = "value"
-tracks/18/path = NodePath("particulasrosa2:emitting")
+tracks/18/path = NodePath("particulas/particulasrosa2:emitting")
 tracks/18/interp = 1
 tracks/18/loop_wrap = true
 tracks/18/imported = false
@@ -250,6 +254,54 @@ tracks/18/keys = {
 "transitions": PoolRealArray( 1 ),
 "update": 0,
 "values": [ false ]
+}
+tracks/19/type = "value"
+tracks/19/path = NodePath("particulas/particulasamarelas2:emitting")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/20/type = "value"
+tracks/20/path = NodePath("particulas/particulasamarelas:emitting")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/21/type = "value"
+tracks/21/path = NodePath("caixas/Caixaamarela:position")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -7.37131, -12.331 ) ]
+}
+tracks/22/type = "value"
+tracks/22/path = NodePath("caixas/Caixaamarela:rotation_degrees")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
 }
 
 [sub_resource type="Animation" id=3]
@@ -431,6 +483,30 @@ tracks/14/keys = {
 "update": 1,
 "values": [ true ]
 }
+tracks/15/type = "value"
+tracks/15/path = NodePath("caixas:visible")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("particulas:visible")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
 
 [sub_resource type="Animation" id=4]
 resource_name = "bonus2"
@@ -610,10 +686,10 @@ tracks/15/loop_wrap = true
 tracks/15/imported = false
 tracks/15/enabled = true
 tracks/15/keys = {
-"times": PoolRealArray( 1.2 ),
-"transitions": PoolRealArray( 1 ),
+"times": PoolRealArray( 1.2, 2.7 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 1,
-"values": [ true ]
+"values": [ true, false ]
 }
 tracks/16/type = "value"
 tracks/16/path = NodePath("escondidinho:visible")
@@ -622,10 +698,10 @@ tracks/16/loop_wrap = true
 tracks/16/imported = false
 tracks/16/enabled = true
 tracks/16/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PoolRealArray( 0, 2.7 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 1,
-"values": [ true ]
+"values": [ true, false ]
 }
 tracks/17/type = "value"
 tracks/17/path = NodePath("bonus:visible")
@@ -638,6 +714,18 @@ tracks/17/keys = {
 "transitions": PoolRealArray( 1 ),
 "update": 1,
 "values": [ true ]
+}
+tracks/18/type = "value"
+tracks/18/path = NodePath("particulas:visible")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
 }
 
 [sub_resource type="Animation" id=5]
@@ -932,6 +1020,726 @@ tracks/24/keys = {
 "update": 0,
 "values": [ 0.0 ]
 }
+tracks/25/type = "value"
+tracks/25/path = NodePath("particulas:visible")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/keys = {
+"times": PoolRealArray( 0.1 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+
+[sub_resource type="Animation" id=11]
+resource_name = "winamarelo"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzrosa:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0.654902 ), Color( 1, 0.0313726, 0.909804, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzazul:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0.596078 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Centroazulrosa:self_modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0.913725 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzamarela:self_modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0.439216 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/4/type = "bezier"
+tracks/4/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Centroazulrosa:scale:x")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"points": PoolRealArray( 2.16528, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/5/type = "bezier"
+tracks/5/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Centroazulrosa:scale:y")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"points": PoolRealArray( 2.16528, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/6/type = "bezier"
+tracks/6/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzamarela:scale:x")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"points": PoolRealArray( -1.94892, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/7/type = "bezier"
+tracks/7/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzamarela:scale:y")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"points": PoolRealArray( -1.94892, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/8/type = "bezier"
+tracks/8/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzazul:scale:x")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"points": PoolRealArray( -2.08383, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/9/type = "bezier"
+tracks/9/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzazul:scale:y")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"points": PoolRealArray( -2.08383, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/10/type = "bezier"
+tracks/10/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzrosa:scale:x")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"points": PoolRealArray( 1.91159, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/11/type = "bezier"
+tracks/11/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzrosa:scale:y")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"points": PoolRealArray( 1.91159, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("caixas/Caixarosa:visible")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("knife:visible")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("CyberCircusRouletteBonus:visible")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0.1 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("CyberCircusRouletteBonus:position")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -10, 68 ) ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("CyberCircusRouletteBonus:rotation_degrees")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/17/type = "value"
+tracks/17/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzmuitoamarela:position")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -185, 201 ), Vector2( -183, 206 ) ]
+}
+tracks/18/type = "value"
+tracks/18/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzmuitoamarela:rotation_degrees")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0 ]
+}
+tracks/19/type = "bezier"
+tracks/19/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzmuitoamarela:scale:x")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/keys = {
+"points": PoolRealArray( 0.210555, -0.25, 0, 0.25, 0, 2.62819, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.4 )
+}
+tracks/20/type = "bezier"
+tracks/20/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzmuitoamarela:scale:y")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/keys = {
+"points": PoolRealArray( 0.210555, -0.25, 0, 0.25, 0, 2.62819, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.4 )
+}
+tracks/21/type = "value"
+tracks/21/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzmuitoamarela:self_modulate")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/keys = {
+"times": PoolRealArray( 0, 0.4, 0.8, 1.1, 1.4, 1.7, 2, 2.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0.537255 ), Color( 0.992157, 1, 0, 1 ), Color( 1, 1, 1, 0.537255 ), Color( 0.992157, 1, 0, 1 ), Color( 1, 1, 1, 0.537255 ), Color( 0.992157, 1, 0, 1 ), Color( 1, 1, 1, 0.537255 ), Color( 0.992157, 1, 0, 1 ) ]
+}
+tracks/22/type = "value"
+tracks/22/path = NodePath("particulas/particulasrosa:emitting")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/23/type = "value"
+tracks/23/path = NodePath("particulas/particulasrosa2:emitting")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/24/type = "value"
+tracks/24/path = NodePath("particulas/particulasamarelas2:emitting")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/keys = {
+"times": PoolRealArray( 0, 2.2, 2.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, false, true ]
+}
+tracks/25/type = "value"
+tracks/25/path = NodePath("particulas/particulasamarelas:emitting")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/keys = {
+"times": PoolRealArray( 0, 2.2, 2.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, false, true ]
+}
+tracks/26/type = "value"
+tracks/26/path = NodePath("particulas/particulasazul:emitting")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/keys = {
+"times": PoolRealArray( 0.1 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/27/type = "value"
+tracks/27/path = NodePath("particulas/particulasazul2:emitting")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/keys = {
+"times": PoolRealArray( 0.1 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/28/type = "value"
+tracks/28/path = NodePath("caixas/Caixaamarela:position")
+tracks/28/interp = 1
+tracks/28/loop_wrap = true
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/keys = {
+"times": PoolRealArray( 2.2, 2.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -7.37131, -12.331 ), Vector2( -33.4329, 14.5039 ) ]
+}
+tracks/29/type = "value"
+tracks/29/path = NodePath("caixas/Caixaamarela:rotation_degrees")
+tracks/29/interp = 1
+tracks/29/loop_wrap = true
+tracks/29/imported = false
+tracks/29/enabled = true
+tracks/29/keys = {
+"times": PoolRealArray( 2.2, 2.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0 ]
+}
+tracks/30/type = "bezier"
+tracks/30/path = NodePath("caixas/Caixaamarela:scale:x")
+tracks/30/interp = 1
+tracks/30/loop_wrap = true
+tracks/30/imported = false
+tracks/30/enabled = true
+tracks/30/keys = {
+"points": PoolRealArray( -0.00275277, -0.25, 0, 0.25, 0, -0.00275277, -0.25, 0, 0.25, 0, 0.98991, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 2.2, 2.4, 3 )
+}
+tracks/31/type = "bezier"
+tracks/31/path = NodePath("caixas/Caixaamarela:scale:y")
+tracks/31/interp = 1
+tracks/31/loop_wrap = true
+tracks/31/imported = false
+tracks/31/enabled = true
+tracks/31/keys = {
+"points": PoolRealArray( -0.00275277, -0.25, 0, 0.25, 0, 0.491639, -0.25, 0, 0.25, 0, 0.775708, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 2.2, 2.4, 3 )
+}
+tracks/32/type = "value"
+tracks/32/path = NodePath("caixas/Caixaazul:visible")
+tracks/32/interp = 1
+tracks/32/loop_wrap = true
+tracks/32/imported = false
+tracks/32/enabled = true
+tracks/32/keys = {
+"times": PoolRealArray( 3 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+
+[sub_resource type="Animation" id=10]
+resource_name = "winazul"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzrosa:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0.654902 ), Color( 1, 0.0313726, 0.909804, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzazul:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.4, 0.7, 1.1, 1.4, 1.7, 2, 2.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0.596078 ), Color( 0, 1, 0.905882, 1 ), Color( 1, 1, 1, 0.596078 ), Color( 0, 1, 0.905882, 1 ), Color( 1, 1, 1, 0.596078 ), Color( 0, 1, 0.905882, 1 ), Color( 1, 1, 1, 0.596078 ), Color( 0, 1, 0.905882, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Centroazulrosa:self_modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0.913725 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzamarela:self_modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0.439216 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("particulas/particulasrosa:emitting")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 2.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, false ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("particulas/particulasrosa2:emitting")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 2.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, false ]
+}
+tracks/6/type = "bezier"
+tracks/6/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Centroazulrosa:scale:x")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"points": PoolRealArray( 2.16528, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/7/type = "bezier"
+tracks/7/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Centroazulrosa:scale:y")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"points": PoolRealArray( 2.16528, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/8/type = "bezier"
+tracks/8/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzamarela:scale:x")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"points": PoolRealArray( -1.94892, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/9/type = "bezier"
+tracks/9/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzamarela:scale:y")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"points": PoolRealArray( -1.94892, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/10/type = "bezier"
+tracks/10/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzazul:scale:x")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"points": PoolRealArray( -2.08383, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/11/type = "bezier"
+tracks/11/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzazul:scale:y")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"points": PoolRealArray( -2.08383, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/12/type = "bezier"
+tracks/12/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzrosa:scale:x")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"points": PoolRealArray( 1.91159, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/13/type = "bezier"
+tracks/13/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzrosa:scale:y")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"points": PoolRealArray( 1.91159, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("caixas:visible")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("knife:visible")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("CyberCircusRouletteBonus:visible")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0.1 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/17/type = "value"
+tracks/17/path = NodePath("CyberCircusRouletteBonus:position")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -10, 68 ) ]
+}
+tracks/18/type = "value"
+tracks/18/path = NodePath("CyberCircusRouletteBonus:rotation_degrees")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/19/type = "value"
+tracks/19/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzazul:position")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -196, 210 ) ]
+}
+tracks/20/type = "value"
+tracks/20/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzazul:rotation_degrees")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/21/type = "value"
+tracks/21/path = NodePath("caixas/Caixaazul:position")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/keys = {
+"times": PoolRealArray( 2.2 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -31.9777, 18.0322 ) ]
+}
+tracks/22/type = "value"
+tracks/22/path = NodePath("caixas/Caixaazul:rotation_degrees")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/keys = {
+"times": PoolRealArray( 2.2 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 179.435 ]
+}
+tracks/23/type = "bezier"
+tracks/23/path = NodePath("caixas/Caixaazul:scale:x")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/keys = {
+"points": PoolRealArray( -0.00808308, -0.25, 0, 0.25, 0, 0.00673465, -0.25, 0, 0.25, 0, 0.939703, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 2.2, 2.4, 3 )
+}
+tracks/24/type = "bezier"
+tracks/24/path = NodePath("caixas/Caixaazul:scale:y")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/keys = {
+"points": PoolRealArray( -0.00982468, -0.25, 0, 0.25, 0, -0.522116, -0.25, 0, 0.25, 0, -0.734744, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 2.2, 2.4, 3 )
+}
+tracks/25/type = "value"
+tracks/25/path = NodePath("caixas/Caixarosa:visible")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/keys = {
+"times": PoolRealArray( 3 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/26/type = "value"
+tracks/26/path = NodePath("particulas/particulasazul2:emitting")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/keys = {
+"times": PoolRealArray( 0, 2.2, 2.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, false, true ]
+}
+tracks/27/type = "value"
+tracks/27/path = NodePath("particulas/particulasazul:emitting")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/keys = {
+"times": PoolRealArray( 0, 2.2, 2.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, false, true ]
+}
+tracks/28/type = "value"
+tracks/28/path = NodePath("particulas:visible")
+tracks/28/interp = 1
+tracks/28/loop_wrap = true
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
 
 [sub_resource type="Animation" id=6]
 resource_name = "winrosa"
@@ -985,19 +1793,19 @@ tracks/3/keys = {
 "values": [ Color( 1, 1, 1, 0.439216 ), Color( 1, 1, 1, 0 ) ]
 }
 tracks/4/type = "value"
-tracks/4/path = NodePath("Caixarosa:position")
+tracks/4/path = NodePath("caixas/Caixarosa:position")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/imported = false
 tracks/4/enabled = true
 tracks/4/keys = {
-"times": PoolRealArray( 2.2, 2.4, 2.7 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PoolRealArray( 2.2, 2.4 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector2( 0.999999, 66 ), Vector2( 0.999999, 66 ), Vector2( 0.999999, 66 ) ]
+"values": [ Vector2( 0.999999, 66 ), Vector2( -30.8412, 10.6248 ) ]
 }
 tracks/5/type = "value"
-tracks/5/path = NodePath("Caixarosa:rotation_degrees")
+tracks/5/path = NodePath("caixas/Caixarosa:rotation_degrees")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/imported = false
@@ -1009,54 +1817,269 @@ tracks/5/keys = {
 "values": [ 0.464653, 0.464653, 0.464653 ]
 }
 tracks/6/type = "bezier"
-tracks/6/path = NodePath("Caixarosa:scale:x")
+tracks/6/path = NodePath("caixas/Caixarosa:scale:x")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/imported = false
 tracks/6/enabled = true
 tracks/6/keys = {
-"points": PoolRealArray( 0.00633174, -0.25, 0, 0.25, 0, 0.00633174, -0.25, 0, 0.25, 0, 0.685984, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 2.2, 2.4, 2.7 )
+"points": PoolRealArray( 0.00633174, -0.25, 0, 0.25, 0, 0.00633174, -0.25, 0, 0.25, 0, 0.995774, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 2.2, 2.4, 3 )
 }
 tracks/7/type = "bezier"
-tracks/7/path = NodePath("Caixarosa:scale:y")
+tracks/7/path = NodePath("caixas/Caixarosa:scale:y")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/imported = false
 tracks/7/enabled = true
 tracks/7/keys = {
-"points": PoolRealArray( 0.00470921, -0.25, 0, 0.25, 0, 0.564366, -0.25, 0, 0.25, 0, 0.564366, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 2.2, 2.4, 2.7 )
+"points": PoolRealArray( 0.00470921, -0.25, 0, 0.25, 0, 0.564366, -0.25, 0, 0.25, 0, 0.776971, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 2.2, 2.4, 3 )
 }
 tracks/8/type = "value"
-tracks/8/path = NodePath("particulasrosa:emitting")
+tracks/8/path = NodePath("particulas/particulasrosa:emitting")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/imported = false
 tracks/8/enabled = true
 tracks/8/keys = {
-"times": PoolRealArray( 0, 2.4, 2.7 ),
+"times": PoolRealArray( 0, 2.2, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 1,
 "values": [ false, false, true ]
 }
 tracks/9/type = "value"
-tracks/9/path = NodePath("particulasrosa2:emitting")
+tracks/9/path = NodePath("particulas/particulasrosa2:emitting")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/imported = false
 tracks/9/enabled = true
 tracks/9/keys = {
-"times": PoolRealArray( 0, 2.4, 2.7 ),
+"times": PoolRealArray( 0, 2.2, 2.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 1,
 "values": [ false, false, true ]
+}
+tracks/10/type = "bezier"
+tracks/10/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Centroazulrosa:scale:x")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"points": PoolRealArray( 2.16528, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/11/type = "bezier"
+tracks/11/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Centroazulrosa:scale:y")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"points": PoolRealArray( 2.16528, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/12/type = "bezier"
+tracks/12/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzamarela:scale:x")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"points": PoolRealArray( -1.94892, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/13/type = "bezier"
+tracks/13/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzamarela:scale:y")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"points": PoolRealArray( -1.94892, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/14/type = "bezier"
+tracks/14/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzazul:scale:x")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"points": PoolRealArray( -2.08383, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/15/type = "bezier"
+tracks/15/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzazul:scale:y")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"points": PoolRealArray( -2.08383, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/16/type = "bezier"
+tracks/16/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzrosa:scale:x")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"points": PoolRealArray( 1.91159, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/17/type = "bezier"
+tracks/17/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzrosa:scale:y")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"points": PoolRealArray( 1.91159, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0 )
+}
+tracks/18/type = "value"
+tracks/18/path = NodePath("caixas:visible")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/19/type = "value"
+tracks/19/path = NodePath("caixas/Caixarosa:visible")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/20/type = "value"
+tracks/20/path = NodePath("knife:visible")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/21/type = "value"
+tracks/21/path = NodePath("CyberCircusRouletteBonus:visible")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/keys = {
+"times": PoolRealArray( 0.1 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/22/type = "value"
+tracks/22/path = NodePath("CyberCircusRouletteBonus:position")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -10, 68 ) ]
+}
+tracks/23/type = "value"
+tracks/23/path = NodePath("CyberCircusRouletteBonus:rotation_degrees")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/24/type = "value"
+tracks/24/path = NodePath("particulas/particulasazul:emitting")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/25/type = "value"
+tracks/25/path = NodePath("particulas/particulasazul2:emitting")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/26/type = "value"
+tracks/26/path = NodePath("caixas/Caixaazul:visible")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/keys = {
+"times": PoolRealArray( 0.1 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
 }
 
 [sub_resource type="Gradient" id=8]
 colors = PoolColorArray( 1, 1, 1, 1, 1, 1, 1, 0 )
 
 [node name="Node2D" type="Node2D"]
+
+[node name="caixas" type="Node2D" parent="."]
+position = Vector2( 0.999999, 66 )
+rotation = 0.00810973
+scale = Vector2( 0.685984, 0.564366 )
+
+[node name="Caixaazul" type="Sprite" parent="caixas"]
+visible = false
+position = Vector2( -31.9777, 18.0322 )
+rotation = 3.13174
+scale = Vector2( 0.939703, -0.734744 )
+z_index = 5
+texture = ExtResource( 15 )
+
+[node name="Caixarosa" type="Sprite" parent="caixas"]
+visible = false
+position = Vector2( -30.8412, 10.6248 )
+rotation = 0.00810972
+scale = Vector2( 0.995774, 0.776971 )
+z_index = 5
+texture = ExtResource( 8 )
+
+[node name="Caixaamarela" type="Sprite" parent="caixas"]
+position = Vector2( -7.37131, -12.331 )
+scale = Vector2( -0.00275277, -0.00275277 )
+z_index = 6
+texture = ExtResource( 16 )
 
 [node name="bonus" type="Label" parent="."]
 visible = false
@@ -1101,7 +2124,6 @@ texture = ExtResource( 2 )
 [node name="CyberCircusRouletteBonus" type="Sprite" parent="."]
 light_mask = 4
 position = Vector2( -10, 68 )
-rotation = -3.13348
 z_index = 2
 texture = ExtResource( 3 )
 
@@ -1109,35 +2131,36 @@ texture = ExtResource( 3 )
 position = Vector2( 175, -196 )
 
 [node name="Centroazulrosa" type="Sprite" parent="CyberCircusRouletteBonus/luzesentreaspas"]
-self_modulate = Color( 1, 1, 1, 0.913725 )
+self_modulate = Color( 1, 1, 1, 0 )
 position = Vector2( -181, 197 )
-scale = Vector2( 2.51035, 2.51035 )
+scale = Vector2( 2.16528, 2.16528 )
 z_index = 3
 texture = ExtResource( 6 )
 
 [node name="Luzamarela" type="Sprite" parent="CyberCircusRouletteBonus/luzesentreaspas"]
-self_modulate = Color( 1, 1, 1, 0.439216 )
+self_modulate = Color( 1, 1, 1, 0 )
 position = Vector2( -185, 200 )
 scale = Vector2( -1.94892, -1.94892 )
 z_index = 2
 texture = ExtResource( 5 )
 
 [node name="Luzazul" type="Sprite" parent="CyberCircusRouletteBonus/luzesentreaspas"]
-self_modulate = Color( 1, 1, 1, 0.588235 )
-position = Vector2( -178, 200 )
-scale = Vector2( 2.08477, 2.08477 )
+self_modulate = Color( 1, 1, 1, 0 )
+position = Vector2( -196, 210 )
+scale = Vector2( -2.08383, -2.08383 )
 z_index = 2
 texture = ExtResource( 7 )
 
 [node name="Luzmuitoamarela" type="Sprite" parent="CyberCircusRouletteBonus/luzesentreaspas"]
-visible = false
+self_modulate = Color( 1, 1, 1, 0.537255 )
 position = Vector2( -185, 201 )
+scale = Vector2( 2.62819, 2.62819 )
 texture = ExtResource( 9 )
 
 [node name="Luzrosa" type="Sprite" parent="CyberCircusRouletteBonus/luzesentreaspas"]
-self_modulate = Color( 1, 1, 1, 0.654902 )
+self_modulate = Color( 1, 0.0313726, 0.909804, 0 )
 position = Vector2( -187, 207 )
-scale = Vector2( -2.25945, -2.25945 )
+scale = Vector2( 1.91159, 1.91159 )
 z_index = 2
 texture = ExtResource( 13 )
 
@@ -1148,10 +2171,12 @@ z_index = -2
 texture = ExtResource( 4 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/RESET = SubResource( 7 )
+anims/RESET = SubResource( 9 )
 anims/bonus1 = SubResource( 3 )
 anims/bonus2 = SubResource( 4 )
 anims/bonus3 = SubResource( 5 )
+anims/winamarelo = SubResource( 11 )
+anims/winazul = SubResource( 10 )
 anims/winrosa = SubResource( 6 )
 
 [node name="escondidinho" type="Light2D" parent="."]
@@ -1180,14 +2205,10 @@ hframes = 6
 vframes = 4
 frame = 23
 
-[node name="Caixarosa" type="Sprite" parent="."]
-position = Vector2( 0.999999, 66 )
-rotation = 0.00810972
-scale = Vector2( 0.685984, 0.564366 )
-z_index = 4
-texture = ExtResource( 8 )
+[node name="particulas" type="Node2D" parent="."]
+visible = false
 
-[node name="particulasrosa" type="CPUParticles2D" parent="."]
+[node name="particulasrosa" type="CPUParticles2D" parent="particulas"]
 position = Vector2( -597, 653 )
 rotation = -0.0331861
 scale = Vector2( 5.29521, 5.22104 )
@@ -1219,7 +2240,7 @@ scale_amount = 0.2
 color_ramp = SubResource( 8 )
 hue_variation = 1.0
 
-[node name="particulasrosa2" type="CPUParticles2D" parent="."]
+[node name="particulasrosa2" type="CPUParticles2D" parent="particulas"]
 position = Vector2( 602, 653 )
 rotation = -0.0331861
 scale = Vector2( 5.29521, 5.22104 )
@@ -1232,6 +2253,132 @@ explosiveness = 0.34
 fixed_fps = 60
 local_coords = false
 texture = ExtResource( 12 )
+direction = Vector2( 0, -500 )
+spread = 42.37
+gravity = Vector2( 0, 50 )
+initial_velocity = 143.54
+initial_velocity_random = 1.0
+angular_velocity = -11.73
+orbit_velocity_random = 1.0
+linear_accel = -12.35
+radial_accel = -2.47
+tangential_accel = 20.98
+tangential_accel_random = 1.0
+damping = 4.94
+damping_random = 0.9
+angle = 720.0
+angle_random = 1.0
+scale_amount = 0.2
+color_ramp = SubResource( 8 )
+hue_variation = 1.0
+
+[node name="particulasazul" type="CPUParticles2D" parent="particulas"]
+position = Vector2( 602, 653 )
+rotation = -0.0331861
+scale = Vector2( 5.29521, 5.22104 )
+z_index = 2
+amount = 100
+lifetime = 5.0
+speed_scale = 1.88
+explosiveness = 0.34
+fixed_fps = 60
+local_coords = false
+texture = ExtResource( 14 )
+direction = Vector2( 0, -500 )
+spread = 42.37
+gravity = Vector2( 0, 50 )
+initial_velocity = 143.54
+initial_velocity_random = 1.0
+angular_velocity = -11.73
+orbit_velocity_random = 1.0
+linear_accel = -12.35
+radial_accel = -2.47
+tangential_accel = 20.98
+tangential_accel_random = 1.0
+damping = 4.94
+damping_random = 0.9
+angle = 720.0
+angle_random = 1.0
+scale_amount = 0.2
+color_ramp = SubResource( 8 )
+hue_variation = 1.0
+
+[node name="particulasazul2" type="CPUParticles2D" parent="particulas"]
+position = Vector2( -610, 639 )
+rotation = -0.0331861
+scale = Vector2( 5.29521, 5.22104 )
+z_index = 2
+amount = 100
+lifetime = 5.0
+speed_scale = 1.88
+explosiveness = 0.34
+fixed_fps = 60
+local_coords = false
+texture = ExtResource( 14 )
+direction = Vector2( 0, -500 )
+spread = 42.37
+gravity = Vector2( 0, 50 )
+initial_velocity = 143.54
+initial_velocity_random = 1.0
+angular_velocity = -11.73
+orbit_velocity_random = 1.0
+linear_accel = -12.35
+radial_accel = -2.47
+tangential_accel = 20.98
+tangential_accel_random = 1.0
+damping = 4.94
+damping_random = 0.9
+angle = 720.0
+angle_random = 1.0
+scale_amount = 0.2
+color_ramp = SubResource( 8 )
+hue_variation = 1.0
+
+[node name="particulasamarelas" type="CPUParticles2D" parent="particulas"]
+position = Vector2( -610, 639 )
+rotation = -0.0331861
+scale = Vector2( 5.29521, 5.22104 )
+z_index = 2
+emitting = false
+amount = 100
+lifetime = 5.0
+speed_scale = 1.88
+explosiveness = 0.34
+fixed_fps = 60
+local_coords = false
+texture = ExtResource( 17 )
+direction = Vector2( 0, -500 )
+spread = 42.37
+gravity = Vector2( 0, 50 )
+initial_velocity = 143.54
+initial_velocity_random = 1.0
+angular_velocity = -11.73
+orbit_velocity_random = 1.0
+linear_accel = -12.35
+radial_accel = -2.47
+tangential_accel = 20.98
+tangential_accel_random = 1.0
+damping = 4.94
+damping_random = 0.9
+angle = 720.0
+angle_random = 1.0
+scale_amount = 0.2
+color_ramp = SubResource( 8 )
+hue_variation = 1.0
+
+[node name="particulasamarelas2" type="CPUParticles2D" parent="particulas"]
+position = Vector2( 589, 644 )
+rotation = -0.0331861
+scale = Vector2( 5.29521, 5.22104 )
+z_index = 2
+emitting = false
+amount = 100
+lifetime = 5.0
+speed_scale = 1.88
+explosiveness = 0.34
+fixed_fps = 60
+local_coords = false
+texture = ExtResource( 17 )
 direction = Vector2( 0, -500 )
 spread = 42.37
 gravity = Vector2( 0, 50 )
