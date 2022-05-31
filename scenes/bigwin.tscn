@@ -294,6 +294,7 @@ color_ramp = SubResource( 4 )
 hue_variation = 1.0
 
 [node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+visible = false
 position = Vector2( 182, 74 )
 rotation = -0.202943
 z_index = 2
@@ -356,6 +357,7 @@ color_ramp = SubResource( 4 )
 hue_variation = 1.0
 
 [node name="CPUParticles2D4" type="CPUParticles2D" parent="."]
+visible = false
 position = Vector2( -251, 68 )
 rotation = -0.202943
 z_index = 2
