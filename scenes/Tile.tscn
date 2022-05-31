@@ -3217,8 +3217,7 @@ scale = Vector2( 0.433319, 0.433319 )
 texture = ExtResource( 2 )
 
 [node name="Bunny" type="Sprite" parent="Sprite"]
-visible = false
-light_mask = 128
+light_mask = 2
 position = Vector2( 616.174, -514.633 )
 scale = Vector2( 2.20671, 2.20671 )
 offset = Vector2( -192, -148 )
