@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Scripts/SlotTile.gd" type="Script" id=1]
 [ext_resource path="res://Imagens/bonus/CyberCircus_roulette_bonus.png" type="Texture" id=2]
-[ext_resource path="res://Fonts/CarnivaleeFreakshowDemo-AGn2.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Fonts/Carnevalee Freakshow.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://Imagens/Simbolos/CyberCircus_Cards.png" type="Texture" id=4]
 [ext_resource path="res://Imagens/luz/Light_Ray.png" type="Texture" id=5]
 [ext_resource path="res://Imagens/Simbolos/CyberCircus_GeorgeCloony.png" type="Texture" id=6]
@@ -3187,6 +3187,7 @@ scale = Vector2( 0.433319, 0.433319 )
 texture = ExtResource( 2 )
 
 [node name="Bunny" type="Sprite" parent="Sprite"]
+visible = false
 light_mask = 2
 position = Vector2( 484.631, -175.39 )
 scale = Vector2( 2.57595, 1.83747 )
@@ -3250,6 +3251,7 @@ energy = 3.0
 shadow_color = Color( 0.215686, 1, 0.964706, 0 )
 
 [node name="Lion" type="Sprite" parent="Sprite"]
+visible = false
 light_mask = 2
 position = Vector2( 1158.5, 468.477 )
 scale = Vector2( 2.43477, 2.06552 )
@@ -3378,7 +3380,7 @@ rotation = 0.15369
 scale = Vector2( 0.910988, 0.815587 )
 frames = SubResource( 109 )
 animation = "burn"
-frame = 5
+frame = 1
 playing = true
 
 [node name="RightPaw" type="Sprite" parent="Sprite/Lion/Head"]
@@ -3396,7 +3398,7 @@ rotation = -0.0349056
 scale = Vector2( 0.683358, 0.683087 )
 frames = SubResource( 110 )
 animation = "kwispy"
-frame = 9
+frame = 5
 playing = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite/Lion"]
@@ -3410,6 +3412,7 @@ z_index = -1
 texture = ExtResource( 22 )
 
 [node name="Strongman" type="Sprite" parent="Sprite"]
+visible = false
 light_mask = 2048
 position = Vector2( 1200.04, 431.553 )
 scale = Vector2( 2.64412, 1.81203 )
@@ -3545,6 +3548,7 @@ energy = 3.0
 shadow_color = Color( 0.215686, 1, 0.964706, 0 )
 
 [node name="Ticket" type="Sprite" parent="Sprite"]
+visible = false
 position = Vector2( 1151.58, 362.32 )
 scale = Vector2( 2.70232, 1.87153 )
 
@@ -3578,6 +3582,7 @@ z_index = -2
 texture = ExtResource( 25 )
 
 [node name="Roulette" type="Sprite" parent="Sprite"]
+visible = false
 light_mask = 4
 position = Vector2( 553.864, -120.004 )
 scale = Vector2( 2.4079, 1.94719 )
@@ -3601,6 +3606,9 @@ custom_colors/font_color = Color( 0.956863, 0.905882, 0.752941, 1 )
 custom_fonts/font = SubResource( 120 )
 text = "BONUS"
 max_lines_visible = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Radial" type="Light2D" parent="Sprite/Roulette/Position2D/Label"]
 show_behind_parent = true
@@ -3652,6 +3660,7 @@ texture = ExtResource( 5 )
 range_item_cull_mask = 65536
 
 [node name="A" type="Sprite" parent="Sprite"]
+visible = false
 light_mask = 8
 position = Vector2( 1153.88, 394.628 )
 scale = Vector2( 2.63135, 1.83539 )
@@ -3692,6 +3701,7 @@ z_index = -1
 texture = ExtResource( 25 )
 
 [node name="J" type="Sprite" parent="Sprite"]
+visible = false
 light_mask = 16
 position = Vector2( 1128.5, 408.475 )
 scale = Vector2( 2.62789, 1.83729 )
@@ -3708,6 +3718,9 @@ frame = 1
 light_mask = 16
 margin_right = 40.0
 margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Light2D" type="Light2D" parent="Sprite/J/Control"]
 light_mask = 16
@@ -3730,6 +3743,7 @@ z_index = -1
 texture = ExtResource( 25 )
 
 [node name="K" type="Sprite" parent="Sprite"]
+visible = false
 light_mask = 32
 position = Vector2( 1170.04, 403.859 )
 scale = Vector2( 2.61201, 1.82012 )
@@ -3767,6 +3781,7 @@ z_index = -1
 texture = ExtResource( 25 )
 
 [node name="Q" type="Sprite" parent="Sprite"]
+visible = false
 light_mask = 64
 position = Vector2( 1158.5, 424.629 )
 scale = Vector2( 2.61983, 1.81496 )
@@ -3803,6 +3818,7 @@ z_index = -1
 texture = ExtResource( 25 )
 
 [node name="Juggle" type="Sprite" parent="Sprite"]
+visible = false
 light_mask = 512
 position = Vector2( 1075.42, 288.471 )
 scale = Vector2( 3.88282, 2.65108 )
@@ -3822,6 +3838,7 @@ z_index = -1
 texture = ExtResource( 25 )
 
 [node name="Clown" type="Sprite" parent="Sprite"]
+visible = false
 light_mask = 1024
 position = Vector2( 1153.88, 260.778 )
 scale = Vector2( 3.28529, 2.29118 )
