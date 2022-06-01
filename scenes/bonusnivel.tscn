@@ -245,7 +245,6 @@ tracks/17/keys = {
 [sub_resource type="Animation" id=5]
 resource_name = "rodaroda"
 length = 4.0
-loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("bonus:self_modulate")
 tracks/0/interp = 1
@@ -1373,6 +1372,18 @@ tracks/36/keys = {
 "transitions": PoolRealArray( 1 ),
 "update": 1,
 "values": [ false ]
+}
+tracks/37/type = "value"
+tracks/37/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzmuitoamarela:visible")
+tracks/37/interp = 1
+tracks/37/loop_wrap = true
+tracks/37/imported = false
+tracks/37/enabled = true
+tracks/37/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
 }
 
 [sub_resource type="Animation" id=17]
@@ -2972,6 +2983,18 @@ tracks/31/keys = {
 "update": 1,
 "values": [ false ]
 }
+tracks/32/type = "value"
+tracks/32/path = NodePath("CyberCircusRouletteBonus/luzesentreaspas/Luzmuitoamarela:visible")
+tracks/32/interp = 1
+tracks/32/loop_wrap = true
+tracks/32/imported = false
+tracks/32/enabled = true
+tracks/32/keys = {
+"times": PoolRealArray( 3 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
 
 [sub_resource type="Animation" id=19]
 resource_name = "winrosabaza"
@@ -3574,6 +3597,7 @@ tracks/5/keys = {
 [node name="Node2D" type="Node2D"]
 
 [node name="caixas" type="Node2D" parent="."]
+visible = false
 position = Vector2( 0.999999, 66 )
 rotation = 0.00810973
 scale = Vector2( 0.685984, 0.564366 )
@@ -3587,16 +3611,16 @@ z_index = 5
 texture = ExtResource( 15 )
 
 [node name="Caixarosa" type="Sprite" parent="caixas"]
-visible = false
 position = Vector2( -30.8412, 10.6248 )
 rotation = 0.00810972
-scale = Vector2( 0.00633174, 0.00470921 )
+scale = Vector2( 0.995774, 0.776971 )
 z_index = 5
 texture = ExtResource( 8 )
 
 [node name="Caixaamarela" type="Sprite" parent="caixas"]
+visible = false
 position = Vector2( -33.4329, 14.5039 )
-scale = Vector2( 0.98991, 0.775708 )
+scale = Vector2( -0.00275277, -0.00275277 )
 z_index = 6
 texture = ExtResource( 16 )
 
@@ -3606,8 +3630,8 @@ margin_left = -247.0
 margin_top = -83.0
 margin_right = 234.0
 margin_bottom = 142.001
-rect_rotation = 335.302
-rect_scale = Vector2( 0.16019, 0.16019 )
+rect_rotation = -13.9058
+rect_scale = Vector2( -0.0157572, -0.0157572 )
 rect_pivot_offset = Vector2( 232.421, 139.313 )
 custom_colors/font_color = Color( 0.956863, 0.905882, 0.752941, 1 )
 custom_fonts/font = SubResource( 1 )
@@ -3640,6 +3664,7 @@ z_index = 1
 texture = ExtResource( 2 )
 
 [node name="CyberCircusRouletteBonus" type="Sprite" parent="."]
+visible = false
 light_mask = 4
 position = Vector2( -10, 68 )
 z_index = 2
@@ -3664,20 +3689,19 @@ texture = ExtResource( 5 )
 
 [node name="Luzazul" type="Sprite" parent="CyberCircusRouletteBonus/luzesentreaspas"]
 self_modulate = Color( 1, 1, 1, 0 )
-position = Vector2( -178, 200 )
+position = Vector2( -196, 210 )
 scale = Vector2( -2.08383, -2.08383 )
 z_index = 2
 texture = ExtResource( 7 )
 
 [node name="Luzmuitoamarela" type="Sprite" parent="CyberCircusRouletteBonus/luzesentreaspas"]
-visible = false
-self_modulate = Color( 0.992157, 1, 0, 1 )
+self_modulate = Color( 1, 1, 1, 0.537255 )
 position = Vector2( -183, 206 )
-scale = Vector2( 2.62819, 2.62819 )
+scale = Vector2( 0.210555, 0.210555 )
 texture = ExtResource( 9 )
 
 [node name="Luzrosa" type="Sprite" parent="CyberCircusRouletteBonus/luzesentreaspas"]
-self_modulate = Color( 1, 0.0313726, 0.909804, 0 )
+self_modulate = Color( 1, 0.0313726, 0.909804, 1 )
 position = Vector2( -187, 207 )
 scale = Vector2( 1.91159, 1.91159 )
 z_index = 2
@@ -3711,31 +3735,33 @@ shadow_item_cull_mask = 2
 
 [node name="CurtainLeft" type="Sprite" parent="."]
 light_mask = 0
-position = Vector2( -1452, -47 )
-rotation = 0.204205
+position = Vector2( -1433.32, -43.04 )
+rotation = 0.196665
 z_index = -1
 texture = ExtResource( 11 )
 hframes = 6
 vframes = 4
+frame = 23
 
 [node name="CurtainRight" type="Sprite" parent="."]
 light_mask = 0
-position = Vector2( 1498, -24 )
-rotation = -0.147226
+position = Vector2( 1406.8, -8.40005 )
+rotation = -0.118726
 z_index = -2
 texture = ExtResource( 11 )
 flip_h = true
 hframes = 6
 vframes = 4
+frame = 23
 
 [node name="particulas" type="Node2D" parent="."]
+visible = false
 
 [node name="particulasrosa" type="CPUParticles2D" parent="particulas"]
 position = Vector2( -597, 653 )
 rotation = -0.0331861
 scale = Vector2( 5.29521, 5.22104 )
 z_index = 2
-emitting = false
 amount = 100
 lifetime = 5.0
 speed_scale = 1.88
@@ -3767,7 +3793,6 @@ position = Vector2( 602, 653 )
 rotation = -0.0331861
 scale = Vector2( 5.29521, 5.22104 )
 z_index = 2
-emitting = false
 amount = 100
 lifetime = 5.0
 speed_scale = 1.88
@@ -3863,6 +3888,7 @@ position = Vector2( -610, 639 )
 rotation = -0.0331861
 scale = Vector2( 5.29521, 5.22104 )
 z_index = 2
+emitting = false
 amount = 100
 lifetime = 5.0
 speed_scale = 1.88
@@ -3894,6 +3920,7 @@ position = Vector2( 589, 644 )
 rotation = -0.0331861
 scale = Vector2( 5.29521, 5.22104 )
 z_index = 2
+emitting = false
 amount = 100
 lifetime = 5.0
 speed_scale = 1.88

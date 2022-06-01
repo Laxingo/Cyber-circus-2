@@ -1610,7 +1610,7 @@ tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
-"update": 1,
+"update": 0,
 "values": [ 3 ]
 }
 tracks/1/type = "value"
@@ -1651,7 +1651,7 @@ tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
-"update": 1,
+"update": 0,
 "values": [ 1 ]
 }
 tracks/1/type = "value"
@@ -1692,7 +1692,7 @@ tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
-"update": 1,
+"update": 0,
 "values": [ 2 ]
 }
 tracks/1/type = "value"
@@ -1733,7 +1733,7 @@ tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 2 ),
-"update": 1,
+"update": 0,
 "values": [ 0 ]
 }
 tracks/1/type = "value"
@@ -3910,6 +3910,7 @@ z_index = -1
 texture = ExtResource( 24 )
 
 [node name="Elephant" type="Sprite" parent="Sprite"]
+visible = false
 light_mask = 256
 position = Vector2( 1195.42, 456.938 )
 scale = Vector2( 3.47664, 2.0889 )
