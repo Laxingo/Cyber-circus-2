@@ -86,7 +86,7 @@ func set_icon(tex):
 		$Sprite/Q.visible= false
 		$Sprite/Ticket.visible= false
 		$Sprite/Roulette.visible= false
-	elif(tex =="Lion"):
+	elif(tex =="lion"):
 		$Sprite/A.visible = false
 		$Sprite/Bunny.visible= false
 		$Sprite/Clown.visible = false
@@ -99,7 +99,7 @@ func set_icon(tex):
 		$Sprite/Q.visible= false
 		$Sprite/Ticket.visible= false
 		$Sprite/Roulette.visible= false
-	elif(tex =="Malabare"):
+	elif(tex =="juggle"):
 		$Sprite/A.visible = false
 		$Sprite/Bunny.visible= false
 		$Sprite/Clown.visible = false
@@ -112,7 +112,7 @@ func set_icon(tex):
 		$Sprite/Q.visible= false
 		$Sprite/Ticket.visible= false
 		$Sprite/Roulette.visible= false
-	elif(tex =="Strongman"):
+	elif(tex =="strongman"):
 		$Sprite/A.visible = false
 		$Sprite/Bunny.visible= false
 		$Sprite/Clown.visible = false
