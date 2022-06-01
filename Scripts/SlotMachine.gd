@@ -66,6 +66,17 @@ var prizeNb = 3
 var prizeMasks = [];
 var prizesToAnim = [];
 
+onready var reelSound1 = preload("res://sound/reels spin/Cyber Circus Reel Just Spin.mp3")
+onready var reelSound2 = preload("res://sound/reels spin/Cyber Circus Reel Reel Set.mp3")
+
+onready var reel1Audio = $reel1
+onready var reel2Audio = $reel2
+onready var reel3Audio = $reel3
+onready var reel4Audio = $reel4
+onready var reel5Audio = $reel5
+
+var reelsAudio = [reel1Audio, reel2Audio, reel3Audio, reel4Audio, reel5Audio]
+
 func _ready():
 	
 	setPrizeMasks();
@@ -106,6 +117,8 @@ func start() -> void:
 		_get_result()
 	for reel in reels:
 		_spin_reel(reel)
+#		reelsAudio[reel].stream = reelSound1
+#		reelsAudio[reel].play()
 		if reel_delay > 0:
 			   yield(get_tree().create_timer(reel_delay), "timeout")
   
