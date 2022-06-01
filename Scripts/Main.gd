@@ -26,18 +26,18 @@ func _ready():
 	jukebox.stream = carpet1
 
 func _process(delta):
-	_jukebox()
+#	_jukebox()
 	pass
 
 func _jukebox():
 	if !jukebox.is_playing():
 		jukebox.stream = carpet1
 		jukebox.play()
-		print("Carpet1 Playing")
+#		print("Carpet1 Playing")
 		yield(get_tree().create_timer(jukebox.stream.get_length()), "timeout")
 		jukebox.stream = carpet2
 		jukebox.play()
-		print("Carpet2 Playing")
+#		print("Carpet2 Playing")
 		yield(get_tree().create_timer(jukebox.stream.get_length()), "timeout")
 		jukebox.stop()
 

@@ -3,6 +3,7 @@ class_name SlotTile
 
 var size :Vector2
 var tileName
+var clearAnims
 
 func _ready():
   pass
@@ -174,45 +175,58 @@ func set_size(new_size: Vector2):
 	$Sprite.scale = size / $Sprite.texture.get_size()
   
 func set_speed(speed):
-  $Tween.playback_speed = speed
+	$Tween.playback_speed = speed
   
 func move_to(to: Vector2):   
-  $Tween.interpolate_property(self, "position",
+	$Tween.interpolate_property(self, "position",
 	position, to, 1, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
-  $Tween.start()
+	$Tween.start()
+	$Sprite/Roulette/AnimationPlayer.stop()
+	$Sprite/Ticket/AnimationPlayer.stop()
+	$Sprite/Q/AnimationPlayer.stop()
+	$Sprite/Strongman/Viewport/AnimationPlayer.stop()
+	$Sprite/Juggle/AnimationPlayer.stop()
+	$Sprite/Lion/AnimationPlayer.stop()
+	$Sprite/K/AnimationPlayer.stop()
+	$Sprite/J/AnimationPlayer.stop()
+	$Sprite/Elephant/AnimationPlayer.stop()
+	$Sprite/Clown/AnimationPlayer.stop()
+	$Sprite/Bunny/AnimationPlayer.stop()
+	$Sprite/A/AnimationPlayer.stop()
+
 
 func move_by(by: Vector2):
   move_to(position + by)
   
 func spin_up():
-  $Animations.play('SPIN_UP')
+	$Animations.play('SPIN_UP')
   
 func spin_down():
-  $Animations.play('SPIN_DOWN')
+	$Animations.play('SPIN_DOWN')
 
-func animate_icon(symbol):
-	if (symbol =="A"):
-		$Sprite/A/AnimationPlayer.play("A_Sweep")
-	elif(symbol =="bunny"):
+func animate_icon(prizeID):
+	if (prizeID =="A"):
+		if !$Sprite/A/AnimationPlayer.is_playing():
+			$Sprite/A/AnimationPlayer.play("A_Sweep")
+	elif(prizeID =="bunny"):
 		$Sprite/Bunny/AnimationPlayer.play("bunny")
-	elif(symbol =="clown"):
+	elif(prizeID =="clown"):
 		$Sprite/Clown/AnimationPlayer.play("palhaço")
-	elif(symbol =="elephant"):
+	elif(prizeID =="elephant"):
 		$Sprite/Elephant/AnimationPlayer.play("ele_bola")
-	elif(symbol =="J"):
+	elif(prizeID =="J"):
 		$Sprite/J/AnimationPlayer.play("J_Sweep")
-	elif(symbol =="K"):
+	elif(prizeID =="K"):
 		$Sprite/K/AnimationPlayer.play("K_Sweep")
-	elif(symbol =="Lion"):
+	elif(prizeID =="lion"):
 		$Sprite/Lion/AnimationPlayer.play("lion_win")
-	elif(symbol =="Malabare"):
-		$Sprite/A.visible = true
-	elif(symbol =="Strongman"):
+	elif(prizeID =="juggle"):
+		$Sprite/Juggle/AnimationPlayer.play("juggle ma balls")
+	elif(prizeID =="strongman"):
 		$Sprite/Strongman/Viewport/AnimationPlayer.play("b1")
-		print("AAAAA")
-	elif(symbol =="Q"):
+	elif(prizeID =="Q"):
 		$Sprite/Q/AnimationPlayer.play("Q_Sweep")
-		print("AAAAA")
-	elif(symbol =="ticket"):
+	elif(prizeID =="ticket"):
 		$Sprite/Ticket/AnimationPlayer.play("New Anim")
-		print("AAAAA")
+	elif(prizeID =="roulette"):
+		$Sprite/Roulette/AnimationPlayer.play("Bonus")
