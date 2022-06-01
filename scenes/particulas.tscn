@@ -295,7 +295,7 @@ margin_left = -59.9999
 margin_top = -37.0
 margin_right = 251.0
 margin_bottom = 83.0
-rect_scale = Vector2( 0.177683, 0.174044 )
+rect_scale = Vector2( 5.17772, 5.07169 )
 rect_pivot_offset = Vector2( 150.091, 61.528 )
 custom_colors/font_color = Color( 0.980392, 0.886275, 1, 1 )
 custom_colors/font_outline_modulate = Color( 0.207843, 0.968627, 0.933333, 1 )
@@ -307,10 +307,10 @@ __meta__ = {
 }
 
 [node name="Caixa" type="Sprite" parent="."]
-self_modulate = Color( 1, 1, 1, 0 )
+self_modulate = Color( 1, 1, 1, 0.839216 )
 position = Vector2( 21, 571 )
 rotation = 0.000975787
-scale = Vector2( -0.0224521, -0.901119 )
+scale = Vector2( -1.46253, -0.901119 )
 z_index = -1
 texture = ExtResource( 11 )
 
