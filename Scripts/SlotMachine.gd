@@ -47,7 +47,8 @@ var col3Mid_name
 var col4Mid_name
 var col5Mid_name
 
-export(Array, String) var symbolName := ["bunny", "clown", "elephant"];
+export(Array, String) var symbolName := ["bunny", "lion","strongman", 
+"ticket", "roulette","A", "J", "K", "Q", "juggle", "clown", "elephant"];
 
 var bunny = 0
 var clown= 0
@@ -177,7 +178,7 @@ func current_runs(reel := 0) -> int:
 
 func _randomIcones() -> String:
 	random.randomize()
-	var num = random.randi_range(0, 2)
+	var num = random.randi_range(0, 11)
 	if num == 0:
 		tile_name = symbolName[0]
 	elif num == 1:
