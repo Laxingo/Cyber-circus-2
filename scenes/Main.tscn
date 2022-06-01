@@ -1,11 +1,11 @@
-[gd_scene load_steps=58 format=2]
+[gd_scene load_steps=59 format=2]
 
 [ext_resource path="res://Scripts/SlotMachine.gd" type="Script" id=1]
 [ext_resource path="res://Imagens/UI/ui.png" type="Texture" id=2]
 [ext_resource path="res://Scripts/Main.gd" type="Script" id=3]
 [ext_resource path="res://Imagens/luz/Light_Ball.png" type="Texture" id=4]
 [ext_resource path="res://Imagens/UI/slot.png" type="Texture" id=5]
-[ext_resource path="res://Imagens/UI/play1.png" type="Texture" id=6]
+[ext_resource path="res://Imagens/UI/playh2.png" type="Texture" id=6]
 [ext_resource path="res://Imagens/UI/fundo.png" type="Texture" id=7]
 [ext_resource path="res://Imagens/UI/reels1.png" type="Texture" id=8]
 [ext_resource path="res://Imagens/luz/luz.png" type="Texture" id=9]
@@ -29,12 +29,13 @@
 [ext_resource path="res://Imagens/UI/25.png" type="Texture" id=27]
 [ext_resource path="res://Imagens/UI/10h.png" type="Texture" id=28]
 [ext_resource path="res://Imagens/UI/optionsh.png" type="Texture" id=29]
-[ext_resource path="res://Imagens/UI/playh.png" type="Texture" id=30]
+[ext_resource path="res://Imagens/UI/playhmini2.png" type="Texture" id=30]
 [ext_resource path="res://Imagens/UI/replay.png" type="Texture" id=31]
 [ext_resource path="res://Imagens/UI/replayh.png" type="Texture" id=32]
 [ext_resource path="res://Imagens/UI/reels.png" type="Texture" id=33]
 [ext_resource path="res://sound/music/Cyber Circus Carpet Asharp.mp3" type="AudioStream" id=34]
 [ext_resource path="res://sound/button/Cyber Circus Button Hover-001.mp3" type="AudioStream" id=35]
+[ext_resource path="res://Imagens/UI/play2.png" type="Texture" id=36]
 
 [sub_resource type="Animation" id=2]
 resource_name = "luz"
@@ -2385,13 +2386,18 @@ script = ExtResource( 1 )
 
 [node name="play" type="TextureButton" parent="."]
 light_mask = 2
-margin_left = 846.46
-margin_top = 847.961
-margin_right = 1101.46
-margin_bottom = 1059.96
-texture_normal = ExtResource( 6 )
+margin_left = 882.48
+margin_top = 877.978
+margin_right = 1086.48
+margin_bottom = 1047.98
+rect_scale = Vector2( 0.912909, 0.912909 )
+texture_normal = ExtResource( 36 )
 texture_pressed = ExtResource( 30 )
+texture_hover = ExtResource( 6 )
 expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="options" type="Node2D" parent="."]
 light_mask = 2
