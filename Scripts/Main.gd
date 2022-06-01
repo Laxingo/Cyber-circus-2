@@ -9,27 +9,37 @@ var popedup2 = false
 
 onready var carpet1 = preload("res://sound/music/Cyber Circus Carpet Asharp.mp3")
 onready var carpet2 = preload("res://sound/music/Cyber Circus Carpet Dsharp.mp3")
+onready var playBtn = preload("res://sound/button/Cyber Circus Button Hover-001.mp3")
 
-var carpet1played = false
+
+var carpet1played
+onready var jukebox = $Jukebox
+onready var playAudio = $playBtnAudio
+onready var optionsAudio = $optionsBtnAudio
+onready var options2Audio = $options2BtnAudio
+
+
 
 func _ready():
 	slot.connect("stopped", self, "_on_slot_machine_stopped")
 	lightAnim.play("luz")
+	jukebox.stream = carpet1
 
-func _process(delta: float) -> void:
-	if !carpet1played:
-		$AudioStreamPlayer2D.stream = carpet1
-		if !$AudioStreamPlayer2D.is_playing():
-			$AudioStreamPlayer2D.play()
-			carpet1played = true
-			print("Carpet1 Playing")
-	else:
-		$AudioStreamPlayer2D.stream = carpet2
-		if !$AudioStreamPlayer2D.is_playing():
-			$AudioStreamPlayer2D.play()
-			carpet1played = false
-			print("Carpet2 Playing")
-	
+func _process(delta):
+	_jukebox()
+	pass
+
+func _jukebox():
+	if !jukebox.is_playing():
+		jukebox.stream = carpet1
+		jukebox.play()
+		print("Carpet1 Playing")
+		yield(get_tree().create_timer(jukebox.stream.get_length()), "timeout")
+		jukebox.stream = carpet2
+		jukebox.play()
+		print("Carpet2 Playing")
+		yield(get_tree().create_timer(jukebox.stream.get_length()), "timeout")
+		jukebox.stop()
 
 func _on_Roll2_button_down():
 	if rolled == false:
@@ -72,3 +82,21 @@ func _on_replay_button_down():
 		$options/AnimationPlayer.play("popup2c")
 		popedup2 = false
 		popedup = false
+
+func _on_play_mouse_entered():
+	playAudio.stream = playBtn
+	playAudio.play()
+	yield(get_tree().create_timer(playAudio.stream.get_length()), "timeout")
+	playAudio.stop()
+
+func _on_replay_mouse_entered():
+	options2Audio.stream = playBtn
+	options2Audio.play()
+	yield(get_tree().create_timer(options2Audio.stream.get_length()), "timeout")
+	options2Audio.stop()
+
+func _on_options2_mouse_entered():
+	optionsAudio.stream = playBtn
+	optionsAudio.play()
+	yield(get_tree().create_timer(optionsAudio.stream.get_length()), "timeout")
+	optionsAudio.stop()
