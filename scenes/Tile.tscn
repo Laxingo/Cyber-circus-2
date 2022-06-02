@@ -1,4 +1,4 @@
-[gd_scene load_steps=98 format=2]
+[gd_scene load_steps=110 format=2]
 
 [ext_resource path="res://Scripts/SlotTile.gd" type="Script" id=1]
 [ext_resource path="res://Imagens/bonus/CyberCircus_roulette_bonus.png" type="Texture" id=2]
@@ -1437,7 +1437,6 @@ font_data = ExtResource( 3 )
 [sub_resource type="Animation" id=118]
 resource_name = "Bonus"
 length = 0.833334
-loop = true
 step = 0.0416667
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:position")
@@ -1666,6 +1665,170 @@ tracks/2/keys = {
 "values": [ 69.8115, 69.8115 ]
 }
 
+[sub_resource type="Animation" id=122]
+resource_name = "J_Sweep"
+loop = true
+step = 0.0416667
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 1 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Control/Light2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -18, -342 ), Vector2( -17.9997, 346 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Control/Light2D:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 69.8115, 69.8115 ]
+}
+
+[sub_resource type="Animation" id=123]
+resource_name = "K_Sweep"
+loop = true
+step = 0.0416667
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Control/Light2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -18, -357 ), Vector2( -17.9997, 363 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Control/Light2D:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 69.8115, 69.8115 ]
+}
+
+[sub_resource type="Animation" id=124]
+resource_name = "Q_Sweep"
+loop = true
+step = 0.0416667
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 2 ),
+"update": 1,
+"values": [ 0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Control/Light2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 2, 1 ),
+"update": 0,
+"values": [ Vector2( -18, -342 ), Vector2( -18, 370 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Control/Light2D:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 2, 1 ),
+"update": 0,
+"values": [ 69.8115, 69.8115 ]
+}
+
+[sub_resource type="Animation" id=125]
+resource_name = "A_Sweep"
+loop = true
+step = 0.0416667
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 3 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Control/Light2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -18.0003, -336 ), Vector2( -18, 373 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Control/Light2D:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 69.8115, 69.8115 ]
+}
+
 [sub_resource type="Animation" id=126]
 resource_name = "J_Sweep"
 loop = true
@@ -1707,7 +1870,335 @@ tracks/2/keys = {
 "values": [ 69.8115, 69.8115 ]
 }
 
+[sub_resource type="Animation" id=127]
+resource_name = "K_Sweep"
+loop = true
+step = 0.0416667
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Control/Light2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -18, -357 ), Vector2( -17.9997, 363 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Control/Light2D:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 69.8115, 69.8115 ]
+}
+
+[sub_resource type="Animation" id=128]
+resource_name = "Q_Sweep"
+loop = true
+step = 0.0416667
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 2 ),
+"update": 1,
+"values": [ 0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Control/Light2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 2, 1 ),
+"update": 0,
+"values": [ Vector2( -18, -342 ), Vector2( -18, 370 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Control/Light2D:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 2, 1 ),
+"update": 0,
+"values": [ 69.8115, 69.8115 ]
+}
+
+[sub_resource type="Animation" id=129]
+resource_name = "A_Sweep"
+loop = true
+step = 0.0416667
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 3 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Control/Light2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -18.0003, -336 ), Vector2( -18, 373 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Control/Light2D:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 69.8115, 69.8115 ]
+}
+
+[sub_resource type="Animation" id=130]
+resource_name = "J_Sweep"
+loop = true
+step = 0.0416667
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 1 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Control/Light2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -18, -342 ), Vector2( -17.9997, 346 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Control/Light2D:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 69.8115, 69.8115 ]
+}
+
 [sub_resource type="Animation" id=131]
+resource_name = "K_Sweep"
+loop = true
+step = 0.0416667
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 2 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Control/Light2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -18, -357 ), Vector2( -17.9997, 363 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Control/Light2D:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 69.8115, 69.8115 ]
+}
+
+[sub_resource type="Animation" id=132]
+resource_name = "Q_Sweep"
+loop = true
+step = 0.0416667
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 2 ),
+"update": 1,
+"values": [ 0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Control/Light2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 2, 1 ),
+"update": 0,
+"values": [ Vector2( -18, -342 ), Vector2( -18, 370 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Control/Light2D:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 2, 1 ),
+"update": 0,
+"values": [ 69.8115, 69.8115 ]
+}
+
+[sub_resource type="Animation" id=133]
+resource_name = "A_Sweep"
+loop = true
+step = 0.0416667
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 3 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Control/Light2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -18.0003, -336 ), Vector2( -18, 373 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Control/Light2D:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 69.8115, 69.8115 ]
+}
+
+[sub_resource type="Animation" id=134]
+resource_name = "J_Sweep"
+loop = true
+step = 0.0416667
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 1 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Control/Light2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -18, -342 ), Vector2( -17.9997, 346 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Control/Light2D:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 69.8115, 69.8115 ]
+}
+
+[sub_resource type="Animation" id=135]
 resource_name = "K_Sweep"
 loop = true
 step = 0.0416667
@@ -3101,13 +3592,13 @@ scale = Vector2( 0.998961, 0.998961 )
 z_index = 1
 
 [node name="Label" type="Label" parent="Sprite/Roulette/Position2D"]
+visible = false
 light_mask = 65536
 margin_left = -232.877
 margin_top = -146.482
 margin_right = 248.123
 margin_bottom = 78.5191
 rect_rotation = -13.9058
-rect_scale = Vector2( 0.592182, 0.592182 )
 rect_pivot_offset = Vector2( 232.421, 139.313 )
 custom_colors/font_color = Color( 0.956863, 0.905882, 0.752941, 1 )
 custom_fonts/font = SubResource( 120 )
@@ -3149,8 +3640,8 @@ region_rect = Rect2( 190, 10, 290, 500 )
 
 [node name="Knife" type="Sprite" parent="Sprite/Roulette/ViewportContainer"]
 light_mask = 4
-position = Vector2( 159.233, 152.313 )
-rotation = 8.04537
+position = Vector2( -124.623, 265.393 )
+rotation = -3.71102
 texture = ExtResource( 19 )
 region_enabled = true
 region_rect = Rect2( 60, 250, 80, 210 )
@@ -3166,7 +3657,6 @@ texture = ExtResource( 5 )
 range_item_cull_mask = 65536
 
 [node name="A" type="Sprite" parent="Sprite"]
-visible = false
 light_mask = 8
 position = Vector2( 1248.5, 463.862 )
 scale = Vector2( 3.10528, 1.9277 )
@@ -3197,6 +3687,9 @@ range_item_cull_mask = 8
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite/A"]
 anims/A_Sweep = SubResource( 121 )
+anims/J_Sweep = SubResource( 122 )
+anims/K_Sweep = SubResource( 123 )
+anims/Q_Sweep = SubResource( 124 )
 
 [node name="Quadrado" type="Sprite" parent="Sprite/A"]
 position = Vector2( 7.88654, 17.0018 )
@@ -3235,7 +3728,10 @@ color = Color( 0.737255, 0.443137, 0.760784, 1 )
 range_item_cull_mask = 16
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite/J"]
+anims/A_Sweep = SubResource( 125 )
 anims/J_Sweep = SubResource( 126 )
+anims/K_Sweep = SubResource( 127 )
+anims/Q_Sweep = SubResource( 128 )
 
 [node name="Quadrado" type="Sprite" parent="Sprite/J"]
 position = Vector2( 17.1176, 13.5401 )
@@ -3270,7 +3766,10 @@ color = Color( 0.737255, 0.443137, 0.760784, 1 )
 range_item_cull_mask = 32
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite/K"]
+anims/A_Sweep = SubResource( 129 )
+anims/J_Sweep = SubResource( 130 )
 anims/K_Sweep = SubResource( 131 )
+anims/Q_Sweep = SubResource( 132 )
 
 [node name="Quadrado" type="Sprite" parent="Sprite/K"]
 position = Vector2( 2.11713, 8.92458 )
@@ -3304,6 +3803,9 @@ color = Color( 0.737255, 0.443137, 0.760784, 1 )
 range_item_cull_mask = 64
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite/Q"]
+anims/A_Sweep = SubResource( 133 )
+anims/J_Sweep = SubResource( 134 )
+anims/K_Sweep = SubResource( 135 )
 anims/Q_Sweep = SubResource( 136 )
 
 [node name="Quadrado" type="Sprite" parent="Sprite/Q"]

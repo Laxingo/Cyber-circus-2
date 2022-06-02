@@ -35,6 +35,18 @@ var tiles_moved_per_reel := []
 var runs_stopped := 0
 var total_runs : int
 
+var col1Mid
+var col2Mid 
+var col3Mid 
+var col4Mid 
+var col5Mid 
+
+var col1Mid_name
+var col2Mid_name
+var col3Mid_name
+var col4Mid_name
+var col5Mid_name
+
 export(Array, String) var symbolName := ["bunny", "lion","strongman", 
 "ticket", "roulette","A", "J", "K", "Q", "juggle", "clown", "elephant"];
 
@@ -123,9 +135,9 @@ func _stop() -> void:
 		state = State.OFF
 		emit_signal("stopped")
 	if state == State.OFF:
-#		idk()
-		buildResultMasks();
-		animPrizes();
+		idk()
+	buildResultMasks();
+	animPrizes();
 
 #0.00164684
 
@@ -160,6 +172,19 @@ func _on_tile_moved(tile: SlotTile, _nodePath) -> void:
 		tile.spin_down()
 		if reel == reels - 1:
 			_stop()
+
+func idk():
+	col1Mid = get_tile(0,3)
+	col2Mid = get_tile(1,3)
+	col3Mid = get_tile(2,3)
+	col4Mid = get_tile(3,3)
+	col5Mid = get_tile(4,3)
+	
+	col1Mid_name = col1Mid.tileName
+	col2Mid_name = col2Mid.tileName
+	col3Mid_name = col3Mid.tileName
+	col4Mid_name = col4Mid.tileName
+	col5Mid_name = col5Mid.tileName
 
 func current_runs(reel := 0) -> int:
   return int(ceil(float(tiles_moved_per_reel[reel]) / rows))
@@ -237,38 +262,41 @@ func getPrizes(result_masks):
 	return prizeInfo;
 
 func animPrizes():
+	var firstReel
+	var scndReel
+	var thirdReel
+	var forthReel
+	var fifthReel
+	
 	var oTile
 	var estaReel
 	var estaCol
-	var pCol
-	var pRow
 	for p in prizesToAnim.size():
 		for i in cells:
 			var prizeID = symbolName[prizesToAnim[p][0]];
 			if(prizeMasks[prizesToAnim[p][1]] & 1<<i):
 				var _pcell = reels * tiles_per_reel - 1 - i
-				
-				if (_pcell == 0 or _pcell == 1 or _pcell == 2 or _pcell == 3 or _pcell == 4):
-					pRow = 0
-				elif (_pcell == 5 or _pcell == 6 or _pcell == 7 or _pcell == 8 or _pcell == 9):
-					pRow = 1
-				elif (_pcell == 10 or _pcell == 11 or _pcell == 12 or _pcell == 13 or _pcell == 14):
-					pRow = 2
-				
-				if (_pcell == 0 or _pcell == 5 or _pcell == 10):
-					pCol = 0
-				elif (_pcell == 1 or _pcell == 6 or _pcell == 11):
-					pCol = 1
-				elif (_pcell == 2 or _pcell == 7 or _pcell == 12):
-					pCol=2
-				elif (_pcell == 3 or _pcell == 8 or _pcell == 13):
-					pCol = 3
-				elif (_pcell == 4 or _pcell == 9 or _pcell == 14):
-					pCol = 4
-					
 				print("ANIMAÇÃO: ",prizeID, "  CÉLULAS: ", _pcell);
+				
+				if(_pcell == 0 or _pcell == 5 or _pcell == 10):
+					estaReel = 0
+				elif(_pcell == 1 or _pcell == 6 or _pcell == 11):
+					estaReel = 1
+				elif(_pcell == 2 or _pcell == 7 or _pcell == 12):
+					estaReel = 2
+				elif(_pcell == 3 or _pcell == 8 or _pcell == 13):
+					estaReel = 3
+				elif(_pcell == 4 or _pcell == 9 or _pcell == 14):
+					estaReel = 4
 					
-				oTile = get_tile(pCol, pRow)
-				print("OOOO  ", pCol, " ", pRow)
+				if (_pcell == 0 or _pcell == 1 or _pcell == 2 or _pcell == 3 or _pcell == 4):
+					estaCol = 0
+				if (_pcell == 5 or _pcell == 6 or _pcell == 7 or _pcell == 8 or _pcell == 9):
+					estaCol = 1
+				if (_pcell == 10 or _pcell == 11 or _pcell == 12 or _pcell == 13 or _pcell == 14):
+					estaCol = 2
+					
+					
+				oTile = get_tile(estaCol, estaReel)
 				oTile.animate_icon(prizeID)
 				
