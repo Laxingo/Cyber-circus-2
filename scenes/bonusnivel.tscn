@@ -4056,7 +4056,11 @@ scale = Vector2( 0.210555, 0.210555 )
 texture = ExtResource( 9 )
 
 [node name="Luzrosa" type="Sprite" parent="CyberCircusRouletteBonus/luzesentreaspas"]
+<<<<<<< Updated upstream
 self_modulate = Color( 1, 1, 1, 0 )
+=======
+self_modulate = Color( 1, 1, 1, 0.654902 )
+>>>>>>> Stashed changes
 position = Vector2( -187, 207 )
 scale = Vector2( 1.91159, 1.91159 )
 z_index = 2
@@ -4097,7 +4101,11 @@ z_index = -1
 texture = ExtResource( 11 )
 hframes = 6
 vframes = 4
+<<<<<<< Updated upstream
 frame = 23
+=======
+frame = 22
+>>>>>>> Stashed changes
 
 [node name="CurtainRight" type="Sprite" parent="."]
 light_mask = 0

@@ -439,11 +439,18 @@ __meta__ = {
 }
 
 [node name="Caixa" type="Sprite" parent="."]
+<<<<<<< Updated upstream:scenes/wins.tscn
 visible = false
 self_modulate = Color( 1, 1, 1, 0.839216 )
 position = Vector2( 21, 571 )
 rotation = -3.14062
 scale = Vector2( 1.46253, 0.901119 )
+=======
+self_modulate = Color( 1, 1, 1, 0.839216 )
+position = Vector2( 21, 571 )
+rotation = 0.000975787
+scale = Vector2( -1.46253, -0.901119 )
+>>>>>>> Stashed changes:scenes/particulas.tscn
 z_index = -1
 texture = ExtResource( 3 )
 

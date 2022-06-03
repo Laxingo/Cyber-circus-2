@@ -37,7 +37,7 @@ var runs_stopped := 0
 var total_runs : int
 
 export(Array, String) var symbolName := ["bunny", "lion","strongman", 
-"ticket", "roulette","A", "J", "K", "Q", "juggle", "clown", "elephant"];
+"ticket"];
 
 var bunny = 0
 var clown= 0
@@ -155,7 +155,7 @@ func current_runs(reel := 0) -> int:
 
 func _randomIcones() -> String:
 	random.randomize()
-	var num = random.randi_range(0, 11)
+	var num = random.randi_range(0, 3)
 	if num == 0:
 		tile_name = symbolName[0]
 	elif num == 1:
