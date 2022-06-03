@@ -1,9 +1,13 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 [gd_scene load_steps=60 format=2]
 =======
 [gd_scene load_steps=69 format=2]
 >>>>>>> 92e51a8f9f413bfd41dbc3cfd82b1044e6c84d04
+=======
+[gd_scene load_steps=59 format=2]
+>>>>>>> parent of 747bfea (e4r5y)
 =======
 [gd_scene load_steps=59 format=2]
 >>>>>>> parent of 747bfea (e4r5y)
@@ -46,6 +50,7 @@
 [ext_resource path="res://Imagens/UI/play2.png" type="Texture" id=36]
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 [ext_resource path="res://sound/reels spin/Cyber Circus Reel Just Spin.mp3" type="AudioStream" id=37]
 =======
 [ext_resource path="res://Imagens/UI/replayhmini.png" type="Texture" id=37]
@@ -59,6 +64,8 @@
 [ext_resource path="res://Imagens/UI/infohmini.png" type="Texture" id=45]
 [ext_resource path="res://Imagens/UI/25hmini.png" type="Texture" id=46]
 >>>>>>> 92e51a8f9f413bfd41dbc3cfd82b1044e6c84d04
+=======
+>>>>>>> parent of 747bfea (e4r5y)
 =======
 >>>>>>> parent of 747bfea (e4r5y)
 
